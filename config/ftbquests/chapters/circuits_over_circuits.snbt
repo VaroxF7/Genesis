@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "circuits_over_circuits"
+	group: "1C1C4FB2AFCF489D"
+	icon: "gtceu:advanced_integrated_circuit"
+	id: "1484F051C8635075"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Circuits for Days"
+}
