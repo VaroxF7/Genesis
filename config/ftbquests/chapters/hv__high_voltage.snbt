@@ -2032,7 +2032,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["48141DBA683F6B5A"]
+			dependencies: ["0115C631C256D9A6"]
 			description: [
 				"&aGasoline&r is an extremely powerful Combustion Fuel. It's over &63 times&r as energy dense as &dDiesel&r!"
 				""
@@ -2052,7 +2052,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["00E2BAEDB8199E4E"]
+			dependencies: ["1B0D6287DCB92535"]
 			description: [
 				"&6Multiply the energy density by 2&r and you have &aHigh Octane Gasoline&r."
 				""
@@ -2108,7 +2108,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["48141DBA683F6B5A"]
+			dependencies: ["0115C631C256D9A6"]
 			description: [
 				"Here are the four most relevant &dHydrocarbons&r you will be obtaining from distilling Steam-Cracked Fuels."
 				""
@@ -2150,7 +2150,7 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["48141DBA683F6B5A"]
+			dependencies: ["0115C631C256D9A6"]
 			description: [
 				"&aLiquid Air&r is a great way to get large amounts of &aNitrogen&r and &aOxygen&r at the cost of using more energy than &3LV Centrifuges&r."
 				""
@@ -2188,7 +2188,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["48141DBA683F6B5A"]
+			dependencies: ["0115C631C256D9A6"]
 			description: [
 				"This Quest requires the &3Pyrolyse Oven&r and is &doptional&r, yet convenient."
 				""
@@ -2254,7 +2254,7 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["48141DBA683F6B5A"]
+			dependencies: ["0115C631C256D9A6"]
 			description: [
 				"The &3Cracker&r is a multiblock built with the sole purpose of cracking fluids. It comes with all the recipes of &3Chemical Reactor&r Cracking, but it is &6lossless&r."
 				""
@@ -2275,11 +2275,7 @@
 			y: -10.5d
 		}
 		{
-			dependencies: [
-				"1A4AD56965407DC5"
-				"0AF2AD397838755F"
-				"77070668969E31BF"
-			]
+			dependencies: ["0AF2AD397838755F"]
 			dependency_requirement: "one_completed"
 			description: [
 				"So, you wish to make the next pair of &6AE2 Storage Components&r? Good. "
@@ -2308,21 +2304,25 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
-			dependencies: [
-				"5B90589798F2302B"
-				"7709C26681DFD9FD"
+			dependencies: ["15300D00CE89C62F"]
+			id: "2DAE6E1688FABED6"
+			tasks: [
+				{
+					id: "54DF90DD45BC204B"
+					item: "gtceu:epoxy_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "3DE27E8967881924"
+					item: "gtceu:epoxy_circuit_board"
+					type: "item"
+				}
 			]
-			id: "32CA16F1D42A48D9"
-			tasks: [{
-				id: "6D173AD5D8D2668E"
-				item: "ae2:cell_component_256k"
-				type: "item"
-			}]
 			x: 19.0d
-			y: -6.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]

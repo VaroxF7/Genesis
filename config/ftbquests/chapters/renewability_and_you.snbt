@@ -321,10 +321,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"4D7A771B67DAFC6F"
-				"48141DBA683F6B5A"
-			]
+			dependencies: ["4D7A771B67DAFC6F"]
 			description: [
 				"By collecting Air with a &6Gas Collector&r and cooling it to Liquid state with a &3Vacuum Freezer&r, you can then distill the liquid Air for a plethora of valuable resources."
 				""

@@ -24,13 +24,6 @@
 			y: 6.75d
 		}
 		{
-			id: "567AFEA6A07F1886"
-			linked_quest: "390E59F05132FCB8"
-			size: 0.75d
-			x: 1.125d
-			y: 7.875d
-		}
-		{
 			id: "33EE8F2888E09B86"
 			linked_quest: "528CE69DA4358B2E"
 			size: 0.75d
@@ -360,7 +353,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: ["7A55CC71442CC854"]
+			dependencies: ["1205E8B63F5BB34E"]
 			description: [
 				"The best battery-like item for &5EV&r!"
 				""
@@ -368,8 +361,7 @@
 			]
 			icon: "gtceu:lapotron_crystal"
 			id: "69E384F389B0D07B"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [
 				{
 					id: "3DF109921CA21ADB"
@@ -384,8 +376,8 @@
 				}
 			]
 			title: "Extreme Batteries"
-			x: 3.375d
-			y: 1.125d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -538,28 +530,25 @@
 			y: 3.375d
 		}
 		{
-			dependencies: ["069FD86133D7D582"]
+			dependencies: ["6359ADA241E99728"]
 			description: [
 				"If you want a big boost to your processing abilities, look no further than these powerful Multiblocks!"
 				""
 				"Formerly known as &2Gregicality Multiblocks&r, the add-on has been fully integrated into GregTech CEu Modern!"
 				""
 				"You'll need to make use of many new &9alloys&r to build the new Multiblocks. Yay, more content!"
-				""
-				"&6This quest unlocks a new tutorial on the GCYM mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
 			]
 			icon: "gtceu:vibration_safe_casing"
 			id: "3B2D2C47BEBCFFA7"
-			shape: "gear"
-			size: 1.2d
+			size: 1.0d
 			subtitle: "We made it so far..."
 			tasks: [{
 				id: "02739BCF3877B446"
 				type: "checkmark"
 			}]
 			title: "Gregicality Multiblocks"
-			x: 9.0d
-			y: 6.6d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -678,10 +667,7 @@
 			y: 5.625d
 		}
 		{
-			dependencies: [
-				"40408FFD02134148"
-				"7FA0ACB7F161F378"
-			]
+			dependencies: ["56E37285C51EBAED"]
 			description: [
 				"A lot of &dKanthal&r will be required for the &aEV Motors&r. This may feel painful when you're on the edge of &5EV&r, but it won't be a problem later - trust us."
 				""
@@ -693,8 +679,7 @@
 			]
 			icon: "gtceu:ev_electric_motor"
 			id: "26575D4FEB3D3F62"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Wait, no, don't leave!"
 			tasks: [
 				{
@@ -734,19 +719,18 @@
 				}
 			]
 			title: "The \"Fun\" will never stop"
-			x: 3.375d
-			y: 6.75d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["7FA0ACB7F161F378"]
+			dependencies: ["56E37285C51EBAED"]
 			description: [
 				"&3ME Hatches&r directly connect to your &aAE System&r, allowing you to skip placing interfaces directly on buses and hatches."
 				""
 				"&l&3Lore:&r&o This feature originally comes from GTNH!"
 			]
 			id: "681F1423A36FD4FF"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "No more interfaces on buses"
 			tasks: [{
 				id: "69FC6941E6C83799"
@@ -754,8 +738,8 @@
 				type: "item"
 			}]
 			title: "ME Hatches"
-			x: 5.625d
-			y: 4.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -895,7 +879,6 @@
 			y: 7.875d
 		}
 		{
-			dependencies: ["117FBB18DEE6F08B"]
 			description: [
 				"Now that you have &aEpoxy&r, you can make &aAdvanced Circuit Boards&r! The next Circuit tier is oh so close, so keep pushing."
 				""
@@ -1034,62 +1017,8 @@
 		}
 		{
 			dependencies: [
-				"4024C831C77101CA"
-				"16B735F9C391D260"
-			]
-			description: [
-				"In lieu of GTCEu's &3Ender Fluid Links&r being fully implemented, &dEnder Storage&r makes its way into the pack."
-				""
-				"Recipes have been adjusted to a &asimilar tier&r. You can change the \"frequency\" of &6each tank&r by using dye on the wool pads on top."
-				""
-				"You can also make similar &3Ender Chests&r to transport items - which is nice, because there's currently &cno way&r to wirelessly transport items in base &bGTCEu&r! Don't ever say we don't treat you!"
-				""
-				"Lastly, using a &eDiamond&r on an Ender Tank will lock the tank to your own &dprivate frequency&r, which is helpful if you're playing on a server."
-			]
-			id: "23A7E6D95549B1F8"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Ender? I ha- Ok, this joke is old"
-			tasks: [{
-				id: "5AAF6386B4AA7C69"
-				item: "enderstorage:ender_tank"
-				type: "item"
-			}]
-			title: "Ender Fluid Linking"
-			x: 6.75d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"16E3465CF94E2BDD"
-				"4024C831C77101CA"
-			]
-			description: [
-				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
-				""
-				"Slap it on a &3Battery Buffer&r, set a Minimum EU near 0, and a Maximum EU near the max capacity."
-				""
-				"The Cover will output a &4Redstone&r signal until the high threshold is reached, and then it will wait until the low threshold is reached to output redstone again."
-				""
-				"This is a must to automate inertia-based power generators such as Boilers, or more importantly &3Large Turbines&r."
-			]
-			id: "7F2FE3AF6F0C1190"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Save on Redstone contraptions"
-			tasks: [{
-				id: "305731DA47087165"
-				item: "gtceu:advanced_energy_detector_cover"
-				type: "item"
-			}]
-			title: "Advanced Energy Detector"
-			x: 5.625d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"73E8283634E5E33A"
 				"45F9AAE4ABE32033"
+				"40AB7614D8547016"
 			]
 			description: [
 				"You can now remotely expand your AE2 network if you're looking to move bases."
@@ -1098,7 +1027,7 @@
 			]
 			icon: "ae2:quantum_link"
 			id: "46C7E1D5E37B1ED2"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "[-h^2/2m∇^2 + V(x,t)]ψ(x,t) = iht'ψ(x,t)"
 			tasks: [
 				{
@@ -1121,8 +1050,8 @@
 				}
 			]
 			title: "Quantum Tunnel"
-			x: 3.375d
-			y: 10.125d
+			x: -6.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1219,488 +1148,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"390E59F05132FCB8"
-				"4CD9F6D1B4CC7D81"
-				"1F571B9E1555DA04"
-				"40018C0546454CD9"
-			]
-			description: [
-				"&aEpoxy&r is the foundation for all future Circuit Boards in the game. Get ready to make a lot of this stuff."
-				""
-				"&9&lNote:&r This questline is quite complicated, so tackle everything else before trying to make Epoxy. You'll need all the help you can get!"
-				"{@pagebreak}"
-				"There are several ways to obtain the ingredients for &aEpoxy&r."
-				""
-				"We'll ignore recipes related to Glycerol, as they're never worth it unless modpack devs tweak things around. &mHint hint, if you're making your own pack!&r"
-				""
-				"Try and use &3Large Chemical Reactors&r to shortcut recipes."
-				"{@pagebreak}"
-				"&dChlorine&r is only partially recycled, so you'll need a constant supply. Feeding it manually should be sufficient at first."
-				""
-				"Recipes involving &dSodium Hydroxide&r could be looped by electrolyzing the &9Salt Water&r co-product."
-				""
-				"Doing this will probably require you to make some Quadruple Pipes, Pump Covers, Fluid Filters... or route everything using AE2."
-				""
-				"In general, closed loop setups are nice to prevent overproduction or overconsumption, but go for whatever's more fun for you."
-			]
-			id: "117FBB18DEE6F08B"
-			shape: "gear"
-			size: 1.2d
-			subtitle: "Prime circuit board material"
-			tasks: [{
-				id: "35EAB019D81FD0A6"
-				item: "gtceu:epoxy_plate"
-				type: "item"
-			}]
-			title: "Epoxy"
-			x: 3.375d
-			y: 7.875d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"You're going to want to use the &3LCR&r recipe for your first &aEpichlorohydrin&r."
-				""
-				"This recipe requires &aPropene&r, which means that &dOil Processing&r and &dFuel Cracking&r are now necessary ventures. We're truly sorry if you've been dragging your heels!"
-				""
-				"It's quite important that you make your first &3Distillation Tower&r before progressing to the right."
-				""
-				"Last of all, if you haven't noticed, you can loop the &dSalt Water&r byproduct to bootstrap the &dSodium Hydroxide&r."
-			]
-			id: "1F571B9E1555DA04"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Putting the \"Epic\" in \"Epichlorohydrin\""
-			tasks: [{
-				id: "45620325962A91D0"
-				item: "gtceu:epichlorohydrin_bucket"
-				type: "item"
-			}]
-			title: "Epichlorohydrin"
-			x: 2.25d
-			y: 7.875d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"Obtain &aPhenol&r from:"
-				""
-				"&91 -&r &aWood Tar&r distillation."
-				""
-				"&92 -&r Reacting &aBenzene&r with &dChlorine&r and &dSodium Hydroxide&r This should be performed in an &3LCR&r, and the Chlorine is perfectly looped."
-				""
-				"&93 -&r Shortcutting the above recipe by ignoring the &dSodium Hydroxide&r. This is net negative on &dChlorine&r."
-				""
-				"&94 -&r Reacting &aBenzene&r, &dPropene&r and &dOxygen&r using a small amount of &4Phosphoric Acid&r - normally a catalyst, but consumed here in small quantities. This is called the Cumene process."
-				"{@pagebreak}"
-				"If you're having trouble deciding between the options presented, here's the appeal of each route:"
-				""
-				"&91 -&r Great if you're willing to set up a &3Pyrolyse Oven&r + &3Distillation Tower&r combo."
-				""
-				"&92 -&r This one's our preference! You can use the &dSalt&r to make more &dSalt Water&r, then electrolyze to create a loop."
-				""
-				"&93 -&r Very appealing if you have an infinite supply of &dChlorine&r. You could achieve this by setting up a &3Fluid Drilling Rig&r on a Salt Water vein."
-				""
-				"&94 -&r ...&4Phosphoric Acid&r is a pain to produce. You'd be mad to consider this."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The Benzene + Oxygen recipe was added in GTCE with the intent of fixing missing chemical recipes, as the Large Chemical Reactor didn't exist. Now that CEu provides more realistic options, we may remove the recipe in future."
-			]
-			id: "4CD9F6D1B4CC7D81"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "But that's just how I Phenol"
-			tasks: [{
-				id: "5F713348547742D9"
-				item: "gtceu:phenol_bucket"
-				type: "item"
-			}]
-			title: "Phenol"
-			x: 2.25d
-			y: 6.75d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"While distilling &aWood Vinegar&r gives &aAcetone&r, the yield is low and might not meet your needs."
-				""
-				"You might want to use the direct &3LCR&r recipe from &aAcetic Acid&r to obtain &aAcetone&r."
-				""
-				"If you want to be fancy, you can also use the good old &aAcetic Acid&r -> &dDissolved Calcium Acetate&r -> &aAcetone&r loop, which does not require a &3LCR&r, but still recycles the Calcium compound perfectly."
-				"{@pagebreak}"
-				"We've been talking about Acetic Acid, but we're yet to tell you how to obtain it. Wouldn't that be great?"
-				""
-				"&aAcetic Acid&r can be synthesized in the &3Chemical Reactor&r. Our favorite recipe is from &dEthylene&r."
-			]
-			id: "40018C0546454CD9"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "78BFA0425B39316A"
-				item: "gtceu:acetone_bucket"
-				type: "item"
-			}]
-			title: "Acetone"
-			x: 2.25d
-			y: 9.0d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"Silicone Rubber has its uses in Cable insulation, Conveyor recipes, and more."
-				""
-				"You may want to shelve this quest for now, as tackling Silicone Rubber can be a pretty severe &dChlorine&r sink."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
-				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
-			]
-			icon: "gtceu:silicone_rubber_plate"
-			id: "1A4AD56965407DC5"
-			size: 0.75d
-			subtitle: "An alternate rubber"
-			tasks: [
-				{
-					id: "3E2FBCED1C782E7C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/silicone_rubber"
-						}
-					}
-					optional_task: true
-					title: "Silicone Rubber Ingot"
-					type: "item"
-				}
-				{
-					id: "3CF87D26761354C4"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/silicone_rubber"
-						}
-					}
-					title: "Silicone Rubber Plate"
-					type: "item"
-				}
-			]
-			title: "Silicone Rubber"
-			x: 1.125d
-			y: 6.75d
-		}
-		{
-			dependencies: ["390E59F05132FCB8"]
-			description: [
-				"&7Styrene-Butadiene Rubber (SBR)&r is an enhanced type of Rubber."
-				""
-				"It can be used in place of Rubber in most recipes, and is &6four times more efficient&r at &ainsulating Cables&r. It is also strictly required for certain higher-tier recipes."
-				""
-				"This isn't exactly worth making until you get the &3Distillation Tower&r, but it eventually becomes easier with &dFuel Cracking&r."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
-				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
-			]
-			id: "77070668969E31BF"
-			size: 0.75d
-			subtitle: "Steel Ball Run"
-			tasks: [{
-				id: "7D952AF37FC51956"
-				item: "gtceu:styrene_butadiene_rubber_plate"
-				type: "item"
-			}]
-			title: "Styrene-Butadiene Rubber"
-			x: 0.0d
-			y: 7.875d
-		}
-		{
-			dependencies: [
-				"40018C0546454CD9"
-				"48141DBA683F6B5A"
-			]
-			description: [
-				"&aGasoline&r is an extremely powerful Combustion Fuel. It's over &63 times&r as energy dense as &dDiesel&r!"
-				""
-				"&9Note:&r This Combustion Fuel exists solely as a &echallenge&r for you to overcome if you desire to take on it."
-				""
-				"It's completely &doptional&r, so we'll let you figure out how to obtain it, without any further tips."
-			]
-			id: "00E2BAEDB8199E4E"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "2D073A538A19BCDD"
-				item: "gtceu:gasoline_bucket"
-				type: "item"
-			}]
-			title: "Gasoline"
-			x: 1.125d
-			y: 9.0d
-		}
-		{
-			dependencies: ["00E2BAEDB8199E4E"]
-			description: [
-				"&6Multiply the energy density by 2&r and you have &aHigh Octane Gasoline&r."
-				""
-				"&9Note:&r Automating this requires a lot of &3Distillation Towers&r! A huge portion of your base would be dedicated to producing this constantly without anything bottlenecking."
-				""
-				"If you have a base successfully running on &aHOG&r, feel free to brag and share some screenshots on our &8Discord&r."
-			]
-			id: "046B4A0B2639B16A"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Fetch me my Draconium!"
-			tasks: [{
-				id: "5C03BCF778B6293A"
-				item: "gtceu:high_octane_gasoline_bucket"
-				type: "item"
-			}]
-			title: "High Octane Gasoline"
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"4AFD3073C731A1E4"
-				"16A6AE5C770DB83A"
-			]
-			description: [
-				"The &3Distillation Tower&r is a multiblock that will help you extract the most out of fluids. In &3Distilleries&r, you had to pick only one product to output. DTs output &6all of it at once&r!"
-				""
-				"&9Note the special placement rules:&r Energy, Items, and Fluid Inputs can only be placed on the bottom layer. Maintenance can be placed anywhere. Fluid Outputs can only be placed starting on the second vertical layer, and only allow one per layer as well."
-				"{@pagebreak}"
-				"The &3DT&r can form at any height from &c&c3&r to &c13&r blocks, allowing 2 to 12 Fluid Outputs. Fluid will always output on the layer corresponding to the recipe in &2EMI&r."
-				""
-				"The &3DT&r has one more &9special&r rule. You can deliberately build it too short, and it will &cvoid&r whichever Fluid should have been output at the top layers that were removed. This can be useful in some very niche situations."
-				""
-				"It is a good idea to use &3Super Tanks&r as the output for every layer."
-				"{@pagebreak}"
-				"&cNote:&r Using the &3Distillation Tower&r for Oil -> Fuel -> Diesel is &cnot&r worth it! You will spend more energy overclocking the Multiblock than what you would get back from the products. It would be better to wait until you can make the &3Large Distillery&r (&1IV&r) for large scale Diesel production. "
-				""
-				"However, the DT is &6very valuable&r when extracting Cracked Fuels and Pyrolyse products."
-			]
-			id: "48141DBA683F6B5A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2893ECAD2905293A"
-				table_id: 4190763620137969664L
-				type: "choice"
-			}]
-			shape: "gear"
-			size: 1.3d
-			subtitle: "Time for a real oil refinery!"
-			tasks: [{
-				id: "53541406691632A9"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			title: "Distillation Tower"
-			x: 1.125d
-			y: 10.125d
-		}
-		{
-			dependencies: [
-				"6D12CE80F92FC485"
-				"48141DBA683F6B5A"
-			]
-			description: [
-				"&aLiquid Air&r is a great way to get large amounts of &aNitrogen&r and &aOxygen&r at the cost of using more energy than &3LV Centrifuges&r."
-				""
-				"However, this will also give you both &6Helium&r and &6Argon&r - which are great to boost smelting in the &3Electric Blast Furnace&r."
-				""
-				"&cNote:&r You will need at least &3HV Input and Output Hatches&r to be able to run this recipe."
-			]
-			icon: "gtceu:air_bucket"
-			id: "1030A9F4AAC685ED"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "692E848C43205905"
-					item: "gtceu:oxygen_bucket"
-					type: "item"
-				}
-				{
-					id: "1EF11FF81D5E6135"
-					item: "gtceu:nitrogen_bucket"
-					type: "item"
-				}
-				{
-					id: "2654CD00A7193574"
-					item: "gtceu:helium_bucket"
-					type: "item"
-				}
-				{
-					id: "2C54EC0AABA91D39"
-					item: "gtceu:argon_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Air"
-			x: 2.25d
-			y: 11.25d
-		}
-		{
-			dependencies: ["6958029B5514D4EC"]
-			description: [
-				"Some specific fluids are &dCryogenic&r, which are too cold for ordinary pipes. "
-				""
-				"Thus... you need to pick the right pipe for the job."
-				""
-				"Not many pipes support cold fluids, so you'll want to give &aStainless Steel&r or &aIridium&r a try. Later on you can use &aNaquadah&r or most of the fusion materials when you get there."
-				""
-				"&cWARNING:&r&r Cryogenics in the wrong pipes will cause &cvoiding&r, &cpipe freezing&r, and high rates of &cdeath&r! Be careful."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This is the first time GregTech has cryogenic mechanics, a GTCEu-original feature!"
-			]
-			icon: "gtceu:stainless_steel_large_fluid_pipe"
-			id: "6D12CE80F92FC485"
-			shape: "circle"
-			size: 0.66d
-			subtitle: "You won't find it here"
-			tasks: [{
-				id: "5C8340E344B1EA59"
-				type: "checkmark"
-			}]
-			title: "This isn't Cryotheum!"
-			x: 3.375d
-			y: 11.25d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"Here are the four most relevant &dHydrocarbons&r you will be obtaining from distilling Steam-Cracked Fuels."
-				""
-				"You will want to set this up &lbefore&r moving to &1IV&r."
-				""
-				"&aSteam-Cracked Light Fuel&r as input is probably the most favorable, but you are free to experiment."
-				""
-				"We know what you're thinking - something along the lines of \"&7&oThat Carbon output is just SO infuriating! It's ruining my automation!&r\"."
-				""
-				"Enable Item Voiding (in the controller GUI) if you don't want to build an Output Bus."
-			]
-			icon: "gtceu:oil_bucket"
-			id: "46367A76755866D9"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "1B0AD1105DEBBBC2"
-					item: "gtceu:benzene_bucket"
-					type: "item"
-				}
-				{
-					id: "109534199B99AD2A"
-					item: "gtceu:butadiene_bucket"
-					type: "item"
-				}
-				{
-					id: "33D42013817BF007"
-					item: "gtceu:ethylene_bucket"
-					type: "item"
-				}
-				{
-					id: "0A3EED37CD163A73"
-					item: "gtceu:methane_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Fuel"
-			x: 2.25d
-			y: 10.125d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"This Quest requires the &3Pyrolyse Oven&r and is &doptional&r, yet convenient."
-				""
-				"The first four fluids are the important products of &aWood Tar&r Distillation:"
-				"&9-&r Phenol: useful for Epoxy and PBI"
-				"&9-&r Benzene: an important hydrocarbon"
-				"&9-&r Toluene: useful for TNT"
-				"&9-&r Dimethylbenzene: useful for PBI"
-				""
-				"Unlike Oil, putting &aWood Tar&r in the &3Distillation Tower&r for the byproducts, and using &dNitrobenzene&r for power is arguably worth it."
-				"{@pagebreak}"
-				"The bottom three are the important products from &aWood Vinegar&r Distillation:"
-				"&9-&r Acetic Acid: useful to make more Acetone"
-				"&9-&r Methanol: a moderately important hydrocarbon"
-				"&9-&r Acetone: useful for Epoxy and Gasoline"
-				"{@pagebreak}"
-				"It's also possible to use a \"full combo\" of 4 &3DTs&r -  input &aCharcoal Byproducts&r into a first tower, splitting into &aWood Tar&r, &aWood Gas&r and &aWood Vinegar&r."
-				""
-				"This isn't the most efficient cost-to-production ratio, but the option is there if you get bored."
-			]
-			icon: "gtceu:seed_oil_bucket"
-			id: "5742702B8021B1F5"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [
-				{
-					id: "50A51E293CF77CDC"
-					item: "gtceu:phenol_bucket"
-					type: "item"
-				}
-				{
-					id: "1A3F5CC1F2AE86D7"
-					item: "gtceu:benzene_bucket"
-					type: "item"
-				}
-				{
-					id: "69FFE6E6FD6E2198"
-					item: "gtceu:toluene_bucket"
-					type: "item"
-				}
-				{
-					id: "4CEA0DC5DED2BC42"
-					item: "gtceu:dimethylbenzene_bucket"
-					type: "item"
-				}
-				{
-					id: "6649B70C143E163A"
-					item: "gtceu:acetic_acid_bucket"
-					type: "item"
-				}
-				{
-					id: "73AEFD316B4C5605"
-					item: "gtceu:methanol_bucket"
-					type: "item"
-				}
-				{
-					id: "50ACCD4B9ACD8C13"
-					item: "gtceu:acetone_bucket"
-					type: "item"
-				}
-			]
-			title: "True Distillation: Organic"
-			x: 1.125d
-			y: 11.25d
-		}
-		{
-			dependencies: ["48141DBA683F6B5A"]
-			description: [
-				"The &3Cracker&r is a multiblock built with the sole purpose of cracking fluids. It comes with all the recipes of &3Chemical Reactor&r Cracking, but it is &6lossless&r."
-				""
-				"This is a great way to save a lot of Fuel in the long term!"
-				""
-				"Higher Coil tiers provide a small energy discount - up to 70% with the best Coils available."
-			]
-			id: "24866E83B280C9AB"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "You Crack Me Up"
-			tasks: [{
-				id: "4307AF60A80EE9FC"
-				item: "gtceu:cracker"
-				type: "item"
-			}]
-			title: "Multiblock Cracking"
-			x: 0.0d
-			y: 10.125d
-		}
-		{
 			dependencies: ["39E7997F3080250A"]
 			description: [
 				"To turn a P2P Tunnel into an &aItem P2P Tunnel&r, right-click it in the world with a &dvanilla Chest&r."
@@ -1748,8 +1195,7 @@
 				"&l&3Lore:&r&o This multiblock was inspired by GT++. It didn't use any heating coils, had no temperature requirements, and only produced regular liquids for all materials. It was pretty OP back in the day, but it eventually got restricted to only a single Energy Hatch to balance it out. For some reason, it also allowed you to melt any dust... into liquid...?"
 			]
 			id: "5979B0E13A1EDC9C"
-			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Visions of GT++"
 			tasks: [{
 				id: "1493AF342D999313"
@@ -1757,47 +1203,8 @@
 				type: "item"
 			}]
 			title: "So Many Alloys!"
-			x: 7.875d
-			y: 6.75d
-		}
-		{
-			dependencies: ["3B2D2C47BEBCFFA7"]
-			description: [
-				"You probably have some old machines lying around, right?"
-				""
-				"You most likely know by now that Arc Furnaces can recycle machines, but by &5EV&r, they upgrade to &a9 slots&r!"
-				""
-				"&eNote&r: This quest accepts either an &5EV&r or &9IV&r Arc Furnace. You don't have to make both."
-			]
-			icon: "gtceu:iv_arc_furnace"
-			id: "6FEF59B8F571359D"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "I never liked them anyway..."
-			tasks: [{
-				id: "35CAC76B502E12FF"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_arc_furnace"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_arc_furnace"
-							}
-						]
-					}
-				}
-				title: "Arc Furnace"
-				type: "item"
-			}]
-			title: "Getting Rid of Those Old Machines"
-			x: 7.955102040816328d
-			y: 5.611224489795916d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -2056,6 +1463,760 @@
 			title: "EU P2P Tunnels"
 			x: 8.418367346938766d
 			y: 2.7806122448979593d
+		}
+		{
+			id: "56E37285C51EBAED"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "20BB25A8B6FE6599"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["56E37285C51EBAED"]
+			id: "1205E8B63F5BB34E"
+			tasks: [{
+				id: "7F3EDA78D7679B41"
+				item: "gtceu:ev_assembler"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1205E8B63F5BB34E"]
+			id: "2ED7E973744982DF"
+			tasks: [{
+				id: "7A99A23D5DE81F52"
+				item: "gtceu:hv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"56E37285C51EBAED"
+				"14AC945B3126E0E5"
+			]
+			id: "5E7E4A1F0FB4008D"
+			size: 1.5d
+			tasks: [{
+				id: "71926AF734FAB676"
+				title: "lithography"
+				type: "custom"
+			}]
+			title: "mk3 lithography"
+			x: -5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5E7E4A1F0FB4008D"]
+			id: "44B26FE6C9F28960"
+			subtitle: "long term memory chip "
+			tasks: [{
+				id: "5CD7FBD71262A448"
+				title: "LTMC"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"44B26FE6C9F28960"
+				"54D947B64E08AA64"
+			]
+			id: "708EE6745D540665"
+			tasks: [{
+				id: "3363C68B91EDD677"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"708EE6745D540665"
+				"54D947B64E08AA64"
+				"461FB3AFA0660337"
+			]
+			id: "460227324E915129"
+			tasks: [{
+				id: "65FC58987F9FD973"
+				item: "megacells:cell_component_1m"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"5E7E4A1F0FB4008D"
+				"14AC945B3126E0E5"
+				"32CFD7131F58D2C9"
+			]
+			id: "40AB7614D8547016"
+			tasks: [
+				{
+					id: "7EC6A78B79832EAD"
+					item: "gtceu:nano_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "1D356C6D6D9B1846"
+					item: "gtceu:nano_cpu_chip"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"7DB04E880C78A223"
+				"67BCB23197F7CE91"
+				"610B920BFF17A59B"
+			]
+			id: "14AC945B3126E0E5"
+			tasks: [{
+				id: "4A8DBBF329D14147"
+				title: "prepared nano wafer"
+				type: "custom"
+			}]
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"3A7D614D38E85410"
+				"081998D075425441"
+				"3116D4B4DA9A80DB"
+			]
+			id: "7DB04E880C78A223"
+			tasks: [{
+				id: "5A3A4D12E0E5C559"
+				title: "raw high power cpu chip"
+				type: "custom"
+			}]
+			x: -8.0d
+			y: 8.5d
+		}
+		{
+			id: "3A7D614D38E85410"
+			tasks: [{
+				id: "764FD6EFE9B29C37"
+				item: "gtceu:hpic_chip"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 8.0d
+		}
+		{
+			id: "081998D075425441"
+			tasks: [{
+				id: "52E2B89E43A53B30"
+				item: "gtceu:cpu_chip"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 9.0d
+		}
+		{
+			id: "67BCB23197F7CE91"
+			tasks: [{
+				id: "1B3F26C94F6651CE"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5E7E4A1F0FB4008D"]
+			id: "54D947B64E08AA64"
+			size: 1.5d
+			tasks: [{
+				id: "4BAB94FE59C74734"
+				title: "Advanced Circuit Manufacturer"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: 9.75d
+		}
+		{
+			dependencies: ["066ABF84C38759D5"]
+			id: "461FB3AFA0660337"
+			tasks: [{
+				id: "1E8B0C43B8BAB019"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5E7E4A1F0FB4008D"
+				"5D1DEC429E185818"
+			]
+			id: "066ABF84C38759D5"
+			tasks: [
+				{
+					id: "2B5EAF714600696F"
+					item: "megacells:printed_accumulation_processor"
+					type: "item"
+				}
+				{
+					id: "3EB5E2A547BCBCC5"
+					item: "megacells:accumulation_processor_press"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["56E37285C51EBAED"]
+			id: "3CB5A7E3D1097224"
+			tasks: [{
+				id: "6397A40745603A67"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56E37285C51EBAED"]
+			id: "1AD6A3F987D3958B"
+			tasks: [{
+				id: "627DCF8D1F6FD3CA"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DFC1B8B717E3FC6"]
+			id: "218E743F6A81F5B5"
+			tasks: [{
+				id: "7E257CEC8D89C800"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["56E37285C51EBAED"]
+			id: "7AD5F44509CB40AB"
+			tasks: [{
+				id: "194035996B021184"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7AD5F44509CB40AB"]
+			id: "648766D385C7CF65"
+			tasks: [{
+				id: "19CB1DA4CF364486"
+				item: "gtceu:palladium_raw_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7AD5F44509CB40AB"]
+			id: "0DFC1B8B717E3FC6"
+			tasks: [{
+				id: "4F518F8A308789BF"
+				item: "gtceu:platinum_raw_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7AD5F44509CB40AB"]
+			id: "45D195325454F664"
+			tasks: [{
+				id: "6FE4C26F1A1778EC"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7AD5F44509CB40AB"]
+			id: "25DED3EE36D2ABF2"
+			tasks: [{
+				id: "50ED09687468C0F5"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["648766D385C7CF65"]
+			id: "006A598727B8DBA1"
+			tasks: [{
+				id: "60CE73150150F37A"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["25DED3EE36D2ABF2"]
+			id: "24803FD77CFC78D3"
+			tasks: [{
+				id: "6ED76E5B2FD4FF80"
+				item: "gtceu:rhodium_ingot"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25DED3EE36D2ABF2"]
+			id: "58979339A7E9C3CD"
+			tasks: [{
+				id: "3396901B9766DCB9"
+				item: "gtceu:ruthenium_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45D195325454F664"]
+			id: "7512EBE5A4C40835"
+			tasks: [{
+				id: "7FBB15D1E8B13854"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45D195325454F664"]
+			id: "500B887822EC29F2"
+			tasks: [{
+				id: "39510E911A5BB788"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["218E743F6A81F5B5"]
+			id: "610B920BFF17A59B"
+			tasks: [{
+				id: "336A8CE745D21CD2"
+				item: "gtceu:fine_platinum_wire"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["006A598727B8DBA1"]
+			id: "3116D4B4DA9A80DB"
+			tasks: [{
+				id: "16D04ABB00B6C762"
+				item: "gtceu:fine_palladium_wire"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1205E8B63F5BB34E"]
+			id: "7FBB7E670996BB68"
+			tasks: [{
+				id: "4F7AA56DE5FD63CA"
+				item: "gtceu:ev_large_miner"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FBB7E670996BB68"]
+			id: "15C57F8597B86D55"
+			tasks: [{
+				id: "38B9BD6CAE467EBE"
+				item: "gtceu:tungstate_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["15C57F8597B86D55"]
+			id: "5DBB865383913B3F"
+			tasks: [{
+				id: "1DB5148C06B85E86"
+				item: "gtceu:tungstic_acid_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5DBB865383913B3F"]
+			id: "343A323FAB5E322B"
+			tasks: [{
+				id: "2974090599E8D656"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["343A323FAB5E322B"]
+			id: "12F3B1F4E21C31AD"
+			tasks: [{
+				id: "23E151D15B4F9848"
+				item: "gtceu:tungsten_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4D8E89E33F336788"]
+			id: "66C8EE518F7BD4E3"
+			tasks: [{
+				id: "35837E4BCFF82A2B"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"56E37285C51EBAED"
+				"4933CB693DD220DD"
+			]
+			icon: "ad_astra:mars_globe"
+			id: "034D0C04A6CA99B4"
+			tasks: [
+				{
+					dimension: "ad_astra:mars"
+					icon: "ad_astra:mars_globe"
+					id: "50D532D87FADEC87"
+					title: "The Martian"
+					type: "dimension"
+				}
+				{
+					id: "1F1D0242AD2159CC"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_2_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5A18AC6697C71E28"
+					item: "gtceu:rocket_fuel_bucket"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["034D0C04A6CA99B4"]
+			id: "5D1DEC429E185818"
+			tasks: [{
+				id: "36230F45C0FBDDC4"
+				title: "new martian ore"
+				type: "custom"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5D1DEC429E185818"]
+			id: "3B766CFFB63081A8"
+			tasks: [{
+				id: "17E9199CCC2B3ADE"
+				title: "dust from the ore"
+				type: "custom"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3B766CFFB63081A8"
+				"12F3B1F4E21C31AD"
+			]
+			id: "4D8E89E33F336788"
+			tasks: [{
+				id: "50116FFAD44E0C72"
+				item: "gtceu:hot_tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66C8EE518F7BD4E3"]
+			id: "6359ADA241E99728"
+			tasks: [{
+				id: "4E995E2BD8B529EE"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40AB7614D8547016"]
+			id: "28D398D257B0DFA8"
+			tasks: [{
+				id: "657220A2F9F17EBA"
+				item: "aeinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["40AB7614D8547016"]
+			id: "0316546656AA4A93"
+			tasks: [{
+				id: "365B2CA3DEFD709A"
+				title: "Doped Nano CPu wafer"
+				type: "custom"
+			}]
+			title: "Advanced Nano CPU Wafer"
+			x: -5.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"0316546656AA4A93"
+				"01B733E8BDD8AC9B"
+				"60D6388BCB53AC0A"
+			]
+			id: "444FB60665A8EAB4"
+			tasks: [
+				{
+					id: "75C76E3C72F0F066"
+					item: "gtceu:qbit_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "59B7E6523EF0D02D"
+					item: "gtceu:qbit_cpu_chip"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"4D0F0C4EDC5D75FB"
+				"003F4D65F99A0C35"
+			]
+			id: "32CFD7131F58D2C9"
+			tasks: [{
+				id: "652CBB146DD4F2DA"
+				title: "cleaning fluid"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4D863D8889E35060"]
+			id: "4D0F0C4EDC5D75FB"
+			tasks: [{
+				id: "59F949996D4D5E4C"
+				title: "ammonium hydroxide"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F2DB7834204A117"]
+			id: "003F4D65F99A0C35"
+			tasks: [{
+				id: "69FA99E79936B096"
+				title: "hydrogen peroxide"
+				type: "custom"
+			}]
+			x: -3.5d
+			y: 11.0d
+		}
+		{
+			id: "01B733E8BDD8AC9B"
+			tasks: [{
+				id: "63000175F4894617"
+				item: "gtceu:gallium_arsenide_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"7CEEBDE83F911FE6"
+				"239553C744EE34CE"
+			]
+			id: "60D6388BCB53AC0A"
+			subtitle: "TMAH"
+			tasks: [{
+				id: "1250BACD2E10DFDC"
+				title: "tetramethylammonium hydroxide"
+				type: "custom"
+			}]
+			x: -6.5d
+			y: 12.5d
+		}
+		{
+			id: "19A7D5EA859CA5DE"
+			tasks: [{
+				id: "2E87A0E61AF66431"
+				item: "gtceu:methanol_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 11.5d
+		}
+		{
+			id: "732CE8CDC03B0C0D"
+			tasks: [{
+				id: "045D0CDCD157B8DD"
+				item: "gtceu:hydrochloric_acid_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"732CE8CDC03B0C0D"
+				"19A7D5EA859CA5DE"
+			]
+			id: "7CEEBDE83F911FE6"
+			tasks: [{
+				id: "581DC52085D8C8A8"
+				title: "methyl chloride"
+				type: "custom"
+			}]
+			x: -7.5d
+			y: 12.5d
+		}
+		{
+			id: "0E9FC151F457F08C"
+			tasks: [{
+				id: "5ECB9B668C277384"
+				item: "gtceu:monochloramine_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 14.5d
+		}
+		{
+			id: "17AE97A53EE078CF"
+			tasks: [{
+				id: "7406D5DB8038184F"
+				item: "gtceu:dimethylamine_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 14.5d
+		}
+		{
+			id: "404C2F7C289D8617"
+			tasks: [{
+				id: "47444BAF29498474"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"17AE97A53EE078CF"
+				"0E9FC151F457F08C"
+				"404C2F7C289D8617"
+			]
+			id: "239553C744EE34CE"
+			tasks: [{
+				id: "1ED8C0ED40DD0B4F"
+				title: "trimethylamine"
+				type: "custom"
+			}]
+			x: -6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["30F7E833D9A62E0B"]
+			id: "6F2DB7834204A117"
+			tasks: [{
+				id: "2EBAF02417705C83"
+				item: "gtceu:barium_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.0d
+		}
+		{
+			id: "30F7E833D9A62E0B"
+			tasks: [{
+				id: "1AF3A34A71C990C0"
+				item: "gtceu:barite_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 13.0d
+		}
+		{
+			id: "4D863D8889E35060"
+			tasks: [{
+				id: "369E6290AE02684F"
+				item: "gtceu:ammonia_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 13.0d
+		}
+		{
+			id: "4933CB693DD220DD"
+			tasks: [{
+				id: "2FE9EF7E5B67BFDC"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Improve your infrastructure and parallelise your setups"]

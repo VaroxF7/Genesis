@@ -5,7 +5,7 @@
 	group: "693226878D58638A"
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 7
+	order_index: 6
 	quest_links: [
 		{
 			id: "217218CFDDD8EAC4"
@@ -27,20 +27,6 @@
 			size: 0.75d
 			x: 1.125d
 			y: 3.375d
-		}
-		{
-			id: "7E79CDC95173C788"
-			linked_quest: "1A4AD56965407DC5"
-			size: 0.75d
-			x: 0.375d
-			y: 5.25d
-		}
-		{
-			id: "2FD482405B15F06A"
-			linked_quest: "77070668969E31BF"
-			size: 0.75d
-			x: 1.125d
-			y: 5.625d
 		}
 		{
 			id: "4E999806429BF983"
@@ -753,9 +739,7 @@
 			dependencies: [
 				"35D4F93EFB6EACB6"
 				"300348B1238BCB9A"
-				"1A4AD56965407DC5"
 				"12FEE0A47E4658D5"
-				"77070668969E31BF"
 				"3A7491323AC5C70C"
 			]
 			description: [
@@ -883,6 +867,7 @@
 			y: 5.621173469387756d
 		}
 		{
+			dependencies: ["0C3EA9ED76A43391"]
 			description: [
 				"New in the &a1.4 update&r, Dual Hatches will greatly help with automation with Multiblocks."
 				""
@@ -934,18 +919,19 @@
 				type: "item"
 			}]
 			title: "Two Hatches for the Price of One"
-			x: -0.5d
-			y: 8.5d
+			x: -1.0d
+			y: 13.0d
 		}
 		{
+			dependencies: ["1CAAEF1D9467DF30"]
 			id: "12881010700F0B1E"
 			tasks: [{
 				id: "1790A9573A401828"
 				item: "advanced_ae:quantum_structure"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.5d
+			x: 6.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -955,8 +941,8 @@
 				item: "advanced_ae:quantum_core"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: 6.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -966,8 +952,8 @@
 				item: "advanced_ae:quantum_accelerator"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: 7.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -977,8 +963,8 @@
 				item: "advanced_ae:data_entangler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.5d
+			x: 6.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -988,18 +974,19 @@
 				item: "advanced_ae:quantum_storage_128"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: 7.5d
+			y: 13.5d
 		}
 		{
+			dependencies: ["199C9758EBC54DB5"]
 			id: "1CAAEF1D9467DF30"
 			tasks: [{
 				id: "262D6695386D7F4D"
 				item: "advanced_ae:quantum_unit"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: 6.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -1009,8 +996,8 @@
 				item: "advanced_ae:quantum_multi_threader"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.5d
+			x: 5.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["1CAAEF1D9467DF30"]
@@ -1020,28 +1007,8 @@
 				item: "advanced_ae:quantum_storage_256"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			id: "63CED2C6CABAF6BD"
-			tasks: [{
-				id: "779B9606D911FD7B"
-				item: "gtceu:rare_earth_dust"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 7.0d
-		}
-		{
-			id: "3F12CA2352D47497"
-			tasks: [{
-				id: "2229643C79DACE3F"
-				item: "gtceu:polyphenylene_sulfide_foil"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 7.0d
+			x: 5.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["0C3EA9ED76A43391"]
@@ -1081,7 +1048,11 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["0B0013888893010A"]
+			dependencies: [
+				"0B0013888893010A"
+				"75101804157E0E32"
+				"785F665D42728389"
+			]
 			id: "0D07F23223A8C629"
 			size: 2.0d
 			tasks: [{
@@ -1100,8 +1071,8 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 10.0d
+			x: 4.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0D07F23223A8C629"]
@@ -1132,10 +1103,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"3F12CA2352D47497"
-				"63CED2C6CABAF6BD"
-			]
+			dependencies: ["0C3EA9ED76A43391"]
 			id: "02121AC2A5F761C2"
 			tasks: [
 				{
@@ -1184,8 +1152,8 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
-			y: 7.0d
+			x: -2.5d
+			y: 16.5d
 		}
 		{
 			id: "3C00FAD3365D8A41"
@@ -1389,7 +1357,6 @@
 				"30B5A4DD34D1ECC3"
 				"6037DA20B3F8887D"
 				"22185703A817DE69"
-				"6BBAEC8340A07C96"
 			]
 			id: "15C70EDC799A042B"
 			shape: "circle"
@@ -1513,8 +1480,8 @@
 				title: "Aeorogel Proceccing Unit"
 				type: "custom"
 			}]
-			x: -4.5d
-			y: 18.5d
+			x: -4.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["50AE9C915D39424C"]
@@ -1524,8 +1491,8 @@
 				item: "aether:cold_aercloud"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 17.5d
+			x: -2.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["50AE9C915D39424C"]
@@ -1535,8 +1502,8 @@
 				item: "aether:golden_aercloud"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 18.5d
+			x: -2.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["50AE9C915D39424C"]
@@ -1546,8 +1513,8 @@
 				item: "aether:blue_aercloud"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 19.5d
+			x: -2.5d
+			y: 20.0d
 		}
 		{
 			id: "29417280D03083F1"
@@ -1556,8 +1523,8 @@
 				title: "aether air"
 				type: "custom"
 			}]
-			x: -4.5d
-			y: 20.0d
+			x: -5.5d
+			y: 19.5d
 		}
 		{
 			id: "3719E1E4CDC93D79"
@@ -1566,8 +1533,8 @@
 				title: "cryotheum"
 				type: "custom"
 			}]
-			x: -4.5d
-			y: 17.0d
+			x: -5.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -1581,8 +1548,8 @@
 				type: "custom"
 			}]
 			title: "Thundering Aerogel"
-			x: -2.0d
-			y: 18.0d
+			x: -1.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -1595,8 +1562,8 @@
 				title: "Conductiv Aerogel"
 				type: "custom"
 			}]
-			x: -2.0d
-			y: 19.0d
+			x: -1.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["7F2F3B9E13CDA58A"]
@@ -1612,7 +1579,7 @@
 		{
 			dependencies: [
 				"79577FCAE7E80A28"
-				"4BF9CEACEED920CE"
+				"6008CC0853F50D99"
 			]
 			id: "3E9ADA11305DC0FF"
 			tasks: [{
@@ -1620,38 +1587,20 @@
 				title: "new fuel for fusion "
 				type: "custom"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 20.0d
 		}
 		{
 			id: "22185703A817DE69"
+			subtitle: "plasma"
 			tasks: [{
 				id: "28CE63B915E2CEDC"
 				title: "solarium"
 				type: "custom"
 			}]
+			title: "solariumn"
 			x: 2.0d
-			y: 15.0d
-		}
-		{
-			id: "6BBAEC8340A07C96"
-			tasks: [{
-				id: "6660A1B10034848B"
-				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 15.0d
-		}
-		{
-			id: "4BF9CEACEED920CE"
-			tasks: [{
-				id: "1EAFB66D944700D0"
-				item: "gtceu:uranium_235_rod"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 19.0d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -1875,14 +1824,48 @@
 				"7778C390A05C66E2"
 				"2634C4C354DDA797"
 			]
-			id: "4843C51BEFDFD034"
+			id: "204660274A246CD9"
 			tasks: [{
-				id: "3D8F372172676944"
-				title: "Naquadena Fuel Rod"
+				id: "593B368073A72E41"
+				title: "naqudria Waste Fuel Rod"
 				type: "custom"
 			}]
 			x: -5.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["27F170398C037A67"]
+			id: "785F665D42728389"
+			tasks: [{
+				id: "633BF2266B84DB0F"
+				title: "new lioquid"
+				type: "custom"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["27F170398C037A67"]
+			id: "75101804157E0E32"
+			tasks: [{
+				id: "16E3777F7E85565B"
+				title: "new liquid"
+				type: "custom"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			id: "27F170398C037A67"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "392AE9DE89575C2B"
+				title: "Venus!"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 9.0d
 		}
 	]
 	subtitle: ["Investigate the scientific and fuse elements"]

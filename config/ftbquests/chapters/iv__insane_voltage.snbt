@@ -5,7 +5,7 @@
 	group: "693226878D58638A"
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -1499,6 +1499,7 @@
 				title: "new ore dust"
 				type: "custom"
 			}]
+			title: "new ore dust from mars"
 			x: -10.0d
 			y: -1.5d
 		}
@@ -1525,13 +1526,17 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["52C22A894ED36585"]
+			dependencies: [
+				"52C22A894ED36585"
+				"7592A9B75A529922"
+			]
 			id: "58DEF726B747D9B9"
 			tasks: [{
 				id: "7CFCEB5F1F425D4A"
 				title: "new multiblock space"
 				type: "custom"
 			}]
+			title: "fuel manufactury"
 			x: -9.5d
 			y: 0.5d
 		}
@@ -1699,7 +1704,7 @@
 				item: "gtceu:fiber_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 6.0d
 		}
 		{
@@ -1710,7 +1715,7 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 7.0d
 		}
 		{
@@ -1859,11 +1864,15 @@
 				title: "containment shield protector"
 				type: "custom"
 			}]
+			title: "Plasma Energy Container"
 			x: -13.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["711E9BEAE01970BC"]
+			dependencies: [
+				"711E9BEAE01970BC"
+				"3CCFCA28EB450223"
+			]
 			id: "22237F0FC98C62F5"
 			tasks: [{
 				id: "5DD1120E5B9E1C84"
@@ -1892,7 +1901,7 @@
 				item: "gtceu:multilayer_fiber_reinforced_circuit_board"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -9.0d
 			y: 6.0d
 		}
 		{
@@ -1903,8 +1912,22 @@
 				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -9.0d
 			y: 7.0d
+		}
+		{
+			id: "3CCFCA28EB450223"
+			tasks: [{
+				id: "16E2FD7D7C650E3C"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -14.5d
+			y: -5.0d
 		}
 	]
 	subtitle: ["Automate everything and learn how to assemble"]
