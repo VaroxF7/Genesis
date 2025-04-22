@@ -1,0 +1,154 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev__extreme_voltages"
+	group: "693226878D58638A"
+	id: "1D26C359A5A16DDF"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1F6113C2465CD0F5"
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "40BFAFB73E7CD2E9"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "071B295CB63640E8"
+			tasks: [{
+				id: "3B0378480608DAC4"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C1298146337407A"]
+			id: "1518967535BDFE68"
+			tasks: [{
+				id: "4899D171D7C9FB54"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DF36FA7C14DF1C9"]
+			id: "39BC32A1743ED81D"
+			tasks: [{
+				id: "47BC06EA74FF5A26"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["071B295CB63640E8"]
+			id: "3F3D01D4876C5376"
+			tasks: [{
+				id: "69D3DEAC504CD59E"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F3D01D4876C5376"]
+			id: "12910868D1B17D89"
+			tasks: [{
+				id: "5B3C8008F8BA2B73"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F3D01D4876C5376"]
+			id: "6C2A9639C39BFD9D"
+			tasks: [{
+				id: "50657F01A44C1B32"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["071B295CB63640E8"]
+			id: "577DCAD6214185B6"
+			tasks: [{
+				id: "514E7005FAAF0E7A"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["577DCAD6214185B6"]
+			id: "60BDC19AB805D143"
+			tasks: [{
+				id: "7178B0FA6FD538AA"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["577DCAD6214185B6"]
+			id: "53EA7254673CAEA4"
+			tasks: [{
+				id: "606F6E22A6D962F6"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["071B295CB63640E8"]
+			id: "3DF36FA7C14DF1C9"
+			tasks: [{
+				id: "6D4464BEA6EECEA4"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["071B295CB63640E8"]
+			id: "1C1298146337407A"
+			tasks: [{
+				id: "3C9F02EA2DCDCF43"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "0F628CC53A5E4CC0"
+			tasks: [{
+				id: "4CFCDB4FCB387AA1"
+				item: "gtceu:epoxy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "EV - Extreme Voltages"
+}
