@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/magnets/superconducting_magnet_bloom_ctm"
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    }
+}

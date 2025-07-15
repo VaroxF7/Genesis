@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/magnets/superconducting_magnet_ctm"
+    }
+}

@@ -1,0 +1,36 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('fuel_manufac')
+        .category('fuel_manufac')
+        .setEUIO('in')
+        .setMaxIOSize(4, 4, 4, 4)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPRESSOR)
+        .setMaxTooltips(3);
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('fuel_manufac', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:stable_machine_casing'))
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeType('fuel_manufac')
+        .pattern(definition => FactoryBlockPattern.start()
+          .aisle('CCC', 'CGC', 'CCC')
+          .aisle('CCC', 'GSG', 'CCC')
+          .aisle('CKC', 'CGC', 'CCC')
+            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('G', Predicates.blocks('gtceu:cleanroom_glass'))
+            .where('S', Predicates.blocks('gtceu:hv_world_accelerator'))
+            .where('C', Predicates.blocks('gtceu:stable_machine_casing')
+              .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+              .or(Predicates.blocks(PartAbility.INPUT_ENERGY))
+              .or(Predicates.blocks(PartAbility.EXPORT_ITEMS))
+              .or(Predicates.blocks(PartAbility.IMPORT_ITEMS))
+              .or(Predicates.blocks(PartAbility.EXPORT_FLUIDS))
+              .or(Predicates.blocks(PartAbility.IMPORT_FLUIDS))
+            .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            .or(Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1)))
+            .build()
+        )
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/multiblock/implosion_compressor', false)
+})
