@@ -92,4 +92,18 @@ ServerEvents.recipes(event => {
     .itemOutputs("kubejs:t1_circuit_zpm")
     .EUt(GTValues.VA[GTValues.LuV]).duration(1000).circuit(1)
     .dimension("ad_astra:earth_orbit")
+
+    // Crystal CPU
+    event.recipes.gtceu.advanced_circuit_manufacturer("crystal_cpu_1")
+    .itemInputs([
+        Item.of("8x gtceu:engraved_crystal_chip"),
+        Item.of("kubejs:cmc_chip"),
+        Item.of("kubejs:ctc_chip"),
+        Item.of("32x gtceu:fine_europium_wire"),
+        Item.of("16x gtceu:fine_naquadah_wire")
+    ])
+    .itemOutputs("kubejs:crystal_cpu")
+    .inputFluids([Fluid.of("gtceu:high_grade_solder",5500),Fluid.of("gtceu:cryotheum",15000),Fluid.of("gtceu:duranium",2500)])
+    .EUt(GTValues.VA[GTValues.EV]).duration(500).circuit(1)
+    .dimension("ad_astra:earth_orbit")
 })

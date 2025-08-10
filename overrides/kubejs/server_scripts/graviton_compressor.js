@@ -46,7 +46,7 @@ event.recipes.gtceu.fluid_solidifier("nether_star_solidifier")
 event.recipes.gtceu.graviton_compressor("silquadria_fuel_1")
 .itemInputs("16x gtceu:americium_dust")
 .inputFluids("gtceu:silquadria_plasma 1000","gtceu:compressed_hydrogen 2500")
-.outputFluids([Fluid.of("minecraft:water",500)])
+.outputFluids([Fluid.of("gtceu:silquadria_fuel_plasma",500)])
 .EUt(GTValues.VA[GTValues.UV]).duration(300).circuit(1).dimension("ad_astra:earth_orbit")
 
 // Cryotheum

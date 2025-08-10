@@ -84,15 +84,7 @@ ServerEvents.recipes(event => {
     .duration(50).EUt(15)
 
     // Fiberoptic
-    event.recipes.gtceu.fiber_assembly_line("ae2_quartz_fiber")
-    .itemInputs("6x gtceu:fine_borosilicate_glass_wire","3x kubejs:certus_quartz_fine_fiber")
-    .itemOutputs("3x ae2:quartz_fiber")
-    .duration(250).EUt(60)
 
-    event.recipes.gtceu.fiber_assembly_line("ae2_quartz_glass_wire")
-    .itemInputs("2x ae2:quartz_fiber","4x ae2:fluix_dust")
-    .itemOutputs("ae2:fluix_glass_cable")
-    .duration(250).EUt(120)
 
     // Controller & Drive & Assembler 
     event.recipes.gtceu.assembler("ae2_controller")
@@ -284,6 +276,23 @@ ServerEvents.recipes(e => {
      .itemInputs("16x gtceu:cobalt_dust")
      .outputFluids([Fluid.of("gtceu:alumite_rocket_fuel", 144)])
      .duration(200).EUt(120)
+})
+
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.fiber_assembly_line("ae2_quartz_fiber")
+    .itemInputs("6x gtceu:fine_borosilicate_glass_wire","3x kubejs:certus_quartz_fine_fiber")
+    .itemOutputs("3x ae2:quartz_fiber")
+    .duration(250).EUt(60)
+
+    event.recipes.gtceu.fiber_assembly_line("ae2_quartz_glass_wire")
+    .itemInputs("2x ae2:quartz_fiber","4x ae2:fluix_dust")
+    .itemOutputs("ae2:fluix_glass_cable")
+    .duration(250).EUt(120)
+
+    event.recipes.gtceu.fiber_assembly_line("testing")
+    .itemInputs("2x ae2:quartz_fiber","4x ae2:fluix_dust")
+    .itemOutputs("minecraft:sand")
+    .duration(250).EUt(120)
 })
 
 

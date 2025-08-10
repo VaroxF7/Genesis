@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('litho_machine_mk1')
         .category('litho_machine_mk1')
         .setEUIO('in')
-        .setMaxIOSize(4, 4, 4, 4)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
+        .setMaxIOSize(6, 4, 6, 2)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
         .setMaxTooltips(4);
@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('litho_machine_mk2')
         .category('litho_machine_mk2')
         .setEUIO('in')
-        .setMaxIOSize(4, 4, 4, 4)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
+        .setMaxIOSize(6, 4, 6, 2)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
         .setMaxTooltips(3);
@@ -41,11 +41,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:stainless_steel_gearbox'))
             .where('C', Predicates.blocks('gtceu:plascrete')
               .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-              .or(Predicates.blocks(PartAbility.INPUT_ENERGY).setPreviewCount(1))
-              .or(Predicates.blocks(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
-              .or(Predicates.blocks(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
-              .or(Predicates.blocks(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-              .or(Predicates.blocks(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
             .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .build()
         )

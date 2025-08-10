@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('biochemical_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
         .recipeType('biochemical_reactor')
         .pattern(definition => FactoryBlockPattern.start()

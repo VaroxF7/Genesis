@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('ore_syn_chamber')
         .category('ore_syn_chamber')
         .setEUIO('in')
-        .setMaxIOSize(4, 4, 4, 4)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
+        .setMaxIOSize(4, 10, 4, 4)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
         .setMaxTooltips(3);

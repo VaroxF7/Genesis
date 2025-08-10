@@ -65,18 +65,18 @@ ServerEvents.recipes(event => {
     .duration(100).EUt(510).circuit(1)
 
     // Titanium Line
-    event.recipes.gtceu.chemical_reactor("bauxite_hydroxide")
+    event.recipes.gtceu.large_chemical_reactor("bauxite_hydroxide")
     .itemInputs("8x gtceu:sodium_hydroxide_dust","4x gtceu:bauxite_dust")
     .inputFluids([Fluid.of("minecraft:water",500)])
     .outputFluids([Fluid.of("gtceu:bauxite_hydroxide",1000)])
     .duration(100).EUt(510).circuit(1)
 
-    event.recipes.gtceu.chemical_reactor("neutral_bauxite")
+    event.recipes.gtceu.large_chemical_reactor("neutral_bauxite")
     .inputFluids([Fluid.of("gtceu:bauxite_hydroxide",500),Fluid.of("gtceu:sulfuric_acid",250)])
     .outputFluids([Fluid.of("gtceu:neutral_bauxite_hydroxide",750)])
     .duration(100).EUt(510).circuit(2)
 
-    event.recipes.gtceu.chemical_reactor("virulent")
+    event.recipes.gtceu.large_chemical_reactor("virulent")
     .inputFluids([Fluid.of("gtceu:neutral_bauxite_hydroxide",500),Fluid.of("undergarden:virulent_mix_source",1000),Fluid.of("gtceu:sulfuric_acid",250)])
     .outputFluids([Fluid.of("gtceu:hollow_earth_filtrate",750)])
     .duration(150).EUt(510).circuit(3)

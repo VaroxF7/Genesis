@@ -45,12 +45,24 @@ ServerEvents.recipes(event => {
     .itemOutputs("gtceu:hpca_active_cooler_component")
     .duration(500).EUt(GTValues.V[GTValues.IV]).cleanroom(CleanroomType.CLEANROOM)
 
-    // Fusion MK2
+    // Fusion MK1 - MK2 Fusion
     event.recipes.gtceu.assembly_line("mk2_fusion_new")
     .itemInputs("gtceu:fusion_coil","16x #gtceu:circuits/zpm","4x gtceu:double_naquadria_plate","2x gtceu:double_europium_plate","gtceu:zpm_field_generator","16x kubejs:superclust_1","16x kubejs:superclust_3","16x gtceu:uranium_rhodium_dinaquadide_quad_wire")
     .inputFluids("gtceu:high_grade_solder 4000","gtceu:indium 1500","gtceu:trinium 4000")
     .itemOutputs("gtceu:zpm_fusion_reactor")
     .duration(500).EUt(GTValues.VA[GTValues.ZPM])
     .stationResearch(b => b.researchStack('gtceu:luv_fusion_reactor').CWUt(10,500000).EUt(220022))
+
+    event.recipes.gtceu.assembly_line("fusion_coil")
+   .itemInputs("gtceu:superconducting_coil","4x gtceu:iv_field_generator","2x gtceu:neutron_reflector","16x gtceu:dilithium_dust","2x gtceu:samarium_iron_arsenic_oxide_hex_wire")
+   .itemOutputs("gtceu:fusion_coil")
+   .inputFluids([Fluid.of("gtceu:naquadah",576)])
+   .EUt(GTValues.VA[GTValues.IV]).duration(2048)
+
+   event.recipes.gtceu.assembly_line("better_fusion_mk1")
+   .itemInputs("2x gtceu:superconducting_coil","gtceu:double_plutonium_241_plate","4x gtceu:double_osmiridium_plate","16x gtceu:indium_tin_barium_titanium_cuprate_hex_wire","32x kubejs:superclust_5","16x kubejs:superclust_1","4x gtceu:luv_field_generator","4x kubejs:t1_circuit_luv")
+   .inputFluids([Fluid.of("gtceu:high_grade_solder",2000)])
+   .itemOutputs("gtceu:luv_fusion_reactor")
+   .EUt(GTValues.VA[GTValues.LuV]).duration(2048)
 })
 

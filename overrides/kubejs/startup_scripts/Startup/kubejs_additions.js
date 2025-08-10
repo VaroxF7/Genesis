@@ -13,6 +13,25 @@ StartupEvents.registry('item', e => {
     e.create("crystal_cpu").displayName("Crystal CPU")
     e.create("super_seperator").displayName("SPC Spacer")
     e.create("draconic_reflector").displayName("Draconic Reflector")
+    
+    e.create("lv_stator").displayName("LV Stator")
+    e.create("mv_stator").displayName("MV Stator")
+    e.create("hv_stator").displayName("HV Stator")
+    e.create("ev_stator").displayName("EV Stator")
+    e.create("iv_stator").displayName("IV Stator")
+    e.create("luv_stator").displayName("LUV Stator")
+    e.create("zpm_stator").displayName("ZPM Stator")
+    e.create("uv_stator").displayName("UV Stator")
+
+    e.create("lv_rotor").displayName("LV Rotor")
+    e.create("mv_rotor").displayName("MV Rotor")
+    e.create("hv_rotor").displayName("HV Rotor")
+    e.create("ev_rotor").displayName("EV Rotor")
+    e.create("iv_rotor").displayName("IV Rotor")
+    e.create("luv_rotor").displayName("LUV Rotor")
+    e.create("zpm_rotor").displayName("ZPM Rotor")
+    e.create("uv_rotor").displayName("UV Rotor")
+
 
     e.create("ae_logic_wafer").displayName("Logic Processor Wafer")
     e.create("ae_engineering_wafer").displayName("Engineering Processor Wafer")
