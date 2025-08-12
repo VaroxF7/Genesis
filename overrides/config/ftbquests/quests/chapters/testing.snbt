@@ -1,0 +1,251 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "testing"
+	group: ""
+	id: "20147CA5453C7E58"
+	images: [
+		{
+			height: 0.5d
+			image: "createdeco:block/palettes/decals/decal_right"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			height: 0.5d
+			image: "createdeco:block/palettes/decals/decal_right"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			height: 0.5d
+			image: "createdeco:block/palettes/decals/decal_right"
+			rotation: 0.0d
+			width: 0.5d
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Basically, all motor need a Stator and a Rotor from each level material that is used for it."]
+			id: "18A77C0124106258"
+			tasks: [{
+				id: "6A6F3FDC7C711B92"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:electric_motors"
+					}
+				}
+				title: "Any #gtceu:electric_motors"
+				type: "item"
+			}]
+			title: "Any Motor"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "24EF6BCD559C2E58"
+			tasks: [{
+				id: "4CF1CEE8F405FE99"
+				title: "Stator"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "26CD2E97F29FFE07"
+			tasks: [{
+				id: "3D47D9EEE808811E"
+				title: "Rotor"
+				type: "custom"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "5D60A2ED09D76C06"
+			tasks: [{
+				id: "6D23BA7EC56D9B60"
+				item: "gtceu:magnetic_iron_rod"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "5194FACD38D33EC7"
+			tasks: [{
+				id: "3BAC7A0B9FB852E1"
+				item: "gtceu:fine_tin_wire"
+				type: "item"
+			}]
+			title: "Tier Specific Wire"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "368DCCA625D4617D"
+			tasks: [{
+				id: "7F82B78E7EC08113"
+				item: "gtceu:fine_copper_wire"
+				type: "item"
+			}]
+			title: "Copper or Conductiv Tier Material"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "006D50FC187D6333"
+			tasks: [{
+				id: "65AB8BF1760DD3A9"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "1C01E2288D48F50F"
+			tasks: [{
+				id: "302A5D95536B3129"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "4F007851D5475E11"
+			tasks: [{
+				id: "221BFC068E802C43"
+				item: "gtceu:long_brass_rod"
+				type: "item"
+			}]
+			title: "any normal rod"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "67B97EBDC68AAECA"
+			tasks: [{
+				id: "26D183039E2CF71D"
+				item: "gtceu:fine_aluminium_wire"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "1BDEC97D47BFB5BD"
+			tasks: [{
+				id: "3862D5CAB309E0F3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits"
+					}
+				}
+				title: "Any #gtceu:circuits"
+				type: "item"
+			}]
+			title: "Any Tier Specific Circuit"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "435DFF6D390B7490"
+			tasks: [{
+				id: "1B0840E0A28030D3"
+				item: "gtceu:long_brass_rod"
+				type: "item"
+			}]
+			title: "Any Long rod"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			id: "1A67FAAD475AD971"
+			tasks: [{
+				id: "51D2EB5323931B3F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:exquisite_gems"
+					}
+				}
+				title: "Any #forge:exquisite_gems"
+				type: "item"
+			}]
+			title: "Any Gem"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "62ED0E559309B420"
+			tasks: [{
+				id: "73972AB9AAC438D9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits"
+					}
+				}
+				title: "Any #gtceu:circuits"
+				type: "item"
+			}]
+			title: "Any Tier Specific Circuit"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			id: "0098E1591139C378"
+			tasks: [{
+				id: "213924D6604FC9C1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates"
+					}
+				}
+				title: "Any #forge:plates"
+				type: "item"
+			}]
+			title: "any tier specific plate"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			id: "6C93161A07616184"
+			tasks: [{
+				id: "6A4C6949B04087BD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:exquisite_gems"
+					}
+				}
+				title: "Any #forge:exquisite_gems"
+				type: "item"
+			}]
+			title: "Any exquisite Gem"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "Testing"
+}

@@ -32,7 +32,7 @@ event.recipes.gtceu.graviton_compressor("rcp_compressor_graviton_6")
 
 // Nether Star
 event.recipes.gtceu.graviton_compressor("rcp_1_nether_star")
-.inputFluids([Fluid.of("gtceu:super_compressed_krypton",2500),Fluid.of("gtceu:super_compressed_hydrogen",2500)])
+.inputFluids([Fluid.of("gtceu:super_compressed_krypton_plasma",2500),Fluid.of("gtceu:super_compressed_hydrogen_plasma",2500)])
 .outputFluids([Fluid.of("gtceu:liquid_nether_star",1000)])
 .duration(1000).EUt(GTValues.VA[GTValues.LuV]).circuit(1).dimension("ad_astra:earth_orbit")
 
@@ -114,4 +114,15 @@ event.recipes.gtceu.graviton_compressor("plasma_8")
 .inputFluids([Fluid.of("gtceu:vanadium",10000)])
 .outputFluids([Fluid.of("gtceu:vanadium_pl_plasma",1000)])
 .EUt(GTValues.VA[GTValues.ZPM]).duration(300).circuit(8).dimension("ad_astra:earth_orbit")
+
+// Draconium & Neutronium
+event.recipes.gtceu.graviton_compressor("neutronium_1")
+.inputFluids([Fluid.of("gtceu:unstable_neutronium",1000),Fluid.of("gtceu:iridium",2500),Fluid.of("gtceu:supercooled_cryotheum",5000)])
+.outputFluids([Fluid.of("gtceu:neutronium",1000)])
+.EUt(GTValues.VA[GTValues.UV]).duration(300).circuit(1).dimension("ad_astra:earth_orbit")
+
+event.recipes.gtceu.graviton_compressor("stable_draconium_1")
+.inputFluids([Fluid.of("gtceu:unstable_draconium",1000),Fluid.of("gtceu:naquadria",2500),Fluid.of("gtceu:supercooled_cryotheum",5000)])
+.outputFluids([Fluid.of("gtceu:draconium",500)])
+.EUt(GTValues.VA[GTValues.UV]).duration(300).circuit(1).dimension("ad_astra:earth_orbit")
 })

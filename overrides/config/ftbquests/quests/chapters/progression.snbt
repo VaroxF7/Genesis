@@ -1,0 +1,433 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "progression"
+	group: "1C1C4FB2AFCF489D"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "28EBC0FF82EFD94B"
+	images: [
+		{
+			height: 1.0d
+			image: "gtceu:item/lv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/mv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/hv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/ev_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/iv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/luv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/zpm_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:item/uv_solar_panel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "54BA76BF04C96F47"
+			tasks: [{
+				id: "77A13AA101E691A2"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			id: "4EA334884A5BD15F"
+			tasks: [{
+				id: "20B7936D750B2A17"
+				item: "gtceu:mv_machine_casing"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			id: "3FF057F33C0EE6DE"
+			tasks: [{
+				id: "57454325C52E097F"
+				item: "gtceu:hv_machine_casing"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			id: "75993486C241011A"
+			tasks: [{
+				id: "1FBD520D75FEDAD1"
+				item: "gtceu:ev_machine_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			id: "2341750B18F3B774"
+			tasks: [{
+				id: "0FB8950553FBDB4C"
+				item: "gtceu:iv_machine_casing"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 7.0d
+		}
+		{
+			id: "7D0B30CCCC11764F"
+			tasks: [{
+				id: "3F3665DFE91817EE"
+				item: "gtceu:luv_machine_casing"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			id: "35307078CA254788"
+			tasks: [{
+				id: "0C2EB0E207ACF17E"
+				item: "gtceu:zpm_machine_casing"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 7.0d
+		}
+		{
+			id: "4498DAF97D91A188"
+			tasks: [{
+				id: "482C9BE33776B651"
+				item: "gtceu:uv_machine_casing"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 7.0d
+		}
+		{
+			id: "6D191648C48F03A0"
+			tasks: [{
+				id: "1C878BEB0875A9A9"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "19882D984F4A9BB8"
+			tasks: [{
+				id: "02987D52CCDD2C8C"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			id: "30155EE317EB7620"
+			tasks: [{
+				id: "40566574845BF65F"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			id: "7E2DE0E728D762EA"
+			tasks: [{
+				id: "71B3DE9410AA7FB4"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			id: "20BB2AABABEB1420"
+			tasks: [{
+				id: "1031C16B35B67A27"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			id: "2961BBF47AFE0208"
+			tasks: [{
+				id: "43A94E192D28CAF1"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			id: "70711A75B61F8646"
+			tasks: [{
+				id: "23E2E17332ADBE51"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			id: "577E22109D48C8CF"
+			tasks: [{
+				id: "5B778A02939BA8A9"
+				title: "Optical Circuit Board"
+				type: "custom"
+			}]
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			id: "654755A5CAC716D7"
+			tasks: [{
+				id: "5A7381535C72EEEE"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			id: "57A7FF083D1EE7E8"
+			tasks: [{
+				id: "1A3E560DA9D5E7F6"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			id: "438CD6314D1CD7D7"
+			tasks: [{
+				id: "00F3BDEC6EDDFEBD"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			id: "62CB3793A0D41BE3"
+			tasks: [{
+				id: "1C3F5C198A9E9294"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			id: "0FBF31E4861BB9B0"
+			tasks: [{
+				id: "34812FB3003ADACD"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			id: "3B2F45041E35D3F8"
+			tasks: [{
+				id: "5720A5C6E1A76E78"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.5d
+		}
+		{
+			id: "7D2F1C4CB04F9084"
+			tasks: [{
+				id: "49E19D62119CB190"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			id: "43EBEFA01E87EC9D"
+			tasks: [{
+				id: "5763465D35306690"
+				item: "kubejs:t1_circuit_lv"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43EBEFA01E87EC9D"]
+			id: "3C9CE0768B345566"
+			tasks: [{
+				id: "5E5516D32BECCBD1"
+				item: "kubejs:t1_circuit_mv"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3C9CE0768B345566"]
+			id: "1C36D0CC4E625697"
+			tasks: [{
+				id: "2F24E1B5BE64F0D9"
+				item: "kubejs:t1_circuit_hv"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1C36D0CC4E625697"]
+			id: "576E17491488A5C5"
+			tasks: [{
+				id: "6C7929F91FEA538F"
+				item: "kubejs:t1_circuit_ev"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["576E17491488A5C5"]
+			id: "036F7C2F93B336C6"
+			tasks: [{
+				id: "24180C5F0A24A117"
+				item: "kubejs:t1_circuit_iv"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["036F7C2F93B336C6"]
+			id: "221AC1D5CE145055"
+			tasks: [{
+				id: "2050058D329B58A3"
+				item: "kubejs:t1_circuit_luv"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7F9F587BDD4C2A43"
+				"1E960196C50BC62C"
+			]
+			id: "287FC0FE8A23263B"
+			tasks: [{
+				id: "00BFFD765DF6032D"
+				item: "kubejs:t1_circuit_uv"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["287FC0FE8A23263B"]
+			id: "1658918234410FEC"
+			tasks: [{
+				id: "16E6139122D63F19"
+				item: "kubejs:t1_circuit_uhv"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 4.0d
+		}
+		{
+			id: "5A96BF4F388B1B34"
+			tasks: [{
+				id: "7F40C4B687A4C7CD"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3136F132C29B94C4"]
+			id: "1E960196C50BC62C"
+			tasks: [{
+				id: "41C981A2CBA6C0C1"
+				item: "kubejs:t1_circuit_zpm"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["221AC1D5CE145055"]
+			id: "3136F132C29B94C4"
+			tasks: [{
+				id: "46F82AF0EF7FDE7D"
+				item: "kubejs:biotine_supercomputer"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+	]
+	subtitle: ["A step forward is always rewarding"]
+	title: "Circuit Progression"
+}

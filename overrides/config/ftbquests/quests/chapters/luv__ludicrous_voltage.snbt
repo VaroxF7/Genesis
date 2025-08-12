@@ -1,0 +1,2147 @@
+{
+	autofocus_id: "1312CBD3535B9500"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "luv__ludicrous_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:luv_electric_motor"
+	id: "262A03F6F4EC713C"
+	order_index: 6
+	quest_links: [
+		{
+			id: "217218CFDDD8EAC4"
+			linked_quest: "195E5BFDE4C5A0DE"
+			size: 0.75d
+			x: 6.75d
+			y: 3.375d
+		}
+		{
+			id: "0BD725095A2264FF"
+			linked_quest: "7CFC112B8F460549"
+			size: 0.75d
+			x: 5.625d
+			y: 3.375d
+		}
+		{
+			id: "67271280B90D765D"
+			linked_quest: "300348B1238BCB9A"
+			size: 0.75d
+			x: 1.125d
+			y: 3.375d
+		}
+		{
+			id: "4E999806429BF983"
+			linked_quest: "77B7B1EDD19831E0"
+			shape: "gear"
+			size: 1.2d
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			id: "6D8AC2D2A5189C70"
+			linked_quest: "67327DFE3B18EAE2"
+			shape: "circle"
+			size: 2.0d
+			x: -16.5d
+			y: 11.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"78277DBC07D3C45C"
+			]
+			description: [
+				"The &aUHPIC&r unlocks &3ZPM Energy Hatches&r and &3Dynamos&r, as well as the Active Transformer. "
+				""
+				"You may know the drill, but do you know the screwdriver?"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:uhpic_chip"
+			id: "52D00CD3E8D1E293"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "375256F3884D78A5"
+					item: "gtceu:uhpic_wafer"
+					type: "item"
+				}
+				{
+					id: "131EF40752C3F5B4"
+					item: "gtceu:uhpic_chip"
+					type: "item"
+				}
+			]
+			title: "Ultra High Power Integrated Circuit"
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00C14E3B8009DF7F"]
+			description: [
+				"&3Dielectric PCB Coolant&r is used to maintain some highly advanced late and end-game machinery."
+				""
+				"You only need a little bit in &dLuV&r, but you'll want to automate it when you get to &cZPM&r."
+			]
+			id: "35549F0404C87BCA"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Absolutely beneficial for the environment"
+			tasks: [{
+				id: "10FAF765725C7790"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
+			title: "Dielectric PCB Coolant"
+			x: 2.25d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"52D00CD3E8D1E293"
+				"35549F0404C87BCA"
+				"5ED7707B0ECF2207"
+			]
+			description: [
+				"The &3Active Transformer&r is a multiblock used to transform energy on a much larger scale. For example, you can convert &6HV&r to &7LV&r power directly by using the apropriate energy hatches."
+				""
+				"It also has a second function, detailed in the above quest."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This is yet another feature from TecTech, which also required these cables to be painted. They do look fantastic if you paint them, but it's optional in CEu."
+			]
+			id: "1AD003487B4EC2EF"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "More than a large transformer"
+			tasks: [{
+				id: "39CDBE6B4B973868"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			title: "Active Transformer"
+			x: 3.375d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"5ED7707B0ECF2207"
+				"52D952ADBEB67454"
+			]
+			description: [
+				"The &3Data Bank&r is a multiblock capable of storing huge amounts of data. You can fill it with &aData Access Hatches&r, and fill those with &aData Storage Items&r."
+				""
+				"After that, you'll need power, and then a way to connect it to your Assembly Line! This is done through &3Optical Fiber Cables&r, which can be used to link &3Optical Data Hatches together&r."
+				"{@pagebreak}"
+				"An &9Optical Transmission Hatch&r is used to send data (like an output), and an &9Optical Reception Hatch&r to recieve the data (like an input). "
+				""
+				"Optical cables have some restrictions however. They can only connect &eone input to one output&r. The Data Bank is your answer to this, since you can place many hatches on them to route your data anywhere."
+				""
+				"You can use this behavior to &echain&r Data Banks as well. Connecting one Data Bank to another, and then one of them to an Assembly Line will provide the data of both banks!"
+				"{@pagebreak}"
+				"&eNote: &rThis multiblock will be required later on in progression, but is very useful to set up early."
+				""
+				"&l&3Lore:&r&o This multiblock also originates from TecTech, but part of its mechanics required optical cables to be painted as well. You don't have to do that here, but it looks really nice if you do!"
+			]
+			id: "42760D3A86EFDCA3"
+			size: 0.75d
+			subtitle: "Time for a server room"
+			tasks: [{
+				id: "01188385BE2DB3B3"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
+			title: "Mass Data Storage"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1AD003487B4EC2EF"]
+			description: [
+				"The &3Active Transformer&r has a second use - &6Laser Power&r. Lasers are like superconductors, but behave slightly differently. They share the energy input across all connected active transformers, allowing widespread power distribution. You can use &3Active Transformers&r to convert regular EU to and from Lasers."
+				""
+				"Like optical cables, they can only be connected to &eone input and output&r. But, these ones also only can move in &estraight lines&r. To turn them, an &3Active Transformer&r with a Laser Source Hatch (output) and Target Hatch (input) is needed."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This is yet again another TecTech feature, but there's a bit more to it this time. TecTech's lasers were tiered by voltage and carried thousands of amps instead. CEu doesn't faff around with any of that tiering. You only need one type of laser here!"
+			]
+			id: "07159FCD9744DD98"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Time for some lasers!"
+			tasks: [{
+				id: "3BA3AA8746044DC1"
+				item: "gtceu:normal_laser_pipe"
+				type: "item"
+			}]
+			title: "Laser Power Transmission"
+			x: 3.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["78277DBC07D3C45C"]
+			description: [
+				"Doping &9Silicon&r with &9Naquadah&r will give a better &aSilicon Boule&r."
+				""
+				"Use it for higher yield on &dWafers&r."
+				""
+				"This will also unlock the &6best recipe&r for &6HV&r Circuits in the &3LuV Circuit Assembler&r. You're probably going to want to mass produce these for the many &dLapotronic Energy Orbs&r that'll be required moving forwards."
+			]
+			id: "3F31E99D0284A60A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Doper than ever before"
+			tasks: [{
+				id: "2F8C92A86CAF338F"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			title: "Naquadah-doped Silicon Boule"
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["7A1E3C3A2D699C5B"]
+			description: [
+				"&aNaquadah&r is a late-game material with a variety of uses. It is required when building a Fusion Reactor and progressing to &cZPM&r, to name a few."
+				""
+				"For some reason, its fluid is a brilliant &agreen&r - don't ask us why."
+				""
+				"&l&3Lore:&r&o Naquadah is a material originally from Stargate."
+			]
+			hide_dependency_lines: true
+			id: "78277DBC07D3C45C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Don't you mean Stargatium?"
+			tasks: [{
+				id: "36833D5050F81992"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah"
+			x: 1.125d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"78277DBC07D3C45C"
+				"7A1E3C3A2D699C5B"
+			]
+			description: [
+				"&aNaquadah Coils&r crank up the Heat Capacity to &d7,200K&r."
+				""
+				"These coils are required for progressing to the second half of &dLuV&r and beyond."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Well... not some \"juicy GregTech lore\", but a cool space fact, owing to the fact you're beating the Sun's temperature with your EBF. The surface temperature of the Sun is 5,800K. We're taking this as an effective temperature - i.e. the radiative temperature of the Sun as if it were a perfectly \"black body\". Check out the Stefan-Boltzmann law if you're interested in some crude astrophysics."
+				""
+				"&oOh, and the \"photosphere\" (the part of the sun we're talking about when we mention its surface)? It's 400 kilometres thick. That's 250 miles. Damn!"
+			]
+			id: "2FCBA0D780DBDA9E"
+			size: 0.75d
+			subtitle: "Hotter than the surface temperature of the Sun!"
+			tasks: [{
+				count: 16L
+				id: "28332FC9FCA83E41"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "Naquadah Coils"
+			x: 3.375d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"0F192D1F44B9B599"
+				"2FCBA0D780DBDA9E"
+			]
+			description: [
+				"&aLuV Superconductors&r are necessary if you're eyeing a &9Fusion Reactor&r. "
+				""
+				"Don't ignore our warning here - you're gonna need &ea lot&r&r of them. Luckily, any &5Indium&r shortages will be solved by your Naquadah line."
+			]
+			id: "5ED7707B0ECF2207"
+			size: 0.75d
+			subtitle: "Be glad these don't use pumps"
+			tasks: [{
+				id: "10FB849CE994B1A5"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+				type: "item"
+			}]
+			title: "LuV Superconductors"
+			x: 4.5d
+			y: 1.125d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"&cWarning&r: &9Plasmas&r are &cextremely hot&r, with temperatures exceeding &d30k Kelvin&r! "
+				""
+				"However, this &6&ldoesn't&r mean that a special type of pipe is required to transport plasma. Plasmas are treated slightly differently, and bend the rules a bit."
+				""
+				"Fluid pipes that can handle plasmas, such as &aTungsten&r, &aNaquadah&r, or &aDuranium&r can hold any plasma &6regardless of temperature&r. This means they &lwon't&r melt under the heat of the plasma!"
+				""
+				"WARNING:&r Plasmas in incompatible pipes will cause &cvoiding&r, &cpipe burning&r, and &ldisproportionately high&r rates of &cdeath&r. Be careful!"
+				""
+				"&l&3Lore:&r&o This mechanic originates from GT6, just like the acids!"
+			]
+			icon: "gtceu:argon_plasma_bucket"
+			id: "173C1FA72301B5E7"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "The stars are calling..."
+			tasks: [{
+				id: "062ECB2F9C9D741D"
+				type: "checkmark"
+			}]
+			title: "Fluid of the Stars"
+			x: 5.625d
+			y: 1.125d
+		}
+		{
+			dependencies: ["173C1FA72301B5E7"]
+			description: [
+				"Use this turbine to extract very large amounts of power from plasma!"
+				""
+				"&aHelium Plasma&r is the best fuel for its cost."
+				""
+				"If you're the type to question how realistic Plasma Turbines are... look up Magnetohydrodynamic Generators if you want something that bends fact into fiction."
+			]
+			id: "4E9DED9569AA17F5"
+			size: 0.75d
+			subtitle: "Plasma? Turbine?! How?"
+			tasks: [{
+				id: "13230F892A8F6FA1"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			title: "Large Plasma Turbine"
+			x: 6.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["378F0AFCF95354B2"]
+			description: [
+				"This is the main material for &cZPM&r. Having this in stock will be a test of your Platinum processing, so this is a &6pre-emptive warning&r to stay on top of mining PGS-bearing ore."
+				""
+				"Prepare to make lots... after you make &9Fusion&r and &9Crystal Circuits&r. Tackle those before you try making this."
+			]
+			id: "24F0454B9A090C44"
+			size: 0.75d
+			subtitle: "Stargate's Strongest"
+			tasks: [{
+				id: "16895659E44B65B5"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			title: "Naquadah Alloy"
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"78277DBC07D3C45C"
+				"48DEABA155605D23"
+			]
+			description: [
+				"Refining &9Naquadah&r into further products will be your next automation challenge. The primary outputs of this line are &aEnriched Naquadah&r, &aNaquadria&r, and &aTrinium&r. "
+				""
+				"This processing line - affectionately known as the \"Naqline\" - also produces many useful byproducts, such as Titanium and Indium."
+				"{@pagebreak}"
+				"&aEnriched Naquadah&r currently isn't used for much, but will be integral to power generation in the future."
+				""
+				"&aNaquadria&r is a lategame material that you'll want to stockpile for your &3UV&r components."
+				""
+				"&aTrinium&r is the material you'll be wanting most right now. You'll use a lot of it to build your first Fusion Reactor, is used for the next set of Coils, and sees heavy usage in most &cZPM&r recipes."
+				"{@pagebreak}"
+				"&eNote&r: This processing chain presents more of a challenge than any chemistry you've dealt with so far."
+				""
+				"As usual, outputs in later steps can be sent back into previous processes... with the caveat that they lose a small amount of fluid with each loop."
+				""
+				"This can be challenging to automate. Good luck!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Many GregTech iterations have Naquadah processing. "
+				""
+				"&oThe first was likely Impact, with its own original Naquadah fuel process. "
+				""
+				"&oGregicality Legacy was hot on its heels with processes for making the Naquadah material (and variants) as well as Fuel. "
+				""
+				"&oAfter that, GTNH added their own Naquadah processes for the material and fuel. "
+				""
+				"&oLastly, GTCEu added the process you're about to set up!"
+			]
+			icon: "gtceu:naquadah_dust"
+			id: "378F0AFCF95354B2"
+			size: 0.75d
+			subtitle: "Do not touch the acid"
+			tasks: [{
+				id: "1D674C3951223E8C"
+				item: "gtceu:fluoroantimonic_acid_bucket"
+				type: "item"
+			}]
+			title: "Naquadah Chain"
+			x: 1.125d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"378F0AFCF95354B2"
+				"2FCBA0D780DBDA9E"
+				"00C14E3B8009DF7F"
+			]
+			description: [
+				"&aTrinium&r is a very important material for progression. You'll need it to make a &9Fusion Reactor&r, but it stays relevant all throughout &cZPM&r. We &7(well, this particular questbook writer!)&r can never have enough of this stuff."
+				""
+				"It also requires an &dLuV&r EBF to smelt! Perhaps dedicate a setup solely for cooking this, unless you're confident that your infrastructure can deal with it."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Stargate, Trinium was strong enough to block a point-blank C4 explosion. It's considered to be a hundred times stronger than steel, at only one-hundreth the weight."
+			]
+			icon: "gtceu:trinium_ingot"
+			id: "0DC999F79A685194"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Another Stargate material!"
+			tasks: [
+				{
+					id: "48F555D3FC7EA449"
+					item: "gtceu:trinium_sulfide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F64CAA30D89B10B"
+					item: "gtceu:trinium_ingot"
+					type: "item"
+				}
+			]
+			title: "Trinium"
+			x: 3.0d
+			y: 3.5999999999999996d
+		}
+		{
+			description: [
+				"&aPlutonium-241&r is yet another requirement for the &9Fusion Reactor&r. It's very easy to make: just centrifuge some &9Pu-239&r to slowly separate some out."
+				""
+				"In the future, this material will require a &dNuclear Reactor&r to produce, but that's not in GTCEu yet."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GT Impact, making Pu-241 was a challenge. Your first Pu-241 had to be produced as a byproduct of its very expensive Naquadah fuel process, and it could only be made independently with something post-fusion!"
+			]
+			id: "2BBD3BC7D1B955C2"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Spicy Plutonium Isotope"
+			tasks: [{
+				id: "757053C4979D8B08"
+				item: "gtceu:plutonium_241_dust"
+				type: "item"
+			}]
+			title: "Plutonium-241"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"0DC999F79A685194"
+				"5ED7707B0ECF2207"
+				"52D952ADBEB67454"
+				"7CFC112B8F460549"
+				"327C3E02CD751453"
+			]
+			description: [
+				"First things first - build the version of the structure that uses Fusion Glass in &aEMI&r. It's far cheaper right now."
+				""
+				"To save on &3Fusion Casings&r, fit Input/Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"The &bFusion Reactor&r will pick a free Output Hatch from the many that are available. In order to \"&6force&r\" the Reactor to use a particular Output Hatch, you can always &alock all of the hatches&r to an irrelevant fluid (we usually use &9Water&r)."
+				""
+				"This time, we'll try something new: we're gonna explain the &3Lore&r at the same time as the mechanics."
+				""
+				"Enjoy the ride!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o GregTech 5's &3Fusion Reactor&f stores EU you feed it in its internal buffer. The maximum capacity is determined by the amount of &3Energy Hatches&f in the structure."
+				""
+				"&oRecipes can only start if the &9\"EU to start\"&f is stored internally, which will be &cconsumed&f. With this stored energy, the reactor can keep running recipes until it goes idle. At this point it will need to be topped up on EU to start again."
+				"{@pagebreak}"
+				"&oShadow of Greg's &3Fusion Reactor&f (which is now GTCEu's Fusion Reactor) comes with an added mechanic called &4Heat&f."
+				""
+				"&oWhen the reactor is running, the &9EU to start&f is converted to &4Heat&f. That Heat is preserved until the Reactor goes idle, at which point it will slowly go down."
+				""
+				"&oNext time a recipe is found, it will use all possible Heat and deduct it from the &9EU to start&f, allowing you to save Energy for short pauses."
+				""
+				"&oThe &3Fusion Reactor I&f can only run recipes up to a required EU of 160 MEU to start. It will also overclock up to &dLuV&f at best, even if you upgrade to ZPM Hatches, so don't stress over attempting this."
+			]
+			id: "546CC03435E763CF"
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Stellar power"
+			tasks: [{
+				id: "48A4D39ED0E11EBC"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor I"
+			x: 5.625d
+			y: 2.25d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"&aEuropium&r is the first major Fusion Material. You'll be using this quite a lot going forwards."
+				""
+				"&eNote&r: The temperature of liquid Europium is very hot, but the fluid isn't a plasma. Plan your piping accordingly!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Gregicality Legacy, Europium was replaced with Rutherfordium as the first fusion material, because Europium is actually found in Rare Earth and isn't fused in real life."
+			]
+			id: "7A74F692F14F0FF8"
+			shape: "gear"
+			size: 1.1d
+			subtitle: "Fusing Europium... whaaat?!"
+			tasks: [{
+				id: "220305C9DA0F512B"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			title: "Europium"
+			x: 6.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["7A74F692F14F0FF8"]
+			description: [
+				"&aCrystal CPUs&r are used to produce &9Crystal Circuits&r - who would have thought?"
+				""
+				"Producing these is quite a bit different from the previous circuit components. Instead of standard silicon wafers, these rely on &9Emerald&r or &9Olivine&r."
+				""
+				"Getting your first Crystal Chips will be difficult, so you may wish to invest in a high-tier Autoclave. If you use a &6HV&r Autoclave... well, we didn't take you for the gambling sort."
+				""
+				"After you get your first Chip, you can duplicate them with &9Europium&r. Don't worry about those other recipes yet, they're for later on in &cZPM&r."
+				"{@pagebreak}"
+				"&eNote&r: An &9Advanced Item Detector&r cover will be useful for automating these. They work just like the Advanced Energy Detector."
+				""
+				"&l&3Lore:&r&o In GT5u modpacks, making your first Crystal Chips required the autoclave to be in Low Gravity, which meant doing this process on a Galacticraft Space Station, or on the moon!"
+			]
+			icon: "gtceu:crystal_cpu"
+			id: "764091A111FB4DA6"
+			size: 0.75d
+			subtitle: "These don't even make any sense!"
+			tasks: [
+				{
+					id: "3B9666A5C3CBDCD6"
+					item: "gtceu:engraved_crystal_chip"
+					type: "item"
+				}
+				{
+					id: "6AFCBD40BD589726"
+					item: "gtceu:crystal_cpu"
+					type: "item"
+				}
+			]
+			title: "Crystal CPU"
+			x: 7.875d
+			y: 2.25d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"This Quest will be completed with &eeither&r an &3LuV Energy Hatch&r&r... or an &3LuV Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Starting at &dLuV&r, you'll start upgrading more multiblocks, which means more energy hatches! Both the &9EBF&r and the &9Assembly Line&r will need power upgrades."
+				""
+				"Don't forget that &d4 Amp&r variants exist!"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:luv_energy_input_hatch"
+			id: "00C14E3B8009DF7F"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "6733F9F527CA9B29"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6CE9FCCC37446BFD"
+					item: "gtceu:luv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line"
+			x: 2.25d
+			y: 2.25d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"At the cost of 16x the drilling Power, the &3Advanced Fluid Drilling Rig II&r will be gaining &664x the output&r in Fluid."
+				"The depletion of veins is also slashed to an eighth of what it was before. This means you will get a total of &6128x&r as much Oil (or whatever fluid) as the regular rig from a bedrock fluid vein until depletion!"
+				""
+				"Even when depleted, you can safely use this and be very much power positive."
+				""
+				"One single &3Advanced Fluid Drilling Rig II&r should be enough to last you until the end of the game, for whatever fluid you drill."
+			]
+			id: "4AEAC79007790BD8"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "This thing is completely ludicrous!"
+			tasks: [{
+				id: "5904009DC40731D6"
+				item: "gtceu:ev_fluid_drilling_rig"
+				type: "item"
+			}]
+			title: "Ludicrous Fluid Drilling"
+			x: 5.61d
+			y: 4.62d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"This Large Miner is nearly identical to the regular one, except it has a wider range and uses more drilling fluid."
+				""
+				"It's an optional sidegrade - one you might not even want."
+				""
+				"&l&3Lore:&r&o There may be a rebalance for these in the future. See the Multiblock Miner quest for details."
+			]
+			id: "1BE779AF4487E3EB"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "414C3982BED7EA0D"
+				item: "gtceu:luv_large_miner"
+				type: "item"
+			}]
+			title: "Ludicrous Ore Drilling"
+			x: 5.28d
+			y: 5.28d
+		}
+		{
+			dependencies: [
+				"7A74F692F14F0FF8"
+				"195E5BFDE4C5A0DE"
+				"5B07279B08BF8DDE"
+			]
+			description: [
+				"The &aLuV Lapotronic Orb&r is even better than the &1IV&r one! Of course, such power comes at a steep cost..."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In older versions of GT, such as GTNH in the past or in GCYL, these orbs were ludicrously expensive! They required 8 orbs of the previous tier! Thankfully, those days are long past."
+			]
+			icon: "gtceu:lapotronic_energy_orb_cluster"
+			id: "0D7C978F9CDF771B"
+			size: 0.75d
+			subtitle: "Even more power!"
+			tasks: [
+				{
+					id: "6D1376BF3CEA87A7"
+					item: "gtceu:lapotronic_energy_orb_cluster"
+					type: "item"
+				}
+				{
+					id: "66D5D76676D27388"
+					item: "gtceu:luv_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ludicrous Batteries"
+			x: 6.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42CD789B8C40E424"]
+			description: ["Cheaper &dLuV&r circuits! These'll take some of the edge out of those brutal Robot Arm recipes."]
+			id: "47087361D6DE7DCF"
+			size: 0.75d
+			subtitle: "Yup... another circuit upgrade"
+			tasks: [{
+				id: "3CF7F369F390A3E5"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			title: "Even more LuV Circuits"
+			x: 7.875d
+			y: 4.5d
+		}
+		{
+			dependencies: ["47087361D6DE7DCF"]
+			description: [
+				"&cZPM&r Circuits that aren't mainframes!"
+				""
+				"Don't lie - &bCrystal Supercomputers&r sound really cool, right?"
+			]
+			id: "7AE681E2AB31EA0D"
+			size: 0.75d
+			subtitle: "...wait, why'd things end here?"
+			tasks: [{
+				id: "0E274B445A95250A"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			title: "More ZPM Circuits"
+			x: 7.875d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"7CFC112B8F460549"
+			]
+			description: ["The &aLuV Electric Prospector&r is a major upgrade from the &eHV&r one. With its huge range, it'll make finding Fluid and Ore veins very easy."]
+			id: "7033A24F37F9B9B9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "If you're yet to strike gold, you will now"
+			tasks: [{
+				id: "718BA09242A22550"
+				item: "gtceu:prospector.luv"
+				type: "item"
+			}]
+			title: "LuV Prospector"
+			x: 4.5d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"195E5BFDE4C5A0DE"
+				"6C241455C5434C2E"
+				"764091A111FB4DA6"
+			]
+			description: [
+				"The first circuit of the &9Crystal&r line."
+				""
+				"&l&3Lore:&r&o The concept of a Crystal Circuit has existed since the very early versions of GregTech. We're still not entirely sure if they exist in real life."
+			]
+			id: "42CD789B8C40E424"
+			size: 0.75d
+			subtitle: "I know where this is going!"
+			tasks: [{
+				id: "6357389871CE70C2"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			title: "Best IV Circuits!"
+			x: 7.875d
+			y: 3.375d
+		}
+		{
+			dependencies: ["0338C9219DC2F819"]
+			description: [
+				"If you say the name 3 times in front of a mirror, you summon a CEu dev."
+				""
+				"&aMulti-Layer Fiber-Reinforced Printed Circuit Boards&r are the next step in your circuit journey. They're not particularly interesting compared to the previous boards: just two of the previous stuck together."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Gregicality Legacy, these circuit boards were much more complicated. They required Kapton, a dual polymer material. It was a challenge to say the least. In the future, the GTCEu team might make these boards somewhat more involved to produce."
+			]
+			id: "6C241455C5434C2E"
+			size: 0.75d
+			subtitle: "M-L F-R PCB"
+			tasks: [{
+				id: "5B8C1C15E5413CEC"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Multi-Layer Fiber-Reinforced Printed Circuit Boards"
+			x: 9.0d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"35D4F93EFB6EACB6"
+				"300348B1238BCB9A"
+				"12FEE0A47E4658D5"
+				"3A7491323AC5C70C"
+			]
+			description: [
+				"&dLuV&r Components are significantly more difficult to produce than their predecessors. They require an &9Assembly Line&r, many different forms of materials, and lots of fluids too!"
+				""
+				"You will notice that &9Samarium&r is required for &aLuV+ Motors&r. Samarium by itself isn't very difficult to obtain, but smelting it is slightly more involved. It requires &9Liquid Helium&r in the Freezer. If you made &9IV Superconductors&r, you've likely seen this already."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In the original GregTech 5, these components were unobtainable! You'd be free from GT if you were at this point! How times change."
+			]
+			icon: "gtceu:luv_electric_motor"
+			id: "11D3B21A177B0E14"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Fun levels - critical"
+			tasks: [
+				{
+					id: "0BA1015B5C7A0BD5"
+					item: "gtceu:luv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "70CFEBF19D3187E4"
+					item: "gtceu:luv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "03F3F0C59537103D"
+					item: "gtceu:luv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "682AD49DA21B55C7"
+					item: "gtceu:luv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "6A9298CBB8CF2A60"
+					item: "gtceu:luv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "31BB271A1E939852"
+					item: "gtceu:luv_emitter"
+					type: "item"
+				}
+				{
+					id: "57609974EC62C885"
+					item: "gtceu:luv_sensor"
+					type: "item"
+				}
+			]
+			title: "Pure Joy"
+			x: 1.125d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0425179329ED1B72"]
+			description: ["A requirement for &dLuV&r+ cables."]
+			id: "12FEE0A47E4658D5"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Cables need better coating now"
+			tasks: [{
+				id: "4CAD2BE5558D7501"
+				item: "gtceu:polyphenylene_sulfide_foil"
+				type: "item"
+			}]
+			title: "Polyphenylene Sulfide"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5CA86A333670A55C"]
+			description: [
+				"&aMagnetic Samarium&r (which you'll need for your &dLuV&r components) requires an &3IV Polarizer&r."
+				""
+				"Even so, we hope you weren't running all the polarization off a single &6HV&r Polarizer. Were you?"
+			]
+			id: "35D4F93EFB6EACB6"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Feeling attracted yet?"
+			tasks: [{
+				id: "1CAACC2FAABE68A1"
+				item: "gtceu:iv_polarizer"
+				type: "item"
+			}]
+			title: "IV Magnetism"
+			x: 0.375d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0D7C978F9CDF771B"]
+			description: [
+				"The Advanced Quantum Chestplate combines protection, a personal battery and an &6ultimate Jetpack&r into a single powerful piece of gear."
+				""
+				"Note that this stores &oa lot&r of energy. You may want to invest in an &3LuV Turbo Charger&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This armor piece is inspired by the IndustrialCraft  Addon Gravisuite, which added the Gravitation Suit, analogous to this chestplate."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:advanced_quarktech_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A884622985A7417"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "I'll be seeing you in the skies!"
+			tasks: [{
+				id: "23AF5E66858C1950"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Best Flight!"
+			x: 6.758503401360549d
+			y: 5.621173469387756d
+		}
+		{
+			dependencies: ["67327DFE3B18EAE2"]
+			id: "605F138348849B18"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "540DC2E94DA0F2CF"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["605F138348849B18"]
+			id: "1497037A05C83136"
+			tasks: [{
+				id: "2DC04BB0D6C0C47C"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["1497037A05C83136"]
+			id: "6188A89805ADBE07"
+			tasks: [
+				{
+					id: "7D9CE8E538E480C1"
+					item: "gtceu:trinium_sulfide_dust"
+					type: "item"
+				}
+				{
+					id: "3CB58EA8116AE1C5"
+					item: "gtceu:impure_enriched_naquadah_solution_bucket"
+					type: "item"
+				}
+			]
+			x: -17.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6188A89805ADBE07"]
+			id: "16F59A4255ABE4FB"
+			tasks: [{
+				id: "2C3E9A51FC85C566"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1497037A05C83136"]
+			id: "79882E594CFE3151"
+			tasks: [{
+				id: "37849E5103E5BBD4"
+				item: "kubejs:thorium_fuel_rod"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"79882E594CFE3151"
+				"7C5A832A6F29978E"
+				"605F138348849B18"
+			]
+			id: "012789EF66CB8A7D"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "575A458CCC825A4D"
+				title: "naquadah reactor"
+				type: "custom"
+			}]
+			x: -20.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"16F59A4255ABE4FB"
+				"17A0BC86AC24B2C5"
+			]
+			id: "202D5CFD58C54D0A"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "40210C6F6928940C"
+				item: "gtceu:superconducting_coil"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["280E36498D199EFB"]
+			id: "17A0BC86AC24B2C5"
+			tasks: [{
+				id: "4846E5B57CC1C61D"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1497037A05C83136"]
+			id: "280E36498D199EFB"
+			tasks: [{
+				id: "4FA248014CAAA1E1"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"17A0BC86AC24B2C5"
+				"774053473A581C08"
+			]
+			id: "35D8DD2E7353A444"
+			tasks: [{
+				id: "7D4197ED730026BF"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 16.5d
+		}
+		{
+			id: "774053473A581C08"
+			shape: "circle"
+			tasks: [{
+				id: "74F6A234DCCEFB94"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"202D5CFD58C54D0A"
+				"00EA398CD631BCBE"
+				"6DFE110371C30559"
+				"3ED1E32BE6EB843E"
+				"26ECE9EF1C595A87"
+			]
+			id: "52B9CEBEEA4B0A6D"
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "0341CCC1A3E050C2"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"5E64880BB0DD57CE"
+				"202D5CFD58C54D0A"
+			]
+			id: "00EA398CD631BCBE"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "03F47FBFB2B054D8"
+				item: "gtceu:fusion_coil"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"435D914EE826B32A"
+				"774053473A581C08"
+				"6F72F7A8A5453638"
+			]
+			id: "6DFE110371C30559"
+			shape: "circle"
+			size: 1.5d
+			tasks: [
+				{
+					id: "66BF8E779DEF5017"
+					item: "kubejs:superclust_5"
+					type: "item"
+				}
+				{
+					id: "7A867E49D655397A"
+					item: "kubejs:superclust_1"
+					type: "item"
+				}
+			]
+			title: "asoc supercluster"
+			x: -14.5d
+			y: 19.5d
+		}
+		{
+			icon: "gtceu:rhodium_gear"
+			id: "3DF02D6F0F6DE811"
+			subtitle: "change back to mk2 one doen"
+			tasks: [
+				{
+					id: "643BED259C2A4962"
+					title: "Lithography"
+					type: "checkmark"
+				}
+				{
+					id: "0CCB9B223DF79E72"
+					item: "gtceu:rhodium_gear"
+					type: "item"
+				}
+			]
+			title: "Naquadah Lithography"
+			x: -14.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"3DF02D6F0F6DE811"
+				"7F225AD3649A562D"
+			]
+			icon: "gtceu:naquadah_wafer"
+			id: "4A53AC3E22B6AC43"
+			tasks: [
+				{
+					id: "693EEA54B4858FFA"
+					item: "gtceu:naquadah_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AA96490CBE195B5"
+					title: "Skip"
+					type: "checkmark"
+				}
+			]
+			x: -14.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4A53AC3E22B6AC43"]
+			icon: "gtceu:advanced_soc_wafer"
+			id: "435D914EE826B32A"
+			tasks: [
+				{
+					id: "48753621F121F437"
+					item: "gtceu:advanced_soc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AAEC7A6EF52DC62"
+					item: "gtceu:uhpic_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24618C169111EE82"
+					title: "Skip"
+					type: "checkmark"
+				}
+			]
+			x: -14.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["52B9CEBEEA4B0A6D"]
+			id: "51A8D8FAE20459F3"
+			tasks: [{
+				id: "5544580B99E32828"
+				item: "gtceu:europium_bucket"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["52B9CEBEEA4B0A6D"]
+			id: "3B179C3E55456F34"
+			tasks: [{
+				id: "51D2CF64AA1F00CA"
+				item: "gtceu:duranium_bucket"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5D5A270CE90D6646"]
+			id: "3ED1E32BE6EB843E"
+			tasks: [{
+				id: "05020472F955C344"
+				item: "gtceu:plutonium_241_dust"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6597D77978313E13"]
+			id: "5D5A270CE90D6646"
+			tasks: [{
+				id: "4AD611DB6A2F0310"
+				item: "gtceu:plutonium_dust"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 21.5d
+		}
+		{
+			id: "6597D77978313E13"
+			tasks: [{
+				id: "201665FB8A9DA5BB"
+				item: "gtceu:raw_plutonium"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["420ECCEB2CFEC423"]
+			id: "26ECE9EF1C595A87"
+			tasks: [{
+				id: "6B3FBD05CA63FE7B"
+				item: "gtceu:high_grade_solder_bucket"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6DE9091CB390278B"]
+			id: "420ECCEB2CFEC423"
+			tasks: [{
+				id: "50FA331E95016916"
+				item: "gtceu:high_grade_solder_dust"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 21.5d
+		}
+		{
+			id: "6DE9091CB390278B"
+			tasks: [{
+				id: "2287E823E361D97D"
+				item: "gtceu:soldering_alloy_dust"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["7CF465EEFB27CC57"]
+			id: "2E2D53EF9EF5D245"
+			tasks: [{
+				id: "3A0C445F86EF66F7"
+				item: "gtceu:high_grade_silicon_dust"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7CF465EEFB27CC57"]
+			id: "39ED857F8282445A"
+			tasks: [{
+				id: "57C6CAC082124361"
+				item: "gtceu:mid_grade_silicon_dust"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"369EA78ED7612657"
+				"605F138348849B18"
+				"405BED065EB37EF8"
+			]
+			id: "7CF465EEFB27CC57"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "aether idk"
+			tasks: [{
+				id: "5A747D7A6B53DE79"
+				title: "athmospheric condenser"
+				type: "custom"
+			}]
+			x: -12.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"605F138348849B18"
+				"67327DFE3B18EAE2"
+			]
+			id: "369EA78ED7612657"
+			tasks: [{
+				id: "7A52D2F3B5509506"
+				item: "gtceu:luv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"67327DFE3B18EAE2"
+				"605F138348849B18"
+			]
+			id: "7C5A832A6F29978E"
+			tasks: [{
+				id: "22C62D7367C92AAD"
+				item: "gtceu:luv_energy_output_hatch"
+				type: "item"
+			}]
+			x: -19.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"67327DFE3B18EAE2"
+				"4C12FA063F8DAAA6"
+			]
+			id: "20CC4FBCC71F6BE8"
+			tasks: [
+				{
+					id: "16E85502BAA30EEB"
+					item: "kubejs:quant_chip_1"
+					type: "item"
+				}
+				{
+					id: "774471FAE1497D78"
+					item: "kubejs:quant_chip_2"
+					type: "item"
+				}
+				{
+					id: "77BC00FDBEF0A0F5"
+					item: "kubejs:quant_chip_3"
+					type: "item"
+				}
+				{
+					id: "7B61402C47AB9183"
+					item: "kubejs:quant_chip_4"
+					type: "item"
+				}
+				{
+					id: "553FFC2CAAE19D47"
+					item: "kubejs:quant_chip_5"
+					type: "item"
+				}
+			]
+			x: -16.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"4D10E5B431C1BFD2"
+				"6F72F7A8A5453638"
+			]
+			id: "4C7CECF9D565E77F"
+			tasks: [{
+				id: "2D4B126585CB2AC7"
+				item: "gtceu:crystal_cpu"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["2AEE6FEE8837DE94"]
+			id: "4D10E5B431C1BFD2"
+			tasks: [{
+				id: "124376B6F787A686"
+				item: "gtceu:engraved_crystal_chip"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"39ED857F8282445A"
+				"3DF02D6F0F6DE811"
+			]
+			id: "7F225AD3649A562D"
+			tasks: [{
+				id: "7575F834CDCE35D8"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 15.5d
+		}
+		{
+			id: "2AEE6FEE8837DE94"
+			tasks: [{
+				id: "4E9F0D4982A24488"
+				item: "kubejs:prepared_naqlux_wafer"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["67327DFE3B18EAE2"]
+			description: [
+				"&dLuV&r Components are significantly more difficult to produce than their predecessors. They require an &9Assembly Line&r, many different forms of materials, and lots of fluids too!"
+				""
+				"You will notice that &9Samarium&r is required for &aLuV+ Motors&r. Samarium by itself isn't very difficult to obtain, but smelting it is slightly more involved. It requires &9Liquid Helium&r in the Freezer. If you made &9IV Superconductors&r, you've likely seen this already."
+			]
+			icon: "gtceu:luv_electric_motor"
+			id: "0131C90B25B998E8"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Fun levels - critical"
+			tasks: [
+				{
+					id: "33BFC6D96058C96C"
+					item: "gtceu:luv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "43C597823D4CD49C"
+					item: "gtceu:luv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "6AB6EA6AE8E3500E"
+					item: "gtceu:luv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "111B99EFC3ED9215"
+					item: "gtceu:luv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "0882CCDC2F85C70C"
+					item: "gtceu:luv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "Pure Joy"
+			x: -17.0d
+			y: 9.5d
+		}
+		{
+			icon: "gtceu:luv_emitter"
+			id: "6F72F7A8A5453638"
+			tasks: [
+				{
+					id: "3523861D895F6DF7"
+					item: "gtceu:luv_emitter"
+					type: "item"
+				}
+				{
+					id: "0A16D5123A6D307C"
+					item: "gtceu:luv_sensor"
+					type: "item"
+				}
+			]
+			x: -13.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"4C7CECF9D565E77F"
+				"6F72F7A8A5453638"
+			]
+			id: "25CE069E42685CDD"
+			tasks: [{
+				id: "76B7E76A5DEEBE12"
+				item: "gtceu:crystal_soc"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 19.5d
+		}
+		{
+			id: "4C12FA063F8DAAA6"
+			tasks: [
+				{
+					id: "5569D3ADC85290F8"
+					item: "gtceu:raw_zephyrite"
+					type: "item"
+				}
+				{
+					id: "4C127528BA22DD82"
+					item: "gtceu:raw_aerogem"
+					type: "item"
+				}
+				{
+					id: "6B2AEEA960510169"
+					item: "gtceu:raw_cloudiron"
+					type: "item"
+				}
+				{
+					id: "7BE2E5E9718D06AC"
+					item: "gtceu:raw_halocite"
+					type: "item"
+				}
+				{
+					id: "013FA50DB6E87258"
+					item: "gtceu:raw_nimbusite"
+					type: "item"
+				}
+				{
+					id: "3CB4E1DE93ECED65"
+					item: "gtceu:polycaprolactam_bucket"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: 8.5d
+		}
+		{
+			id: "5B00E0CF2B1BED89"
+			tasks: [{
+				id: "3815B91A916DD4C0"
+				item: "gtceu:raw_dilithium"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5B00E0CF2B1BED89"]
+			id: "5E64880BB0DD57CE"
+			tasks: [{
+				id: "44F19DF9DDD87947"
+				item: "gtceu:dilithium_dust"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1497037A05C83136"]
+			id: "405BED065EB37EF8"
+			tasks: [{
+				id: "1C7F4652D0404F58"
+				title: "silicon naquadic filter"
+				type: "custom"
+			}]
+			x: -14.5d
+			y: 13.0d
+		}
+		{
+			id: "1312CBD3535B9500"
+			size: 2.0d
+			tasks: [{
+				id: "4358FB5FE3278510"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "&6The Assembly Line"
+			x: -30.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1312CBD3535B9500"]
+			description: [
+				"&dLuV&r Components are significantly more difficult to produce than their predecessors. They require an &9Assembly Line&r, many different forms of materials, and lots of fluids too!"
+				""
+				"You will notice that &9Samarium&r is required for &aLuV+ Motors&r. Samarium by itself isn't very difficult to obtain, but smelting it is slightly more involved. It requires &9Liquid Helium&r in the Freezer. If you made &9IV Superconductors&r, you've likely seen this already."
+			]
+			icon: "gtceu:luv_electric_motor"
+			id: "6B19CF4E731F0F1F"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Fun levels - critical"
+			tasks: [
+				{
+					id: "5F94E9D7A6AA7063"
+					item: "gtceu:luv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "4CA31F9B7DB7D094"
+					item: "gtceu:luv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "1DD9C168329E2B8B"
+					item: "gtceu:luv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "372F41178B6D4BB6"
+					item: "gtceu:luv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "680634C1BC9634B6"
+					item: "gtceu:luv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "746EE4C808C0202D"
+					item: "gtceu:luv_field_generator"
+					type: "item"
+				}
+			]
+			title: "Pure Joy"
+			x: -30.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1312CBD3535B9500"]
+			id: "640BFAC5357DD47B"
+			tasks: [
+				{
+					id: "6E2E813B461EEAB9"
+					item: "kubejs:quant_chip_1"
+					type: "item"
+				}
+				{
+					id: "112EA5D41B17C81E"
+					item: "kubejs:quant_chip_2"
+					type: "item"
+				}
+				{
+					id: "1F592834A3FFDA4B"
+					item: "kubejs:quant_chip_3"
+					type: "item"
+				}
+				{
+					id: "73F5BB8CB9B3B72A"
+					item: "kubejs:quant_chip_4"
+					type: "item"
+				}
+				{
+					id: "3565FD8022BAB68F"
+					item: "kubejs:quant_chip_5"
+					type: "item"
+				}
+			]
+			x: -29.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1312CBD3535B9500"]
+			id: "515D671FBFC63B7C"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4D12C802E957390E"
+					item: "gtceu:luv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "77537B019D78B98F"
+					item: "gtceu:luv_energy_output_hatch"
+					type: "item"
+				}
+				{
+					id: "107B7EF728D7E6CF"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			x: -30.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"515D671FBFC63B7C"
+				"6EFD467126B3A8A7"
+			]
+			id: "5D58C519F3025709"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "3B3D5CCEADC509B1"
+				item: "gtceu:naq_reactor"
+				type: "item"
+			}]
+			x: -32.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["515D671FBFC63B7C"]
+			id: "7065CE14A71ACD68"
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "6A63394ECB7F5F5D"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			title: "&6Naquadah"
+			x: -30.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["7065CE14A71ACD68"]
+			icon: "gtceu:impure_enriched_naquadah_solution_bucket"
+			id: "4CA2F49B28649C56"
+			tasks: [{
+				id: "3D3EA69C8C72D27A"
+				item: "gtceu:impure_enriched_naquadah_solution_bucket"
+				type: "item"
+			}]
+			x: -29.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["7065CE14A71ACD68"]
+			icon: "gtceu:naquadah_coil_block"
+			id: "3E4A2E5F81CB3EF1"
+			tasks: [
+				{
+					id: "122F06D99110BBFF"
+					item: "gtceu:naquadah_coil_block"
+					type: "item"
+				}
+				{
+					id: "451A358A4E58B40A"
+					item: "gtceu:naquadah_alloy_single_wire"
+					type: "item"
+				}
+			]
+			x: -30.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3E4A2E5F81CB3EF1"]
+			id: "7A9483B36AD96D5D"
+			tasks: [{
+				id: "24ABA1A0A778EFC1"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+				type: "item"
+			}]
+			x: -30.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"4CA2F49B28649C56"
+				"3E4A2E5F81CB3EF1"
+			]
+			id: "17147A8587D566ED"
+			tasks: [
+				{
+					id: "7AB7951188D754C5"
+					item: "gtceu:trinium_ingot"
+					type: "item"
+				}
+				{
+					id: "5A07494605C328EF"
+					item: "gtceu:trinium_dust"
+					type: "item"
+				}
+				{
+					id: "1A79EFA97567F8A0"
+					item: "gtceu:trinium_sulfide_dust"
+					type: "item"
+				}
+			]
+			x: -29.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"7A9483B36AD96D5D"
+				"17147A8587D566ED"
+			]
+			id: "1E8B7CA1AEE1F635"
+			tasks: [{
+				id: "752B40DF480D8CB8"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			title: "&6The Active Transformer"
+			x: -30.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"7A9483B36AD96D5D"
+				"17147A8587D566ED"
+				"45EB8C3A60B71758"
+				"7D8516A245488AF0"
+				"71D2F53F2C0325EA"
+				"333CC298F09FC5EF"
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "10E12DD4A72DFD83"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "&6- The First One! -"
+			tasks: [
+				{
+					id: "48CBD07BAD320B74"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+				{
+					id: "421E98D3B5103919"
+					item: "gtceu:fusion_coil"
+					type: "item"
+				}
+				{
+					id: "34BA98BDE3AE4F87"
+					item: "gtceu:fusion_casing"
+					type: "item"
+				}
+			]
+			title: "&6The Fusion Reactor MK I"
+			x: -30.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["52B6F0228FF411C0"]
+			id: "45EB8C3A60B71758"
+			tasks: [
+				{
+					id: "6DBB4D44C7910A5F"
+					item: "kubejs:superclust_5"
+					type: "item"
+				}
+				{
+					id: "6C0AB6F0DCD7BFCA"
+					item: "kubejs:superclust_1"
+					type: "item"
+				}
+				{
+					id: "2E29AFBCF71E8783"
+					item: "kubejs:super_seperator"
+					type: "item"
+				}
+			]
+			title: "&3Chip Superclusters"
+			x: -28.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["595DC8DFA9FF746A"]
+			id: "7D8516A245488AF0"
+			tasks: [{
+				id: "41F4CA91E6B31285"
+				item: "gtceu:plutonium_241_dust"
+				type: "item"
+			}]
+			x: -31.5d
+			y: 22.5d
+		}
+		{
+			icon: "gtceu:raw_plutonium"
+			id: "595DC8DFA9FF746A"
+			tasks: [
+				{
+					id: "40DFD2362B186B4A"
+					item: "gtceu:raw_plutonium"
+					type: "item"
+				}
+				{
+					id: "36EA6E01D52632E8"
+					item: "gtceu:plutonium_dust"
+					type: "item"
+				}
+			]
+			x: -32.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["43A6792292EAF10B"]
+			id: "52B6F0228FF411C0"
+			tasks: [
+				{
+					id: "5503D0D6AEC07077"
+					item: "gtceu:advanced_soc"
+					type: "item"
+				}
+				{
+					id: "2B2008EF6CAA5DA6"
+					item: "gtceu:uhpic_chip"
+					type: "item"
+				}
+			]
+			title: "&3The First Chips"
+			x: -27.5d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"247910958691BDD4"
+				"17147A8587D566ED"
+			]
+			icon: "gtceu:naquadah_wafer"
+			id: "43A6792292EAF10B"
+			tasks: [
+				{
+					id: "0879BCED17856B04"
+					item: "gtceu:naquadah_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7262313A45AF8541"
+					item: "gtceu:advanced_soc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D56BE7DF035679A"
+					item: "gtceu:uhpic_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19DEBF40D2CE4824"
+					title: "Skip"
+					type: "checkmark"
+				}
+				{
+					id: "53E87C3951982D9C"
+					item: "kubejs:prepared_naquadah_wafer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&3Naquadah Silicon Wafers"
+			x: -27.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["42FB785BA9621FC9"]
+			id: "247910958691BDD4"
+			tasks: [{
+				id: "53A8C5C4AE8DA063"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			title: "&3Naquadah Monocrystalline Silicon Boule"
+			x: -27.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7065CE14A71ACD68"]
+			id: "6EFD467126B3A8A7"
+			tasks: [
+				{
+					id: "2E14ECC228624528"
+					item: "gtceu:naquadah_bolt"
+					type: "item"
+				}
+				{
+					id: "7A3C5752A6C9F0F6"
+					item: "gtceu:naquadria_bolt"
+					type: "item"
+				}
+				{
+					id: "14C2ED5E82FD6902"
+					item: "gtceu:naquadah_alloy_bolt"
+					type: "item"
+				}
+			]
+			x: -32.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1342D82552D9D101"]
+			id: "42FB785BA9621FC9"
+			tasks: [
+				{
+					id: "39C2B34DBD58FD1A"
+					item: "gtceu:high_grade_silicon_dust"
+					type: "item"
+				}
+				{
+					id: "56B7D948E154BD1A"
+					item: "gtceu:high_grade_silicon_block"
+					type: "item"
+				}
+			]
+			title: "&3High Purity Silicon"
+			x: -27.5d
+			y: 15.5d
+		}
+		{
+			id: "71D2F53F2C0325EA"
+			tasks: [{
+				id: "477F6752CE1A2009"
+				item: "gtceu:high_grade_solder_bucket"
+				type: "item"
+			}]
+			x: -33.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["10E12DD4A72DFD83"]
+			id: "25760B01C91B8463"
+			tasks: [
+				{
+					id: "479DD099438CF0D1"
+					item: "gtceu:duranium_bucket"
+					type: "item"
+				}
+				{
+					id: "07299753B5AE668F"
+					item: "gtceu:europium_bucket"
+					type: "item"
+				}
+			]
+			title: "&6Duranium&r and &bEuropium&r"
+			x: -28.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["52B9CEBEEA4B0A6D"]
+			id: "5F46036453702A89"
+			tasks: [{
+				id: "6B7DD84920096BC4"
+				title: "NEW ALLOY"
+				type: "custom"
+			}]
+			x: -16.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["52B6F0228FF411C0"]
+			id: "2C8A718F1268FFAD"
+			tasks: [
+				{
+					id: "5CF4B027A3494B7D"
+					item: "kubejs:ctc_chip"
+					type: "item"
+				}
+				{
+					id: "2617571CEAA0584F"
+					item: "kubejs:cmc_chip"
+					type: "item"
+				}
+			]
+			title: "&3The Second Chips"
+			x: -27.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["10E12DD4A72DFD83"]
+			id: "0FD70C23C53A6FAB"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "29616DBD17862129"
+				item: "gtceu:naqatrite_bucket"
+				type: "item"
+			}]
+			x: -30.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"25760B01C91B8463"
+				"2C8A718F1268FFAD"
+			]
+			id: "6062C6684F3ACEBF"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "557224074463A620"
+				item: "kubejs:crystal_cpu"
+				type: "item"
+			}]
+			title: "&6The Crystal CPU"
+			x: -27.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["515D671FBFC63B7C"]
+			id: "1342D82552D9D101"
+			shape: "circle"
+			size: 1.5d
+			tasks: [
+				{
+					id: "28A3D9817B46C58C"
+					item: "gtceu:pure_trichlorosaline_bucket"
+					type: "item"
+				}
+				{
+					id: "4C6E0AD04428050E"
+					item: "gtceu:trichlorosaline_bucket"
+					type: "item"
+				}
+			]
+			title: "&3Pure Trichlorosaline&r"
+			x: -27.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["115F4BB7EDAA68FF"]
+			id: "333CC298F09FC5EF"
+			tasks: [{
+				id: "2B5BDA82C265CB54"
+				item: "gtceu:dilithium_dust"
+				type: "item"
+			}]
+			x: -31.5d
+			y: 21.5d
+		}
+		{
+			id: "115F4BB7EDAA68FF"
+			tasks: [{
+				id: "3D0C1BB64CE90D3D"
+				item: "gtceu:raw_dilithium"
+				type: "item"
+			}]
+			x: -32.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["10E12DD4A72DFD83"]
+			id: "0EDA28012D057C05"
+			shape: "circle"
+			subtitle: "&6- The Ultimate Fuel -"
+			tasks: [{
+				id: "7890E8CE517E649D"
+				item: "gtceu:givs_13_fuel_plasma_bucket"
+				type: "item"
+			}]
+			title: "&6GIVS - 13"
+			x: -31.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["1312CBD3535B9500"]
+			id: "67666F37B0159B96"
+			tasks: [
+				{
+					id: "5C03426709571F05"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7542140172319929"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+				{
+					id: "044BB52A11642C7E"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "451E2699AE71BAD2"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+			]
+			x: -30.0d
+			y: 9.0d
+		}
+	]
+	subtitle: ["Investigate the scientific and fuse elements"]
+	title: "&6LuV&r | &3Ludicrous Voltage&r"
+}

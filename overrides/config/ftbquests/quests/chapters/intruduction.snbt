@@ -1,0 +1,197 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intruduction"
+	group: ""
+	icon: {
+		Count: 1
+		id: "gtceu:bronze_wrench"
+		tag: {
+			DisallowContainerItem: 0b
+			GT.Behaviours: {
+				Mode: 2b
+			}
+			GT.Tool: {
+				Damage: 0
+				HarvestLevel: 2
+				MaxDamage: 191
+				ToolSpeed: 7.0f
+			}
+			HideFlags: 2
+		}
+	}
+	id: "6C3DEC050F6854F8"
+	images: [{
+		height: 2.0d
+		image: "minecraft:textures/particle/goldheart_2.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Thank you&r for Considering this Modpack, this pack is a collection of &2GregTech&r, &2Create&r, &2Decorations&r and &2Performance&r Mods."
+				""
+				"This Pack has been in &6Development since 2023&r, but I have changed my mind so many times over the last 2 years that I had 3 different packs that I wanted to make, but now we are here!"
+				""
+				"If you wish to &2Support&r this pack and keep it updated with more content and so on, consider my Ko-Fi! ❤"
+			]
+			id: "3799F14809CA31C9"
+			rewards: [
+				{
+					id: "786C8D8B2BCD0951"
+					item: "ftbquests:book"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4641B992ADB5AA0A"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "08FC11D43BF4BC03"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			subtitle: "&3Welcome!&r"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "ad_astra:earth_globe"
+				id: "750B570652D7363A"
+				title: "The Beginning!"
+				type: "dimension"
+			}]
+			title: "&6The Beginning&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6C5D47933E6A0710"
+			tasks: [{
+				id: "5E21EFB2BA753661"
+				title: "Performance Mods"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "1C03E113243E5800"
+			tasks: [{
+				id: "5B54F58F707A5803"
+				title: "Exploration Mods"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "5BAC77694194CDEF"
+			tasks: [{
+				id: "5FA2E5FC1C18C48D"
+				title: "Technology Mods"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "77062E0D7FE4F87E"
+			tasks: [{
+				id: "25A72D97EF0FAE1C"
+				title: "Tips"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "5E147B19289B7910"
+			tasks: [{
+				id: "5C2BE6DAD8D4696E"
+				title: "The Monster Collection"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "2A1681B361E89419"
+			tasks: [{
+				id: "2A135E6AB78BFFFB"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "15C87971B645DB46"
+			tasks: [{
+				id: "3AD629AF0F9EEE17"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "391950889DF33196"
+			tasks: [{
+				id: "2B15DE31E0809609"
+				item: {
+					Count: 1
+					id: "gtceu:electric_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"So, the &2Modpack&r is focused on making the &2GregTech Experience better for everyone&r, while also being better for everyone else. We have &6Create&r, &6Tinker's&r and so many more mods just to name a few. We want to make the &2Recipes easier&r, &2less grindy&r but at the same time add &6more content&r, which is a hard task."
+				""
+				"So we came up with this idea, &2early game content before AE2&r, is a lot easier to progress or changed in progression in general. So &2LV and MV&r is a bit easier or changed up in some spots. As you get to &6AE2&r and autocrafting the recipes and progression gets abit harder, but since you get autocrafting, its not as bad for you right?"
+				"{@pagebreak}"
+				"&6HV up to UV&r has seen a lot of new content or will see a lot of it in the future. We have set some simple rules for us to make the life of everyone better! "
+				""
+				"All chemical lines that we add, only get up to 10 steps, most of the time less. We wish to add a lot more content in the future which is completely custom to the Modpack, but this takes a lot of time which we might not have or lack at the moment."
+				""
+				"&2I hope you will enjoy this modpack, if you do leave a positive comment on the Curseforge Page and on the Discord!&r"
+				""
+				""
+				"{@pagebreak}"
+				"And now you may ask, &6where are my Circuits in the Quest Line?&r Well, we have redone that part of &2GregTech&r which many will find confusing at first or even stupid but, we wanted to make this pack special in a way that is controversial, hehe."
+				""
+				"Look at the, "
+				"{ \"text\": \"Circuit Progression Quest Line\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"43EBEFA01E87EC9D\" } }"
+			]
+			icon: "aether:gingerbread_man"
+			id: "751FDA7EDC9185F0"
+			tasks: [{
+				id: "40295EF604FFC689"
+				title: "What to Expect?"
+				type: "checkmark"
+			}]
+			title: "&6What should I know?"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "The Start of a Factory!"
+}

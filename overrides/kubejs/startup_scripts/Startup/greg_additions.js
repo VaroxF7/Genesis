@@ -189,6 +189,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('silquadria_fuel')
         .plasma()
         .color(0x7D2DDB)
+        event.create('spent_silquadria')
+        .plasma()
+        .color(0x7D2DDB)
         event.create('actinex')
         .liquid()
         .color(0x7D2DDB)
@@ -201,6 +204,40 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('stellaric_neutronium')
         .liquid()
         .color(0x7D2DDB)
+        event.create('unstable_draconium')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('draconium')
+        .liquid().ingot()
+        .flags(GTMaterialFlags.GENERATE_DENSE)
+        .color(0x7D2DDB)
+        event.create('unstable_neutronium')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('quantum_star')
+        .liquid()
+        .color(0xFFFFFF)
+        event.create('subatomic_pattering_gel')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('triazirinyl')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('petroxide_suspension')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('neon_cadmide')
+        .liquid()
+        .flags(GTMaterialFlags.GENERATE_BOLT_SCREW,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_FOIL)
+        .color(0xFF3FAF)
+        event.create('proton_fluid')
+        .liquid()
+        .color(0x7D2DDB)
+        event.create('excited_proton_fluid')
+        .gas()
+        .color(0x7D2DDB)
+
+
 
 
         // ZPM BioChemical Line
@@ -279,12 +316,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x7D2DDB)
 
 
-
-
-
-
-
-
         // Repulsor - Naqline
         event.create('naquadic_combust_agent_1')
         .liquid()
@@ -343,12 +374,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x7D2DDB)
 
-
-
-
-
-
 })
+
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+  event.create('nitrogen_feedstock')
+    .fluid()
+    .color(0x9ec9ff); // just color, no fluidTemp
+
+  event.create('azirine_feedstock')
+    .fluid()
+    .color(0xffa500);
+});
+
  
 
 

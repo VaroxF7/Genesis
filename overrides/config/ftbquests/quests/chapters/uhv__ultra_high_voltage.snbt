@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uhv__ultra_high_voltage"
+	group: "693226878D58638A"
+	icon: "kubejs:t1_circuit_uhv"
+	id: "6BC5300A6EFBE9DB"
+	order_index: 9
+	quest_links: [{
+		id: "42758DEF15B789EE"
+		linked_quest: "47827849975E4583"
+		x: -5.0d
+		y: -0.5d
+	}]
+	quests: [ ]
+	title: "UHV - Ultra High Voltage"
+}

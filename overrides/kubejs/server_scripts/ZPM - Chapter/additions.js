@@ -45,6 +45,23 @@ ServerEvents.recipes(event => {
     .itemOutputs("gtceu:hpca_active_cooler_component")
     .duration(500).EUt(GTValues.V[GTValues.IV]).cleanroom(CleanroomType.CLEANROOM)
 
+    event.recipes.gtceu.alloy_blast_smelter("quantum_star_liquid")
+    .itemInputs("16x gtceu:quantum_star")
+    .outputFluids([Fluid.of("gtceu:quantum_star",1000)])
+    .duration(1000).EUt(GTValues.VA[GTValues.LuV]).blastFurnaceTemp(10000)
+
+    event.recipes.gtceu.electric_blast_furnace("neutronium_boule_1")
+    .itemInputs("16x gtceu:iridium_dust","32x gtceu:high_grade_silicon_block","4x gtceu:neutronium_block")
+    .itemOutputs("gtceu:neutronium_boule")
+    .inputFluids([Fluid.of("gtceu:super_compressed_solarium_plasma",8000)])
+    .duration(8000).EUt(GTValues.VA[GTValues.IV]).blastFurnaceTemp(10000)
+
+    event.recipes.gtceu.assembler("draconic_reflector_new")
+    .itemInputs("4x gtceu:dense_draconium_plate","16x gtceu:tritanium_bolt","16x gtceu:tritanium_round")
+    .itemOutputs("kubejs:draconic_reflector")
+    .inputFluids([Fluid.of("gtceu:naqatrite",1000)])
+    .duration(100).EUt(GTValues.VA[GTValues.IV])
+
     // Fusion MK1 - MK2 Fusion
     event.recipes.gtceu.assembly_line("mk2_fusion_new")
     .itemInputs("gtceu:fusion_coil","16x #gtceu:circuits/zpm","4x gtceu:double_naquadria_plate","2x gtceu:double_europium_plate","gtceu:zpm_field_generator","16x kubejs:superclust_1","16x kubejs:superclust_3","16x gtceu:uranium_rhodium_dinaquadide_quad_wire")
@@ -65,4 +82,8 @@ ServerEvents.recipes(event => {
    .itemOutputs("gtceu:luv_fusion_reactor")
    .EUt(GTValues.VA[GTValues.LuV]).duration(2048)
 })
+
+
+
+
 

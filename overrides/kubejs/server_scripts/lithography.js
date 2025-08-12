@@ -182,6 +182,43 @@ ServerEvents.recipes(event => {
     .duration(800).circuit(2)
     .EUt(GTValues.VA[GTValues.IV])
 
+    // MK2 Lithography for Neutronium Recipes
+    event.recipes.gtceu.litho_machine_mk2("neutronium_litho_1_low")
+    .itemInputs("gtceu:neutronium_wafer")
+    .notConsumable("#forge:lenses/white").notConsumable("gtceu:gravitation_engine_unit")
+    .itemOutputs("kubejs:prepared_neutronium_wafer")
+    .chancedOutput("gtceu:prepared_neutronium_wafer", 2500, 0)
+    .inputFluids([Fluid.of("gtceu:subatomic_pattering_gel",8000),Fluid.of("gtceu:deuterium_oxide",8000),Fluid.of("gtceu:supercooled_cryotheum",20000)])
+    .duration(2000).circuit(1)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.litho_machine_mk2("neutronium_litho_1")
+    .itemInputs("gtceu:neutronium_wafer","32x gtceu:uranium_rhodium_dinaquadide_dust")
+    .notConsumable("#forge:lenses/white")
+    .itemOutputs("kubejs:prepared_neutronium_wafer")
+    .inputFluids([Fluid.of("gtceu:subatomic_pattering_gel",8000),Fluid.of("gtceu:quantum_star",4000),Fluid.of("gtceu:supercooled_cryotheum",20000)])
+    .duration(800).circuit(1)
+    .dimension("ad_astra:earth_orbit")
+    .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.litho_machine_mk2("neutronium_litho_wafer_1")
+    .itemInputs("kubejs:prepared_neutronium_wafer","8x gtceu:iridium_dust")
+    .notConsumable("#forge:lenses/black")
+    .itemOutputs("gtceu:highly_advanced_soc_wafer")
+    .inputFluids([Fluid.of("gtceu:tetramethylammonium_hydroxide",2000),Fluid.of("gtceu:subatomic_pattering_gel",200),Fluid.of("gtceu:supercooled_cryotheum",2000)])
+    .duration(2000).circuit(1)
+    .dimension("ad_astra:earth_orbit")
+    .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.litho_machine_mk2("neutronium_litho_wafer_2")
+    .itemInputs("kubejs:prepared_neutronium_wafer","32x gtceu:sapphire_dust","16x kubejs:super_seperator","32x gtceu:cadmium_dust")
+    .notConsumable("#forge:lenses/yellow")
+    .itemOutputs("kubejs:hahdic_wafer")
+    .inputFluids([Fluid.of("gtceu:tetramethylammonium_hydroxide",2500),Fluid.of("gtceu:subatomic_pattering_gel",400),Fluid.of("gtceu:supercooled_cryotheum",500)])
+    .duration(2000).circuit(2)
+    .dimension("ad_astra:earth_orbit")
+    .EUt(GTValues.VA[GTValues.UV])
+
     // Chip Cutting Recipes
     event.recipes.gtceu.cutter("cut_1_ctc")
     .itemInputs("kubejs:ctc_wafer")
@@ -217,6 +254,24 @@ ServerEvents.recipes(event => {
     .itemInputs("kubejs:cmc_wafer")
     .inputFluids([Fluid.of("minecraft:water",1000)])
     .itemOutputs("kubejs:cmc_chip")
+    .EUt(GTValues.VA[GTValues.LuV]).duration(2000).cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.cutter("cut_1_hahdic")
+    .itemInputs("kubejs:hahdic_wafer")
+    .inputFluids([Fluid.of("gtceu:lubricant",250)])
+    .itemOutputs("kubejs:hahdic_chip")
+    .EUt(GTValues.VA[GTValues.LuV]).duration(850).cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.cutter("cut_2_hahdic")
+    .itemInputs("kubejs:hahdic_wafer")
+    .inputFluids([Fluid.of("gtceu:distilled_water",750)])
+    .itemOutputs("kubejs:hahdic_chip")
+    .EUt(GTValues.VA[GTValues.LuV]).duration(1250).cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.cutter("cut_3_hahdic")
+    .itemInputs("kubejs:hahdic_wafer")
+    .inputFluids([Fluid.of("minecraft:water",1000)])
+    .itemOutputs("kubejs:hahdic_chip")
     .EUt(GTValues.VA[GTValues.LuV]).duration(2000).cleanroom(CleanroomType.CLEANROOM)
 })
 
@@ -258,7 +313,8 @@ const convertMap = {
     'kubejs:ltmc_wafer': 'kubejs:dirty_processed_wafer',
     'kubejs:ancw': 'kubejs:dirty_processed_wafer',
     'kubejs:ctc_wafer': 'kubejs:dirty_processed_wafer',
-    'kubejs:cmc_wafer': 'kubejs:dirty_processed_wafer'
+    'kubejs:cmc_wafer': 'kubejs:dirty_processed_wafer',
+    'kubejs:hahdic_wafer': 'kubejs:dirty_processed_wafer'
 };
 
 function tryConvertItem(item) {
@@ -333,8 +389,10 @@ ServerEvents.tags('item', event => {
         'kubejs:ancw',
         'kubejs:prep_q_wafer',
         'kubejs:ctc_wafer',
-        'kubejs:cmc_wafer'
+        'kubejs:cmc_wafer',
+        'kubejs:hahdic_wafer'
     ]
     cleanWafers.forEach(wafer => event.add('kubejs:clean_wafer', wafer))
 })
+
 

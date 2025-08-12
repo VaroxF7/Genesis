@@ -13,6 +13,31 @@ ServerEvents.recipes(event => {
     .inputFluids([Fluid.of("gtceu:duranium",144),Fluid.of("gtceu:nichrome",144)])
     .outputFluids([Fluid.of("gtceu:darmstadtium",14)])
     .duration(50).EUt(GTValues.VA[GTValues.ZPM]).fusionStartEU(250000000)
+
+    event.recipes.gtceu.fusion_reactor("americium_new_1")
+    .inputFluids([Fluid.of("gtceu:lutetium",144),Fluid.of("gtceu:tritanium",144)])
+    .outputFluids([Fluid.of("gtceu:americium",144)])
+    .duration(50).EUt(GTValues.VA[GTValues.ZPM]).fusionStartEU(150000000)
+
+    event.recipes.gtceu.fusion_reactor("draconium_new_1")
+    .inputFluids([Fluid.of("gtceu:americium",144),Fluid.of("gtceu:tritanium",144)])
+    .outputFluids([Fluid.of("gtceu:unstable_draconium",144)])
+    .duration(50).EUt(GTValues.VA[GTValues.ZPM]).fusionStartEU(150000000)
+
+    event.recipes.gtceu.fusion_reactor("neutronium_new_1")
+    .inputFluids([Fluid.of("gtceu:draconium",288),Fluid.of("gtceu:rhodium",288)])
+    .outputFluids([Fluid.of("gtceu:unstable_neutronium",1)])
+    .duration(50).EUt(GTValues.VA[GTValues.ZPM]).fusionStartEU(200000000)
+
+    event.recipes.gtceu.fusion_reactor("stellaric_boosted_neutronium_fusion_1")
+    .inputFluids([Fluid.of("gtceu:neutronium",1),Fluid.of("gtceu:quantum_star",1)])
+    .outputFluids([Fluid.of("gtceu:stellaric_neutronium",1)])
+    .duration(50).EUt(GTValues.VA[GTValues.UV]).fusionStartEU(250000000)
+
+    event.recipes.gtceu.fusion_reactor("actinex_fusion_1")
+    .inputFluids([Fluid.of("gtceu:plutonium_241",1),Fluid.of("gtceu:beryllium",1)])
+    .outputFluids([Fluid.of("gtceu:actinex",1)])
+    .duration(50).EUt(GTValues.VA[GTValues.UV]).fusionStartEU(250000000)
 })
 
 // Fusion Fuel Recipes

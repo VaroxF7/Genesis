@@ -1,0 +1,533 @@
+{
+	autofocus_id: "4670A42616463119"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endless_power"
+	group: "1C1C4FB2AFCF489D"
+	id: "2B715DDEBE57F018"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "60E4EDF9FBCF9D97"
+			tasks: [{
+				id: "496B5054C7AFE614"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["60E4EDF9FBCF9D97"]
+			id: "16271037D4B3B8C2"
+			tasks: [{
+				id: "40FE5AD707C97403"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["769068D19067749E"]
+			id: "03115ADCA7D83A63"
+			tasks: [{
+				id: "40E34F8D874137F5"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"769068D19067749E"
+				"03115ADCA7D83A63"
+			]
+			id: "6DF40CD206A354B8"
+			tasks: [{
+				id: "0D47C9DF21AD9AD3"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"769068D19067749E"
+				"6DF40CD206A354B8"
+			]
+			id: "6A3525276AFCFD13"
+			tasks: [{
+				id: "7D4131A1E634E997"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["769068D19067749E"]
+			id: "6A719E87E638CF31"
+			tasks: [{
+				id: "3F075F83550559EA"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"769068D19067749E"
+				"6A719E87E638CF31"
+			]
+			id: "603C3BEC7F9EF538"
+			tasks: [{
+				id: "766250471B7ED615"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["769068D19067749E"]
+			id: "06E40ED6DE230E6F"
+			tasks: [{
+				id: "5C2A93D208855ADB"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "769068D19067749E"
+			tasks: [{
+				id: "768E7FABC34CD4D5"
+				title: "Combustable Fuel Generation"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41CECCC0FCD63A09"]
+			id: "510F8A2AB1350934"
+			tasks: [{
+				id: "34A2326850D6FA0C"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"41CECCC0FCD63A09"
+				"510F8A2AB1350934"
+			]
+			id: "24F36ADD20751306"
+			tasks: [{
+				id: "541CE0E50ABFD9CE"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41CECCC0FCD63A09"]
+			id: "2E91770B0DBFE894"
+			tasks: [{
+				id: "39B1578EEE75EB10"
+				item: "gtceu:lpg_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			id: "41CECCC0FCD63A09"
+			tasks: [{
+				id: "740D6800D12E58B3"
+				title: "Gasious Energy Generation"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			id: "3ABDB4418E939843"
+			subtitle: "basically a decay generator"
+			tasks: [{
+				id: "628480AB605F5070"
+				title: "phaseshifting generator"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ABDB4418E939843"]
+			id: "51403477466C47E1"
+			tasks: [{
+				id: "19E9F137889FFFF2"
+				title: "spent triaunite fuel rod"
+				type: "custom"
+			}]
+			title: "spent triaunite"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"51403477466C47E1"
+				"3ABDB4418E939843"
+			]
+			id: "00E0F24E4E8C221F"
+			tasks: [{
+				id: "64C19BAFA6DC87CD"
+				title: "spent awakend triaunite"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "1F000F6655684B79"
+			tasks: [{
+				id: "5CF71CDAAAA56AD7"
+				title: "naquadah fuel"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			id: "58BAF0C2E0C44E7A"
+			tasks: [{
+				id: "34B2B81AAB6AFEC2"
+				title: "subatomic energy"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["06E40ED6DE230E6F"]
+			id: "4486DA37840FCAB1"
+			tasks: [{
+				id: "20E7E19138A56499"
+				title: "rocket fuel mk2"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4486DA37840FCAB1"]
+			id: "505A220030CFEB35"
+			tasks: [{
+				id: "061EDC69151254F0"
+				title: "rocket fuel mk3"
+				type: "custom"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["769068D19067749E"]
+			id: "6860EA0463729874"
+			tasks: [{
+				id: "424A3D89100E94A3"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41CECCC0FCD63A09"]
+			id: "7CB5634942154837"
+			tasks: [{
+				id: "058F59D5E568AD05"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1F000F6655684B79"]
+			id: "43720E8FEC9FE6E7"
+			tasks: [{
+				id: "26B3172FF17D64B9"
+				item: "gtceu:naq_reactor"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["43720E8FEC9FE6E7"]
+			id: "3C234B17242F1F39"
+			tasks: [{
+				id: "6A14B6DAA476ED52"
+				item: "gtceu:naq_reactor_repulsor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F000F6655684B79"]
+			id: "462293512C26960E"
+			tasks: [{
+				id: "27C23A978062AD46"
+				item: "gtceu:naquadah_bolt"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6EB8B4175AA68FD0"]
+			id: "5B22F17298B1EF58"
+			tasks: [{
+				id: "55965828AD2B5D04"
+				item: "gtceu:naquadria_bolt"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["462293512C26960E"]
+			id: "6EB8B4175AA68FD0"
+			tasks: [{
+				id: "190EBAFCED740A0F"
+				item: "gtceu:naquadah_alloy_bolt"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F000F6655684B79"]
+			id: "2A4099A81A1C8A36"
+			tasks: [{
+				id: "6D79382D9BDB9175"
+				item: "gtceu:fuel_mixture_naquadic_1_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1F000F6655684B79"
+				"2A4099A81A1C8A36"
+			]
+			id: "101D0A15F026BCF1"
+			tasks: [{
+				id: "2B4555DED30FF2F0"
+				item: "gtceu:naquadic_combust_agent_2_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58BAF0C2E0C44E7A"]
+			id: "037F1872862A592B"
+			tasks: [{
+				id: "0B3F47DDB2D9B4F1"
+				title: "subatomic particles"
+				type: "custom"
+			}]
+			title: "spent subatomic particles"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "7A2B147C38AFFF06"
+			tasks: [{
+				id: "6B1BEF3D57BD5BA6"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			id: "7DD6EA960EBB30AA"
+			tasks: [{
+				id: "473B7D1824B405A7"
+				title: "plasma energy"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "63DF9670B4F13A17"
+			tasks: [{
+				id: "246A1E346D88AF4C"
+				item: "gtceu:iron_plasma_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "42907B063D3D8C0E"
+			tasks: [{
+				id: "1D4B40028FE85C49"
+				item: "gtceu:nickel_plasma_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "149B7CF52537F8BA"
+			tasks: [{
+				id: "60FE9ABB57718C13"
+				item: "gtceu:argon_plasma_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "486C1FBF72E62907"
+			tasks: [{
+				id: "6AAA4FE06E21E2E0"
+				item: "gtceu:helium_plasma_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "7EBFF74154AB8385"
+			tasks: [{
+				id: "16004080465B8432"
+				item: "gtceu:nitrogen_plasma_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "0C18B28FE1971C19"
+			tasks: [{
+				id: "1AC66C960C04539B"
+				item: "gtceu:oxygen_plasma_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "4F43DA5C998BF631"
+			tasks: [{
+				id: "2667EFD34F97B40A"
+				item: "gtceu:gallium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "43897439457353AC"
+			tasks: [{
+				id: "74439DEBDAACC627"
+				item: "gtceu:osmium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "65EBCDEF1C522668"
+			tasks: [{
+				id: "3BB52462DCBB0FF9"
+				item: "gtceu:iridium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "0C0E1B2D804B8718"
+			tasks: [{
+				id: "43402DF0FD3BD9B4"
+				item: "gtceu:yttrium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "1234C96B6E53455A"
+			tasks: [{
+				id: "4E5F7540845AB29F"
+				item: "gtceu:cobalt_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "106351FAC40F1AF8"
+			tasks: [{
+				id: "3F4D52888CD3991B"
+				item: "gtceu:tungsten_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "149472A923A49CCD"
+			tasks: [{
+				id: "614F8BE2770E399A"
+				item: "gtceu:samarium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DD6EA960EBB30AA"]
+			id: "496A1C09607AD605"
+			tasks: [{
+				id: "77BA8896070DBA54"
+				item: "gtceu:vanadium_pl_plasma_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+	]
+	title: "Endless Power"
+}

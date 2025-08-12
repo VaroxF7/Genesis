@@ -1,0 +1,2123 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "zpm__zero_point_module"
+	group: "693226878D58638A"
+	icon: "gtceu:zpm_electric_motor"
+	id: "0945247E83444D90"
+	order_index: 7
+	quest_links: [
+		{
+			id: "6BE70146903B5CBD"
+			linked_quest: "52D00CD3E8D1E293"
+			shape: "rsquare"
+			size: 0.66d
+			x: -1.5d
+			y: 2.25d
+		}
+		{
+			id: "21A3EAE297C446EC"
+			linked_quest: "24F0454B9A090C44"
+			size: 0.75d
+			x: -6.0d
+			y: 2.25d
+		}
+		{
+			id: "498218867478ABC1"
+			linked_quest: "0FD70C23C53A6FAB"
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			id: "48ED69865CEE309C"
+			linked_quest: "0EDA28012D057C05"
+			shape: "circle"
+			x: -8.5d
+			y: 12.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["24F0454B9A090C44"]
+			description: [
+				"The &aZero Point Module&r (item) is a non-rechargable battery with TONS of energy stored. You may have found one of these before now, but you haven't been able to discharge it until reaching &cZPM&r."
+				""
+				"These can only be found as loot from &6Jungle Temples&r. They're exceptionally rare - don't worry about finding one. "
+				""
+				"This quest is &6optional&r and is just for fun. Feel free to hit the checkbox if you just want the completion points!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Zero Point Module, the full name of the ZPM tier, is also from Stargate. Its namesake is a device which generated crazy amounts of energy."
+			]
+			icon: "gtceu:zero_point_module"
+			id: "75905E3672399A63"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Unlimited powah!"
+			tasks: [
+				{
+					id: "10AC8DC9332D084C"
+					item: "gtceu:zero_point_module"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AD0E74B9CD9AFAE"
+					type: "checkmark"
+				}
+			]
+			title: "Zero Point Module"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C7C0F6A6598BC24"]
+			description: [
+				"&aZPM Superconductors&r are a major gate between you and a &9Fusion Reactor Mk2&r, which uses copious amounts for its structure blocks."
+				""
+				"You can also use them to make &9Superconducting Coils&r for cheaper."
+			]
+			id: "2587BFD0D9F3FF4A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Getting tired of all these pitch-black ingots yet?"
+			tasks: [{
+				id: "5688605649CC30C3"
+				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
+				type: "item"
+			}]
+			title: "ZPM Superconductors"
+			x: -4.875d
+			y: 1.125d
+		}
+		{
+			dependencies: ["378F0AFCF95354B2"]
+			description: [
+				"&aEnriched Naquadah&r is an isotope of Naquadah, Nq-528. It is radioactive and will be used in (as of yet) unimplemented nuclear reactors."
+				""
+				"Currently, you just need it to make &9Trinium Coils&r."
+			]
+			icon: "gtceu:enriched_naquadah_ingot"
+			id: "74B037D7031F4A78"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Naquadah, but radioactive!"
+			tasks: [
+				{
+					id: "4598D1D78A71E514"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08B5C0B89DB3E272"
+					item: "gtceu:enriched_naquadah_ingot"
+					type: "item"
+				}
+			]
+			title: "Enriched Naquadah"
+			x: -4.875d
+			y: -1.125d
+		}
+		{
+			dependencies: [
+				"74B037D7031F4A78"
+				"0DC999F79A685194"
+				"2FCBA0D780DBDA9E"
+			]
+			description: [
+				"&aTrinium Coils&r bring up the Heat Capacity to &d9,001K&r."
+				""
+				"These coils are required for progressing to the second half of &cZPM&r, and beyond."
+			]
+			id: "4C7C0F6A6598BC24"
+			size: 0.75d
+			subtitle: "IT'S OVER 9000!!!"
+			tasks: [{
+				count: 16L
+				id: "11CD2F83031C6706"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "Trinium Coils"
+			x: -4.875d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52D952ADBEB67454"
+				"2587BFD0D9F3FF4A"
+			]
+			description: [
+				"The &3Research Station&r is the upgrade to the Scanner. It's used for more advanced forms of research, and will finally allow you to perform research which requires &aData Orbs and Modules&r."
+				""
+				"When running the &3Research Station&r, energy and &9Computation&r is needed. The latter is provided through an &9HPCA&r, which is explained in the next quest. It is recieved with a &3Computation Data Reception Hatch&r. Note that only one Reception Hatch is allowed in a Research Station."
+				"{@pagebreak}"
+				"This multiblock needs computation &dsporadically&r, which means the recipe will not reverse progress if you don't supply enough - it will simply halt in-place. However, the machine will still draw energy constantly, even when recieving no computation."
+				""
+				"To scan items, the process is relatively similar. In the &3Object Holder&r, place the target item in the center slot, and the data storage item in the other slot. Then provide computation, and the data storage item will be updated upon completion. When running, the target item will be Locked and cannot be removed."
+				""
+				"&eNote&r: To form this multiblock, the &3Object Holder&r must face the controller."
+			]
+			id: "468EEFD9D2F69014"
+			size: 0.75d
+			subtitle: "Your research adventures continue!"
+			tasks: [{
+				id: "148C1C60A855B61E"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			title: "Research Station"
+			x: -4.875d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"1D6CC3C7F6BE4055"
+				"7AE681E2AB31EA0D"
+			]
+			description: [
+				"The &aUV Mainframe&r is required to move into &3Fusion Mk2&r."
+				""
+				"It's also made in the Assembly Line."
+				""
+				"Passing over the ingredients we've already seen before, watch out for the &6HSS-E Frames&r."
+			]
+			id: "79E4E53E9DF45549"
+			size: 0.75d
+			subtitle: "...ah, here we go!"
+			tasks: [{
+				id: "226973A23C89BDD2"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			title: "First UV Circuits!"
+			x: -3.75d
+			y: 3.375d
+		}
+		{
+			dependencies: ["1D6CC3C7F6BE4055"]
+			description: [
+				"The &aCrystal SoC&r is used to make cheaper &9Crystal Circuits&r. Enjoy the discount!"
+				""
+				"Crystal SoCs require &9ZPM Emitters&r, which means you need a &9Data Orb&r for their research."
+				""
+				"In the future, these may become more difficult to make."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GT5u, the texture for this item was red, and did not have the special design on it. There was a \"raw\" version with the design, but it was used for other unrelated things. Who knows why?"
+			]
+			id: "29B7D93D7F32DBA9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "When engraving it once isn't enough"
+			tasks: [{
+				id: "488A759013AF2680"
+				item: "gtceu:crystal_soc"
+				type: "item"
+			}]
+			title: "Crystal SoC"
+			x: -3.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["1D6CC3C7F6BE4055"]
+			description: [
+				"This hatch allows you to store more &aData Storage Items&r than the basic one."
+				""
+				"Don't forget that this hatch requires a &9Data Orb&r for research."
+			]
+			id: "72740001958E929A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Increased storage density!"
+			tasks: [{
+				id: "0EC657B81458D697"
+				item: "gtceu:advanced_data_access_hatch"
+				type: "item"
+			}]
+			title: "Advanced Data Access Hatch"
+			x: -2.625d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"378F0AFCF95354B2"
+				"4C7C0F6A6598BC24"
+			]
+			description: ["&aNaquadria&r is an isotope of Naquadah, Nq-522. It's highly unstable, but it'll still be used for &3UV&r components, &9Fusion Mk2&r, and when fusing Neutronium."]
+			icon: "gtceu:naquadria_ingot"
+			id: "6D1F10543A391940"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Naquadah, but radioactive-er!"
+			tasks: [
+				{
+					id: "4A49FE8B35B48D97"
+					item: "gtceu:naquadria_sulfate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "13A95E109FF72A87"
+					item: "gtceu:naquadria_ingot"
+					type: "item"
+				}
+			]
+			title: "Naquadria"
+			x: -2.625d
+			y: 0.0d
+		}
+		{
+			dependencies: ["690E013DFCB060ED"]
+			description: [
+				"Production of &aSterilized Growth Medium&r is the final processing line in GTCEu, for now."
+				""
+				"You will need this for your first &4Wetware Circuits&r."
+				""
+				"Producing it won't be as much of a hassle as PBI, but nearly every step requires a Sterilized Cleanroom. This means you'll have to get creative with how you use your space."
+				""
+				"Make sure to scrutinise every step of the chain. Some recipes are much more efficient than others!"
+				""
+				"&ePro Tip&r: You can wall-share cleanrooms with doors in-between too if you want more space."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o GTCEu's Sterilized Growth Medium chain is loosely based off of Bartworks' from GTNH. The main difference is that GTNH required a Bacterial Vat multiblock, which was more complex than the ordered Assembly Line. GTCEu is considering adding a multiblock like it but with their own spin in the future."
+				"{@pagebreak}"
+				"&l&3More Lore:&r&o In Gregicality Legacy, the Sterilized Growth Medium production chain was very different. It was one of the most difficult processes in the mod, with over 30 complicated steps! It was based off of producing different real-life vitamins and nutrients."
+				"{@pagebreak}"
+				"&l&3Even More Lore:&r&o In Shadows of Greg, this was made with just Distilled Water and Mince Meat. How far we've come..."
+			]
+			id: "6AFDA523304711DB"
+			size: 0.75d
+			subtitle: "The final processing line, at last!"
+			tasks: [{
+				id: "5FFC06116E025936"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			title: "Sterilized Growth Medium"
+			x: -0.375d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"64EA73FAB2A51850"
+				"0D7C978F9CDF771B"
+			]
+			description: [
+				"The &aZPM Lapotronic Orb&r is even better than the &dLuV&r one! It of course comes at a price..."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Imagine making 64 &1IV&f or 8 &dLuV&f Orbs for just one of these! See the Lore for the &dLuV&f orb for details."
+			]
+			icon: "gtceu:energy_module"
+			id: "690A51204DF5D469"
+			size: 0.75d
+			subtitle: "A power singularity!"
+			tasks: [
+				{
+					id: "41813C4D68B991D7"
+					item: "gtceu:energy_module"
+					type: "item"
+				}
+				{
+					id: "705422BF26C76199"
+					item: "gtceu:zpm_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Mega Batteries"
+			x: -1.5d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"1D6CC3C7F6BE4055"
+				"52D00CD3E8D1E293"
+				"7A74F692F14F0FF8"
+				"468EEFD9D2F69014"
+				"24F0454B9A090C44"
+			]
+			description: [
+				"This Quest will be completed with &eeither&r a &3ZPM Energy Hatch&r&r... or a &3ZPM Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Don't forget that &d16 Amp&r variants exist!"
+				""
+				"Don't forget that these hatches require a &9Data Orb&r for research."
+			]
+			icon: "gtceu:zpm_energy_input_hatch"
+			id: "64EA73FAB2A51850"
+			shape: "rsquare"
+			size: 0.75d
+			tasks: [
+				{
+					id: "0B57097F8879481C"
+					item: "gtceu:zpm_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "2C60B79F78094E6A"
+					item: "gtceu:zpm_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line II"
+			x: -2.625d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"35F13B6D60361904"
+				"3568BC9742092FC5"
+			]
+			description: [
+				"The &aSterilized Cleanroom&r is required to produce the next tier of circuits. Nearly every step must be performed inside of one. Good luck fitting everything into such a tight space!"
+				""
+				"If you only have one &3Cleanroom&r, you'll need another for &aSterilized&r recipes."
+				""
+				"&eNote&r: Normal Cleanroom recipes cannot run in the Sterilized Cleanroom, so you can't just \"upgrade\" your old Cleanrooms."
+			]
+			id: "690E013DFCB060ED"
+			size: 0.75d
+			subtitle: "Comes with disinfectant!"
+			tasks: [{
+				count: 8L
+				id: "6A4C78385FF8019A"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			title: "Sterilized Cleanroom"
+			x: -0.375d
+			y: 2.25d
+		}
+		{
+			dependencies: ["468EEFD9D2F69014"]
+			description: [
+				"The &3High Performance Computation Array&r, also known as the &3HPCA&r, is the multiblock used to create &9Computation&r, measured in CWU/t (Compute-Work Units per tick)."
+				""
+				"The HPCA is a modular multiblock with many unique components you've likely not seen before. There are &a9 slots available&r for different components, and there are some example layouts in the EMI previews, so reviewing these may help if you feel confused."
+				"{@pagebreak}"
+				"There are two main types of components:"
+				""
+				"- &9Computation Components&r: These generate CWU/t and require EU/t and cooling."
+				"- &9Cooling Components&r: These provide a certain amount of cooling, and require EU/t."
+				""
+				"Currently Available Components:"
+				""
+				"- &9Empty&r: Fills a slot but otherwise does nothing."
+				"-&9 Heat Sink&r: Requires no power but provides 1 cooling."
+				"- &9Active Cooler&r: Requires power, PCB Coolant, but provides 2 cooling."
+				"- &9Computation&r: Creates 4 CWU/t, but requires a lot of power and cooling."
+				"{@pagebreak}"
+				"The HPCA draws some power to idle. Its power and cooling requirements will sit between the idle upkeep power and a maximum value depending on how much computation is being used."
+				""
+				"If the HPCA is not given enough cooling, Computation components can be &4damaged&r if it is allowed to run above &c100C&r (the idle temperature is &a20C&r). Only computation components can be damaged - all other blocks will be unharmed!"
+				""
+				"The HPCA can only have 1 &3Computation Data Transmission Hatch&r. You can connect it to the Reception Hatch of the &9Research Station&r with Optical Fiber Cable to transmit the computation."
+				"{@pagebreak}"
+				"Basic CWU/t Requirements for ZPM Tier:"
+				""
+				"- &a4 CWU/t&r for &cZPM&r Sensors, Emitters, and Field Generators"
+				"- &a8 CWU/t&r for &cZPM&r Enegy Hatches"
+				"- &a16 CWU/t&r for &3UV&r Circuits and beyond."
+				""
+				"Don't feel forced to go for 16 CWU/t immediately. There's lots to do in between these milestones."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This mechanic is loosely inspired by TecTech's Quantum Computer, which is similar but has some much more annoying mechanics like the Uncertainty Resolver."
+			]
+			id: "1D6CC3C7F6BE4055"
+			size: 0.75d
+			subtitle: "That's no Quantum Computer..."
+			tasks: [{
+				id: "5F20D430C26D3BE4"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
+			}]
+			title: "HPCA"
+			x: -3.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["6AFDA523304711DB"]
+			description: ["&aStem Cells&r are a major component of &4Wetware Circuits&r. Just don't question why these use Osmiridium."]
+			id: "33A1FF5C31EAF716"
+			size: 0.75d
+			subtitle: "This texture used to be really ugly..."
+			tasks: [{
+				id: "1E31342D5310ED6D"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			title: "Stem Cells"
+			x: -0.375d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33A1FF5C31EAF716"]
+			description: [
+				"The final circuit board - it's been a long time coming! As you can see, this board is &cmuch&r more expensive than the other ones, but you should be alright. You're a pro now!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GTNH, these circuit boards require LuV Sensors, instead of IV. This means that Wetware LuV circuits, needed other (crystal) LuV circuits!"
+				""
+				"Additionally, because Wetware was so expensive, using Crystal was preferred unless UHV wetware circuits were needed. Thankfully, CEu does not have this problem, and LuV Wetware Circuits are worth making."
+			]
+			id: "678CABA03E17516A"
+			size: 0.75d
+			subtitle: "The board of life itself"
+			tasks: [{
+				id: "0097D7805D82EDEC"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Wetware Printed Circuit Board"
+			x: -0.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["678CABA03E17516A"]
+			description: ["The &aNeuro Processing Unit&r serves as the CPU for &4Wetware&r. It also takes a circuit board in its recipe, but don't let that scare you."]
+			id: "3BD68E5909A97532"
+			size: 0.75d
+			subtitle: "Neurons for computation"
+			tasks: [{
+				id: "06AE61C5F174F4E7"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			title: "It's Alive!"
+			x: 0.75d
+			y: -1.125d
+		}
+		{
+			dependencies: ["082AB255886E73C2"]
+			description: [
+				"The second circuit of the &4wetware&r line."
+				""
+				"This is also the best &cZPM&r circuit!"
+			]
+			id: "370FC1CDF5F9A9CC"
+			size: 0.75d
+			subtitle: "Did that circuit just BLINK at me?"
+			tasks: [{
+				id: "31DF7507733F3EE0"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			title: "Best ZPM Circuits!"
+			x: 0.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["3BD68E5909A97532"]
+			description: [
+				"The first Circuit of the &4Wetware&r line."
+				""
+				"&6Congrats&r!"
+			]
+			id: "082AB255886E73C2"
+			size: 0.75d
+			subtitle: "Eek, it's alive!"
+			tasks: [{
+				id: "0B12A1F63822CF8A"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			title: "Best LuV Circuits!"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24366846FDA52CE3"]
+			description: [
+				"Remember &aDarmstadtium&r tools from &3GTCE&r? Well then... guess who's back?"
+				""
+				"&aDarmstadtium&r is the main material for &3UV&r hulls. It is yet again made with Fusion."
+				"{@pagebreak}"
+				"&bFun Fact&r: Arsenic does not exist as a liquid at standard conditions. It sublimates directly into a gas! \"Realism\", my ass."
+			]
+			id: "6988AE94BE7B461F"
+			size: 0.75d
+			subtitle: "I want my particle accelerator back..."
+			tasks: [{
+				id: "798EFE8E18E79C0C"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			title: "Darmstadtium"
+			x: -2.625d
+			y: 4.5d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"&aDuranium&r is a material from Star Trek, and is used for a few things in GT. It makes some pretty awesome pipes, but otherwise you won't need much of this quite yet."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In some versions of GT5u, this material was entirely white. In fact, most fusion materials and later were like this. Boring!"
+			]
+			id: "2CB8FCE09920042C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Who needs Stargate, anyway?"
+			tasks: [{
+				id: "0933A476B9F87E66"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			title: "Duranium"
+			x: -0.375d
+			y: 4.5d
+		}
+		{
+			dependencies: ["24366846FDA52CE3"]
+			description: [
+				"&aAmericium&r is a Fusion Mk2 material, used in large quantities in CEu progression!"
+				""
+				"It requires 2 Fusion steps to obtain - Lanthanum and Silicon will make &bLutetium&r, and combining this &bLutetium&r with Chrome will give you &aAmericium&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Gregicality Legacy, Americium was replaced with Dubnium. Americium is a material only obtained from nuclear reactors, so GCYL changed it to the synthetic element Dubnium instead."
+			]
+			id: "762C48F0C2EA6B81"
+			size: 0.75d
+			subtitle: "It'd be nice if we could make this in a nuclear reactor..."
+			tasks: [{
+				id: "5D597AE565A54388"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			title: "Americium"
+			x: -1.5d
+			y: 3.375d
+		}
+		{
+			dependencies: ["370FC1CDF5F9A9CC"]
+			description: [
+				"The third circuit of the &4wetware&r line. Get some &bEuropium&r to make these."
+				""
+				"This is also the best &3UV&r circuit!"
+			]
+			id: "359121584E056022"
+			size: 0.75d
+			subtitle: "Sentience in circuit form"
+			tasks: [{
+				id: "5F54BE8467A5C882"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			title: "Best UV Circuits!"
+			x: 0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["79E4E53E9DF45549"]
+			description: [
+				"&3Advanced HPCA Components&r are improved versions of their regular counterparts, and allow for increasing the computation you can produce from an HPCA."
+				""
+				"The &3HPCA Advanced Computation Component&r produces &a4x&r the computation for only &a2x&r the Cooling!"
+			]
+			id: "0199DBC46D7BC2B9"
+			size: 0.75d
+			subtitle: "Time for some computational advancement!"
+			tasks: [{
+				id: "761AFCD5742F9A03"
+				item: "gtceu:hpca_advanced_computation_component"
+				type: "item"
+			}]
+			title: "Advanced HPCA Components"
+			x: -4.875d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"6D1F10543A391940"
+				"64EA73FAB2A51850"
+				"79E4E53E9DF45549"
+			]
+			description: [
+				"Build the structure displayed with Fusion Glass in &aEMI&r."
+				""
+				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"The &aFusion Reactor Mk2&r is even more expensive than the Mk1! The key difference is that it has a higher &6Energy To Start&r than the Mk1, allowing you to run new recipes."
+				""
+				"It can also overclock lower voltage recipes, such as those in the Mk1 reactor. See the Mk1's quest for how these mechanics work."
+			]
+			id: "24366846FDA52CE3"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Fusion just got more expensive..."
+			tasks: [{
+				id: "0D45B9FFF6BA13FE"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor II"
+			x: -2.625d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"2CB8FCE09920042C"
+				"24366846FDA52CE3"
+			]
+			description: [
+				"&aTritanium&r is a material from Star Trek, and is used for a few other things in GT. It, like &9Americium&r, requires two fusion steps!"
+				""
+				"You'll need this to get the next tier of circuits, and for &3UV&r components."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In some versions of GT5u, only Tritanium fluid was red. The material was otherwise white. In GTCEu, we decided to make the whole thing red instead. Much better looking!"
+			]
+			id: "35F13B6D60361904"
+			size: 0.75d
+			subtitle: "Star Trek strikes again!"
+			tasks: [{
+				id: "6C5B3B1C0B85C003"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "Tritanium"
+			x: -0.375d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"01469247A51ACEC9"
+				"45D65A9BF1F343AB"
+				"7F9F587BDD4C2A43"
+				"691E42A896A631FF"
+				"6391AD1CF0830B2D"
+			]
+			id: "77511A9AEC1600A5"
+			size: 1.5d
+			tasks: [{
+				id: "2B1A7473ABC064C1"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31DBCBA5C122F0D6"]
+			id: "01469247A51ACEC9"
+			shape: "circle"
+			tasks: [{
+				id: "3A536AA9DDCF24FA"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["77511A9AEC1600A5"]
+			id: "068E31C89A50FAFB"
+			shape: "circle"
+			tasks: [{
+				id: "68045C8C58A43510"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["77511A9AEC1600A5"]
+			id: "05B90537AFEC3DCA"
+			shape: "circle"
+			tasks: [{
+				id: "5C3844F8BAADDD36"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"77511A9AEC1600A5"
+				"6391AD1CF0830B2D"
+			]
+			id: "72BA9410EF513BDE"
+			shape: "circle"
+			tasks: [{
+				id: "53688FADCB560017"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			id: "6391AD1CF0830B2D"
+			shape: "circle"
+			tasks: [{
+				id: "69B13055D5180D5F"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["72BA9410EF513BDE"]
+			id: "05C17B8FE87AA66F"
+			tasks: [{
+				id: "4286B4793E3D48E7"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"6105653658D7D96B"
+				"0FD70C23C53A6FAB"
+				"7F9F587BDD4C2A43"
+			]
+			id: "45D65A9BF1F343AB"
+			tasks: [{
+				id: "019408687FD8921D"
+				item: "gtceu:zpm_energy_input_hatch"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"05DC89D0D743D491"
+				"0FD70C23C53A6FAB"
+				"488E8D5600FEDBB9"
+			]
+			id: "6105653658D7D96B"
+			tasks: [{
+				id: "2B2E367539BFA77F"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0FD70C23C53A6FAB"]
+			id: "488E8D5600FEDBB9"
+			tasks: [{
+				id: "21F11422BCE640F5"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["31DBCBA5C122F0D6"]
+			icon: "gtceu:uranium_rhodium_dinaquadide_ingot"
+			id: "05DC89D0D743D491"
+			shape: "circle"
+			tasks: [
+				{
+					id: "1C9DD92CE17F46CF"
+					item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
+					type: "item"
+				}
+				{
+					id: "18E6429F5F35B23F"
+					item: "gtceu:uranium_rhodium_dinaquadide_ingot"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5AD0735A494030B7"]
+			id: "31DBCBA5C122F0D6"
+			tasks: [{
+				id: "1A95FECD720EB070"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["488E8D5600FEDBB9"]
+			id: "6EDE0724FB50FBAA"
+			tasks: [{
+				id: "6E6751C1FD4C8087"
+				item: "gtceu:advanced_data_access_hatch"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0FD70C23C53A6FAB"]
+			id: "691E42A896A631FF"
+			shape: "circle"
+			tasks: [
+				{
+					id: "58B652CCEFA68661"
+					item: "gtceu:zpm_electric_motor"
+					type: "item"
+				}
+				{
+					id: "526D2E78E16CB17F"
+					item: "gtceu:zpm_electric_pump"
+					type: "item"
+				}
+				{
+					id: "57DE104FA4627F2D"
+					item: "gtceu:zpm_robot_arm"
+					type: "item"
+				}
+				{
+					id: "6BEB382C34C4DE27"
+					item: "gtceu:zpm_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "749DEE2377CC66F4"
+					item: "gtceu:zpm_field_generator"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0FD70C23C53A6FAB"
+				"6D75B052FE36AE15"
+				"56D73F6E52CED589"
+				"0EDA28012D057C05"
+				"488E8D5600FEDBB9"
+				"58C1B0C88E0E9187"
+			]
+			description: [
+				"This is probably the biggest &6Power Generator&r you will build for now... "
+				""
+				"The &6Fuel&r is a very dense Mixture of Various &2Fuels&r, &2Combustables&r and &2Gases&r. "
+				""
+				"This &6Quest&r Shows both &2MK1&r and &2MK2 Fuel&r, you can come back here and do your quests how you like them."
+			]
+			id: "39E01513B6098C2D"
+			size: 1.5d
+			tasks: [{
+				id: "7FFC749985576E05"
+				item: "gtceu:naq_reactor_repulsor"
+				type: "item"
+			}]
+			title: "&6Naquadah Pulsating Reactor"
+			x: -7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"72BA9410EF513BDE"
+				"068E31C89A50FAFB"
+			]
+			id: "27A2BC7E56D55066"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "combination of tritanium and americium"
+			tasks: [
+				{
+					id: "40D19DBC96706D79"
+					item: "gtceu:unstable_draconium_bucket"
+					type: "item"
+				}
+				{
+					id: "0B595898650BDA31"
+					item: "gtceu:draconium_ingot"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["05B90537AFEC3DCA"]
+			id: "782BA80C94802CF8"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "78C88E19B110870C"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1434D6C42AB38999"]
+			id: "67B9668B76D115D2"
+			tasks: [{
+				id: "498FFF9D1F6F09DD"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"67B9668B76D115D2"
+				"0B1D1A4B390F8740"
+				"1434D6C42AB38999"
+			]
+			id: "2B57B7B6CC054A05"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "0175D66DFE69B693"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["27A2BC7E56D55066"]
+			description: ["thsi needs draconium"]
+			id: "20D5162A48CEBBC4"
+			subtitle: "look in ZPM quest line, alos change recipe to mk2"
+			tasks: [{
+				id: "154F8AF91CAFCD27"
+				item: "gtceu:unstable_neutronium_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"35D9EC921AFC37B1"
+				"1C94CD9E4ACAFED1"
+				"1C2FE036D1C44A75"
+				"7403329C8D868813"
+			]
+			id: "7006E5379EFB46E8"
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "now yet another fusion ring"
+			tasks: [{
+				id: "507915F7E2317C87"
+				title: "super poisition draconic compression reactor"
+				type: "custom"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3473406BD451FF8F"]
+			description: [
+				"cools down the palsma and generates 750.000 Energy"
+				""
+				"gives excited neutronium plasma, which you can run thruplasma turbine"
+			]
+			icon: "gtceu:rhodium_gear"
+			id: "5E79FCCF47640A93"
+			subtitle: "this generated around 1.000.000 EU/t"
+			tasks: [
+				{
+					id: "3D7C443F8F17022D"
+					title: "Power Gen"
+					type: "checkmark"
+				}
+				{
+					id: "0F57753CC20157DF"
+					item: "gtceu:rhodium_gear"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["05C17B8FE87AA66F"]
+			id: "278EC0F6E0AD3618"
+			tasks: [{
+				id: "6A57C37B08F5F3BF"
+				item: "gtceu:fermented_biomass_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["278EC0F6E0AD3618"]
+			id: "260EB7BB77778A7E"
+			tasks: [{
+				id: "4CFD3B6CBA4F72C2"
+				item: "gtceu:blood_plasma_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["278EC0F6E0AD3618"]
+			id: "4E0B57431C01D31B"
+			tasks: [{
+				id: "313002A7B868641A"
+				item: "gtceu:blood_cells_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"260EB7BB77778A7E"
+				"317423E642146F0F"
+			]
+			id: "40ED806E9BA550D9"
+			tasks: [{
+				id: "57EC6495875EDCAA"
+				item: "gtceu:plasma_enriched_blood_cells_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 13.0d
+		}
+		{
+			id: "317423E642146F0F"
+			tasks: [
+				{
+					id: "474030E98EBFD30B"
+					item: "gtceu:glucose_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "3887551F62664A81"
+					item: "gtceu:concentrated_bromine_solution_bucket"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 12.0d
+		}
+		{
+			id: "6194E4961CD102F8"
+			tasks: [
+				{
+					id: "6607616146E46C2B"
+					item: "gtceu:saline_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "597DE4E301FBA24D"
+					item: "gtceu:mutagen_bucket"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"40ED806E9BA550D9"
+				"0D2EE3AB36C0E59C"
+				"6194E4961CD102F8"
+			]
+			id: "74FC53835E76F8AC"
+			tasks: [{
+				id: "6F9AD0B74DF1AD4A"
+				item: "gtceu:dna_fragments_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"260EB7BB77778A7E"
+				"74FC53835E76F8AC"
+			]
+			id: "4B185F6E4ABDD34D"
+			tasks: [{
+				id: "7323D17DDD427A7B"
+				item: "gtceu:blood_devrived_genetic_material_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.0d
+		}
+		{
+			id: "0D2EE3AB36C0E59C"
+			tasks: [{
+				id: "5BD69B9B024159D9"
+				item: "gtceu:nutrient_medium_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"4B185F6E4ABDD34D"
+				"0D2EE3AB36C0E59C"
+			]
+			id: "120F6EACE72BAB2C"
+			tasks: [{
+				id: "7B08C40B0408F7EA"
+				item: "gtceu:evolved_bacterial_culture_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"120F6EACE72BAB2C"
+				"4FBD98A590570F56"
+			]
+			id: "2F42E6F90FD3AD05"
+			tasks: [{
+				id: "3A94A3E9812CC41F"
+				item: "gtceu:mutated_bacterial_sludge_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			id: "4FBD98A590570F56"
+			tasks: [
+				{
+					id: "6F98E5E4ECE255FB"
+					item: "gtceu:sodium_hydroxide_dust"
+					type: "item"
+				}
+				{
+					id: "221690D3DC31B565"
+					item: "gtceu:barium_sulfide_dust"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"2F42E6F90FD3AD05"
+				"5604B41D432EEC71"
+			]
+			id: "246139265CD395E5"
+			tasks: [{
+				id: "779423CB8F76823F"
+				item: "gtceu:purified_generic_mass_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			id: "5604B41D432EEC71"
+			tasks: [{
+				id: "3083587E56A21A41"
+				item: "gtceu:ammonium_formate_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"246139265CD395E5"
+				"562B878F76D90671"
+			]
+			id: "170D671184D8AB91"
+			tasks: [{
+				id: "0160353A30C0548B"
+				item: "gtceu:recombinated_dna_strands_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			id: "562B878F76D90671"
+			tasks: [
+				{
+					id: "284154D64CA560F2"
+					item: "gtceu:deuterium_oxide_bucket"
+					type: "item"
+				}
+				{
+					id: "4A8B96C6C07DE362"
+					item: "gtceu:nitrous_oxide_bucket"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["170D671184D8AB91"]
+			id: "774AD0C2AB848BD1"
+			tasks: [{
+				id: "02AEDCFC24778C3E"
+				item: "gtceu:proto_cell_cluster_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["4E0B57431C01D31B"]
+			id: "53806DB2192E08C3"
+			tasks: [{
+				id: "658108BB5430C025"
+				item: "gtceu:cryogenic_blood_cells_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"53806DB2192E08C3"
+				"4BFC94FE7FB3EC78"
+			]
+			id: "21E086C269B092C6"
+			tasks: [{
+				id: "62B421B6698AC0BB"
+				item: "gtceu:hematogenic_catalyst_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 14.0d
+		}
+		{
+			id: "4BFC94FE7FB3EC78"
+			tasks: [{
+				id: "237AEA9CD2B8F93A"
+				item: "gtceu:xenon_oxide_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"21E086C269B092C6"
+				"2F42E6F90FD3AD05"
+			]
+			id: "729DC9707D762836"
+			tasks: [{
+				id: "5A5F7589962A9E12"
+				item: "gtceu:beta_cell_cluster_bucket"
+				type: "item"
+			}]
+			title: "beta cell cluster"
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"729DC9707D762836"
+				"774AD0C2AB848BD1"
+			]
+			id: "41408F3B1F7B9C5B"
+			tasks: [{
+				id: "76B82767E10B153F"
+				item: "gtceu:stabilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"41408F3B1F7B9C5B"
+				"36718AC82A649A06"
+			]
+			id: "31F8A200374AF9C3"
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "32453C1660C0F88D"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["74FC53835E76F8AC"]
+			id: "2674E7A8691CC04B"
+			tasks: [{
+				id: "1BFB7A9AF5B80F90"
+				item: "gtceu:protein_slurry_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["278EC0F6E0AD3618"]
+			id: "1931CC454479C6CA"
+			tasks: [{
+				id: "12821B1C1379E452"
+				item: "gtceu:petri_dish"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1931CC454479C6CA"]
+			id: "453A6EB6FAD7CFA3"
+			tasks: [{
+				id: "46D182DADB307602"
+				item: "kubejs:culture_1"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1931CC454479C6CA"]
+			id: "28044F7C09DCDB71"
+			tasks: [{
+				id: "1341A33062AE621D"
+				item: "kubejs:culture_2"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"453A6EB6FAD7CFA3"
+				"4BFC94FE7FB3EC78"
+			]
+			id: "3FD0AC6EFB4987DF"
+			tasks: [{
+				id: "26B7F3813CD3853A"
+				item: "kubejs:cell_1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"28044F7C09DCDB71"
+				"4BFC94FE7FB3EC78"
+			]
+			id: "4833457395F7A63E"
+			tasks: [{
+				id: "2A9A1F7F49483DCD"
+				item: "kubejs:cell_2"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"3FD0AC6EFB4987DF"
+				"4833457395F7A63E"
+			]
+			id: "36718AC82A649A06"
+			tasks: [{
+				id: "56AD72D84D244908"
+				item: "gtceu:raw_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2674E7A8691CC04B"]
+			id: "0DAD0BFA6405100C"
+			tasks: [{
+				id: "791A17670AD9A21F"
+				item: "gtceu:high_purity_protein_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"31F8A200374AF9C3"
+				"0DAD0BFA6405100C"
+			]
+			id: "1434D6C42AB38999"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "1C770C1DD6C76304"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"2B57B7B6CC054A05"
+				"08F3B8D788185846"
+				"71CCD6E846531593"
+			]
+			description: [
+				"So, now you will probably have seen, the costs have changed quiet a bit, its all a bit more expensive and more massiv, that is wanted, we want to make a &3HUGE FACTORY RIGHT?&r yeah."
+				""
+				"You can &2Choose&r which &2Chip&r you want to use for the recipe, the &3HASoC&r or the &3Highly Advanced Qubit Central Processiong Unit&r or &3HAQCPU&r for short."
+			]
+			id: "7FC9EA935825448A"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "&6- The First Optical Ready Circuit! -&r"
+			tasks: [{
+				id: "07C7A047B8060254"
+				item: "kubejs:biotine_supercomputer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["5F971ACC5477793B"]
+			id: "08F3B8D788185846"
+			tasks: [{
+				id: "4F4842162E654BC4"
+				item: "gtceu:highly_advanced_soc"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5F971ACC5477793B"]
+			id: "71CCD6E846531593"
+			subtitle: "highly advanced high density interconnect chip"
+			tasks: [{
+				id: "61FC6CA97234A101"
+				item: "kubejs:hahdic_chip"
+				type: "item"
+			}]
+			title: "HAHDIC"
+			x: 6.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6FFE646D6E2ED1C8"]
+			id: "11C4D38E699F2D85"
+			tasks: [{
+				id: "63E6CFC999AC9745"
+				item: "gtceu:neutronium_wafer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"11C4D38E699F2D85"
+				"2A828F6597C15A6B"
+			]
+			id: "5F971ACC5477793B"
+			tasks: [{
+				id: "7D6AE6509C679884"
+				item: "kubejs:prepared_neutronium_wafer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"29E877F7AC494CEF"
+				"70CA2AF61CD041C1"
+			]
+			id: "6FFE646D6E2ED1C8"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "quantum star in liquid form and neutronium"
+			tasks: [
+				{
+					id: "30584F5E5EBEE0E3"
+					item: "gtceu:stellaric_neutronium_bucket"
+					type: "item"
+				}
+				{
+					id: "2F2306F49FF54565"
+					item: "gtceu:quantum_star_bucket"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["27A2BC7E56D55066"]
+			id: "35D9EC921AFC37B1"
+			subtitle: "this is NC, but needs to be crafted once"
+			tasks: [{
+				id: "78210177D2666173"
+				item: "kubejs:draconic_reflector"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3C4FF01D0E58C990"]
+			id: "1C94CD9E4ACAFED1"
+			tasks: [{
+				id: "153EEEEA6E416536"
+				item: "gtceu:actinex_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "3C4FF01D0E58C990"
+			tasks: [{
+				id: "62A7747705F9DB56"
+				item: "gtceu:plutonium_241_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["77511A9AEC1600A5"]
+			id: "7F568D0BDD30A3DA"
+			shape: "circle"
+			subtitle: "naquadria + silver"
+			tasks: [{
+				id: "0F7F97D53C1A892B"
+				item: "gtceu:silquadria_plasma_bucket"
+				type: "item"
+			}]
+			title: "silquadria"
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"7F568D0BDD30A3DA"
+				"357C780408C31C09"
+			]
+			id: "1C2FE036D1C44A75"
+			shape: "circle"
+			subtitle: "fuel source"
+			tasks: [{
+				id: "6D918617AA89068E"
+				item: "gtceu:silquadria_fuel_plasma_bucket"
+				type: "item"
+			}]
+			title: "silquadria fuel"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["27A2BC7E56D55066"]
+			id: "294925AF929C9BB9"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "4068FA52FC6D7634"
+				title: "supercolling chamber"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["294925AF929C9BB9"]
+			id: "7403329C8D868813"
+			shape: "circle"
+			tasks: [{
+				id: "4A06809BBD3981DA"
+				item: "gtceu:supercooled_cryotheum_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["sterling silver n. neon"]
+			id: "0B1D1A4B390F8740"
+			shape: "circle"
+			subtitle: "fusion recipe mk1"
+			tasks: [{
+				id: "0B7EB395A98A93EC"
+				title: "custom fine wire"
+				type: "custom"
+			}]
+			title: "neon cadmide"
+			x: 7.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"294925AF929C9BB9"
+				"7006E5379EFB46E8"
+				"030609F9D86AC769"
+			]
+			id: "3473406BD451FF8F"
+			tasks: [{
+				id: "2528606E06B0941E"
+				title: "superciritil phaseshifting Plasma Generator"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"294925AF929C9BB9"
+				"0009F48B6E385A47"
+			]
+			id: "29E877F7AC494CEF"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "166D0C40814DB1AE"
+				title: "neutronion collision chamber"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["29E877F7AC494CEF"]
+			id: "1F7D753ADC71C344"
+			subtitle: "made from, tungsten plasma, iridium plasma,naquadria plasma"
+			tasks: [{
+				id: "5A9D09A9506B78EC"
+				title: "new metal for UV"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&2Subatomic Patterning Gel (SAP-Gel)&r"
+				""
+				""
+				"&6Polybenzimidazole Gel&r (wärmeresistenter Träger)"
+				"&aTriazirinyl-Ether&r (fiktives UV-Vernetzungsmittel)"
+				"&5Petroxide Suspension&r (oxidativer Entwickler für Neutronium)"
+				"&cTritium Alcoholate&r (radioaktive Aktivierung bei Belichtung)"
+			]
+			id: "2A828F6597C15A6B"
+			subtitle: "recipe in desc - gpt"
+			tasks: [{
+				id: "1DC6CD13A31A116D"
+				item: "gtceu:subatomic_pattering_gel_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["29E877F7AC494CEF"]
+			icon: "gtceu:rhodium_gear"
+			id: "35FD479A7BDED1AE"
+			subtitle: "this take CWU to function"
+			tasks: [
+				{
+					id: "04A8598DC59BDEDD"
+					title: "Time to Upscale your CWU Array Section!"
+					type: "checkmark"
+				}
+				{
+					id: "5399868B48547799"
+					item: "gtceu:rhodium_gear"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["20D5162A48CEBBC4"]
+			id: "70CA2AF61CD041C1"
+			tasks: [
+				{
+					id: "0560805E81FB2EAB"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+				{
+					id: "5F8DA11BFD4F168C"
+					item: "gtceu:neutronium_bucket"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"6391AD1CF0830B2D"
+				"0FD70C23C53A6FAB"
+				"221AC1D5CE145055"
+			]
+			id: "7F9F587BDD4C2A43"
+			tasks: [{
+				id: "1FC21E3EF27AEA72"
+				item: "kubejs:t1_circuit_zpm"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"7F9F587BDD4C2A43"
+				"691E42A896A631FF"
+			]
+			id: "73752506962D3ADF"
+			shape: "circle"
+			tasks: [
+				{
+					id: "111898A65DBB71DE"
+					item: "gtceu:zpm_emitter"
+					type: "item"
+				}
+				{
+					id: "1D09BDD567ED312C"
+					item: "gtceu:zpm_sensor"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["39E01513B6098C2D"]
+			id: "6BBA61188790DB4D"
+			tasks: [{
+				id: "271A9E45B19E7402"
+				item: "gtceu:decay_naquadric_acid_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6BBA61188790DB4D"]
+			id: "799A4EDC1B2B83EA"
+			tasks: [{
+				id: "781C3B5C60B25013"
+				item: "gtceu:decaying_protein_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["36F2E9F51A0A9EB9"]
+			id: "6D75B052FE36AE15"
+			shape: "circle"
+			tasks: [{
+				id: "2FC46A905F5E8BB4"
+				item: "gtceu:naquadic_combust_agent_1_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2083C8024DE28A2D"]
+			id: "36F2E9F51A0A9EB9"
+			shape: "circle"
+			tasks: [{
+				id: "5EC04ADF0A12A40D"
+				item: "gtceu:supercooled_naquadic_fuel_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["46F50294CAB94507"]
+			id: "2083C8024DE28A2D"
+			shape: "circle"
+			tasks: [{
+				id: "3EC3F5E194BE9362"
+				item: "gtceu:cryocracked_naquadic_fuel_mix_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 14.5d
+		}
+		{
+			id: "45FF66C34943B42E"
+			shape: "circle"
+			tasks: [{
+				id: "6ABEBD8824FB9004"
+				item: "gtceu:ammonium_lithium_nitrate_1_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"45FF66C34943B42E"
+				"400A4C1AE5FB708B"
+			]
+			id: "46F50294CAB94507"
+			shape: "circle"
+			tasks: [{
+				id: "2E731B5F9A4B77C8"
+				item: "gtceu:fuel_mixture_naquadic_1_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"3C7BEE77115EB647"
+				"52FB0EE2305524E4"
+				"403ED5DB053E516E"
+			]
+			id: "400A4C1AE5FB708B"
+			shape: "circle"
+			tasks: [{
+				id: "6CF3A77B2EB351BC"
+				item: "gtceu:naquadic_fuel_mix_base_bucket"
+				type: "item"
+			}]
+			title: "naquadric fuel mixture base"
+			x: -3.5d
+			y: 15.5d
+		}
+		{
+			id: "3C7BEE77115EB647"
+			shape: "circle"
+			tasks: [{
+				id: "2715D3234EC96CF9"
+				item: "gtceu:kryptoxene_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 14.5d
+		}
+		{
+			id: "52FB0EE2305524E4"
+			shape: "circle"
+			tasks: [{
+				id: "18EAF23B3A4419CA"
+				item: "gtceu:cobalt_mang_sulfuric_acid_bucket"
+				type: "item"
+			}]
+			title: "Cobalt Manganese Sulfuric Acid"
+			x: -3.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3E17B65D127F0506"]
+			id: "403ED5DB053E516E"
+			shape: "circle"
+			subtitle: "Tritium and Glycerol"
+			tasks: [{
+				id: "1B2D96B12DF3598F"
+				item: "gtceu:naquadrolene_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			id: "3E17B65D127F0506"
+			shape: "circle"
+			tasks: [{
+				id: "2611B0990095B599"
+				item: "gtceu:acidic_naquadria_solution_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["46BC5D54EC451DDD"]
+			id: "56D73F6E52CED589"
+			tasks: [
+				{
+					id: "72FD3B62B07386D2"
+					item: "gtceu:naquadic_combust_agent_2_bucket"
+					type: "item"
+				}
+				{
+					id: "46B1BC954230F6A8"
+					item: "gtceu:rhodium_gear"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 14.5d
+		}
+		{
+			id: "5AD0735A494030B7"
+			shape: "circle"
+			tasks: [
+				{
+					id: "05F3C658C477C3E2"
+					item: "gtceu:enriched_naquadah_ingot"
+					type: "item"
+				}
+				{
+					id: "26C0304E7AA75957"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7006E5379EFB46E8"]
+			id: "030609F9D86AC769"
+			tasks: [{
+				id: "6259CBD1FEADF05C"
+				item: "gtceu:spent_silquadria_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.767857142857139d
+			y: 5.982142857142854d
+		}
+		{
+			id: "7DACF99B0C397264"
+			subtitle: "produces algy for better protein product"
+			tasks: [{
+				id: "2586DA22E8B69499"
+				title: "algy plant"
+				type: "custom"
+			}]
+			x: 8.5d
+			y: 16.0d
+		}
+		{
+			id: "15BDBC4B9E14D711"
+			subtitle: "a way to farm friendly mobs"
+			tasks: [{
+				id: "590C355036373913"
+				title: "mob synthezier"
+				type: "custom"
+			}]
+			x: 9.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["799A4EDC1B2B83EA"]
+			id: "56C12E58ADB3ACEF"
+			tasks: [{
+				id: "016F56CC9BE9B41E"
+				item: "gtceu:rapid_replicate_protein_cells_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.5d
+		}
+		{
+			id: "46BC5D54EC451DDD"
+			tasks: [{
+				id: "659C152FB3E348FD"
+				title: "refinery, black ring fusion reactor kind of"
+				type: "custom"
+			}]
+			x: -7.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"068E31C89A50FAFB"
+				"7F568D0BDD30A3DA"
+			]
+			id: "357C780408C31C09"
+			tasks: [{
+				id: "452267E702C889DA"
+				item: "gtceu:americium_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			id: "06A4B3024762CDE8"
+			tasks: [{
+				id: "20F9DC6591764A00"
+				title: "hydroquinone"
+				type: "custom"
+			}]
+			x: 14.0d
+			y: 19.5d
+		}
+		{
+			id: "12E5AC09CF17DE32"
+			tasks: [{
+				id: "21ED3E09F93EB831"
+				title: "para-difluorobenzene"
+				type: "custom"
+			}]
+			x: 13.0d
+			y: 19.5d
+		}
+		{
+			id: "49CE2DFE4B22BD1F"
+			tasks: [{
+				id: "2BC860295E6E0CBB"
+				title: "benzophenone"
+				type: "custom"
+			}]
+			x: 12.0d
+			y: 19.5d
+		}
+		{
+			id: "29BAB450DEA8F8ED"
+			tasks: [{
+				id: "5AF29C91F56C4917"
+				title: "difluorobenzophenone"
+				type: "custom"
+			}]
+			x: 11.0d
+			y: 19.5d
+		}
+		{
+			id: "74EB1D20D07F6E27"
+			tasks: [{
+				id: "5DB2749C2231B964"
+				title: "diphenyl sulfone"
+				type: "custom"
+			}]
+			x: 10.0d
+			y: 19.5d
+		}
+		{
+			id: "389B86173D8DB5FB"
+			tasks: [{
+				id: "6566DE663F5D5562"
+				title: "Hydroquinone-Difluorobenzophenone Mixture"
+				type: "custom"
+			}]
+			x: 8.5d
+			y: 19.5d
+		}
+		{
+			id: "0F66CC5FB6281868"
+			tasks: [{
+				id: "4A1480587CA697FF"
+				title: "molten peekl"
+				type: "custom"
+			}]
+			x: 7.5d
+			y: 19.5d
+		}
+	]
+	subtitle: ["Harness the cosmos and wield the bacteriological"]
+	title: "&cZPM&r - Zero Point Module"
+}

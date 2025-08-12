@@ -1,0 +1,873 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uv__ultimate_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:uv_electric_motor"
+	id: "2E730D6F5A7C2E83"
+	images: [{
+		height: 2.5d
+		image: "minecraft:textures/particle/goldheart_2.png"
+		rotation: 0.0d
+		width: 2.5d
+		x: 16.5d
+		y: -2.0d
+	}]
+	order_index: 8
+	quest_links: [
+		{
+			id: "5232A33368566616"
+			linked_quest: "6988AE94BE7B461F"
+			size: 0.75d
+			x: 1.26d
+			y: 6.105d
+		}
+		{
+			id: "194EA210B37DFEA0"
+			linked_quest: "762C48F0C2EA6B81"
+			size: 0.75d
+			x: 1.26d
+			y: 5.355d
+		}
+		{
+			id: "395B2149ABE3A85F"
+			linked_quest: "42760D3A86EFDCA3"
+			size: 0.75d
+			x: 0.135d
+			y: 4.23d
+		}
+		{
+			id: "336EE48F101DE4B9"
+			linked_quest: "20D5162A48CEBBC4"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "38CA0297C9CED8B6"
+			linked_quest: "1F7D753ADC71C344"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			id: "536815A007AF587E"
+			linked_quest: "70CA2AF61CD041C1"
+			size: 1.5d
+			x: 6.5d
+			y: -1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["3CDA855A045A9F4D"]
+			description: [
+				"The &3Network Switch&r allows multiple HPCAs to be used in conjunction with each other! This allows you to provide far more computation to your &aResearch Station&r."
+				""
+				"HPCAs can be connected to &3Network Switches&r with transmission and reception hatches, and then the Network Switch can output to a &aResearch Station&r with another transmission hatch."
+				""
+				"HPCAs cannot connect to &3Network Switches&r by default, and each connected HPCA requires an &3HPCA Bridge Component&r to enable this functionality."
+			]
+			id: "0BADFBA6F96E457E"
+			size: 0.75d
+			subtitle: "With our powers combined..."
+			tasks: [{
+				id: "5816F0458BEA1BCD"
+				item: "gtceu:network_switch"
+				type: "item"
+			}]
+			title: "Network Switch"
+			x: -0.99d
+			y: 3.105d
+		}
+		{
+			dependencies: [
+				"45E300FD7CD05A37"
+				"359121584E056022"
+			]
+			description: [
+				"This is a huge accomplishment, nice job!"
+				""
+				"The only ingredient that should be new to you are the &4Tritanium Frames&r."
+			]
+			id: "3B49BD004F38E1A2"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "The &6final&r circuit"
+			tasks: [{
+				id: "433027F7B7C732A1"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			title: "Wetware Mainframe - The UHV Circuit"
+			x: 0.135d
+			y: 1.98d
+		}
+		{
+			dependencies: [
+				"0BADFBA6F96E457E"
+				"42760D3A86EFDCA3"
+			]
+			description: ["The &3Data Module&r is required for Endgame Research. &aAssembly Lines&r cannot read from it using &aData Access Hatches&r directly, and instead require the &9Data Bank&r."]
+			id: "45E300FD7CD05A37"
+			size: 0.75d
+			subtitle: "Data storage sure is expensive..."
+			tasks: [{
+				id: "10F68287B673E16E"
+				item: "gtceu:data_module"
+				type: "item"
+			}]
+			title: "Data Module"
+			x: 0.135d
+			y: 3.105d
+		}
+		{
+			dependencies: [
+				"762C48F0C2EA6B81"
+				"4C7C0F6A6598BC24"
+				"35F13B6D60361904"
+			]
+			description: [
+				"&aTritanium Coils&r bring the Heat Capacity to &d10,800K&r."
+				""
+				"These coils aren't needed for much, but they'll provide another perfect overclock for most recipes!"
+			]
+			id: "6AF3A40BC9CE7122"
+			size: 0.75d
+			subtitle: "Why would you even need something this hot?!"
+			tasks: [{
+				count: 16L
+				id: "43CE7370C6D03DFD"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			title: "Tritanium Coils"
+			x: 1.26d
+			y: 4.23d
+		}
+		{
+			dependencies: ["70CA2AF61CD041C1"]
+			description: [
+				"A goal if you really want to make a point."
+				""
+				"If you make this in a &3UV&r machine, it'll take you 10 days."
+				""
+				"If you overclock a Gregicality Multiblock to UEV (by using a 4A &4UHV&r hatch), you'll still be waiting for 2.5 days!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The NAN Certificate comes from Crops++, a GT5u addon that adds a wide variety of IC2 crops."
+			]
+			id: "3ED40CE1E4476C99"
+			size: 1.0d
+			subtitle: "Obtain for G.O.A.T Status"
+			tasks: [{
+				id: "29384189E33C8CB1"
+				item: "gtceu:nan_certificate"
+				type: "item"
+			}]
+			title: "Certificate of not being a Noob anymore"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"35F13B6D60361904"
+				"0199DBC46D7BC2B9"
+				"4C295EED918D27CA"
+			]
+			description: [
+				"&3UV&r Components are a tad harder than &cZPM&r. "
+				""
+				"They use lots of &9Tritanium&r and &9Naquadria&r, so make sure your have enough Fusion Reactors, and a fast enough Naquadah Plant."
+				""
+				"They also need a lot more &9Computation&r, which means &3Advanced HPCA Components&r are now required!"
+				""
+				"Computation Needs for early &3UV&r:"
+				""
+				"- &a32 CWU/t&r: Basic &3UV&r Components and the Network Switch"
+				"- &a48 CWU/t&r: &3UV&r Sensor, Emitter, and Field Generator"
+			]
+			icon: "gtceu:uv_electric_motor"
+			id: "26F5A04750F6B6DD"
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prepare your Fusion Reactors!"
+			tasks: [
+				{
+					id: "3AD82F68865047F3"
+					item: "gtceu:uv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "495AADA7E2532B14"
+					item: "gtceu:uv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "006FD36B583851E7"
+					item: "gtceu:uv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "2CED35222E0F45AE"
+					item: "gtceu:uv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "1F2A7D8C0AE58BAA"
+					item: "gtceu:uv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "450D1DD57A51E159"
+					item: "gtceu:uv_emitter"
+					type: "item"
+				}
+			]
+			title: "Total Euphoria"
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"45E300FD7CD05A37"
+				"0BADFBA6F96E457E"
+			]
+			description: [
+				"This Quest will be completed with &eeither&r a &3UV Energy Hatch&r&r... or a &3UV Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Don't forget that &d16 Amp&r variants exist!"
+				""
+				"Additionally, remember that these hatches require a &9Data Module&r for research."
+			]
+			icon: "gtceu:uv_energy_input_hatch"
+			id: "2F2F82D9DE3C798C"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "4783D6B309027111"
+					item: "gtceu:uv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "62593894E98AFC45"
+					item: "gtceu:uv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line III"
+			x: 1.26d
+			y: 3.105d
+		}
+		{
+			dependencies: ["6AF3A40BC9CE7122"]
+			description: [
+				"&aUV Superconductors&r show up a lot in recipes when making a &9Fusion Reactor Mk3&r. Better get ready to make a boatload..."
+				""
+				"You can also use them to cheapen &9Superconducting Coils&r even further."
+			]
+			id: "3CDA855A045A9F4D"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "2A13EB0C94A752BD"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
+				type: "item"
+			}]
+			title: "UV Superconductors"
+			x: -0.99d
+			y: 4.23d
+		}
+		{
+			dependencies: ["616DB394EB7D81D6"]
+			description: [
+				"This Quest will be completed with &eeither&r a &3UHV Energy Hatch&r&r... or a &3UHV Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"These are the final energy hatches in GTCEu. It's been a pleasure upgrading our multiblocks together o7"
+				""
+				"Don't forget about the &d16 amp&r versions!"
+			]
+			icon: "gtceu:uhv_energy_input_hatch"
+			id: "5570F02C03267B36"
+			size: 1.0d
+			tasks: [
+				{
+					id: "4DF40C8FF003DDC6"
+					item: "gtceu:uhv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6E49D6D700F92C39"
+					item: "gtceu:uhv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line for the Last Time"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["70CA2AF61CD041C1"]
+			description: ["The &aGravi Star&r is the final upgraded Nether Star in GTCEu. It's needed for &3UV&r Sensors, Emitters, and Field Generators."]
+			id: "0009F48B6E385A47"
+			size: 1.0d
+			subtitle: "Unfortunately, doesn't make you float"
+			tasks: [{
+				id: "06668056CFF73DBD"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			title: "Gravi Star"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3B49BD004F38E1A2"
+				"2F2F82D9DE3C798C"
+			]
+			description: [
+				"Build the structure displayed with Fusion Glass in &aEMI&r."
+				""
+				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"The &aFusion Reactor Mk3&r is even more expensive than the Mk2! The key difference is that it has a higher &6Energy To Start&r than the Mk2, allowing you to run new recipes."
+				""
+				"It can also overclock lower voltage recipes, such as those in the Mk1 or Mk2 reactor. See the Mk1's quest for how these mechanics work."
+			]
+			id: "023FF9633765A0EB"
+			size: 0.75d
+			subtitle: "The most expensive form of Fusion"
+			tasks: [{
+				id: "571672CEA7362C63"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor III"
+			x: 1.26d
+			y: 1.98d
+		}
+		{
+			dependencies: ["70CA2AF61CD041C1"]
+			description: [
+				"You probably don't even need these, but &aUHV Superconductors&r exist, and are used for a few things, which you also probably don't need..."
+				""
+				"Craft these if you feel like flexing."
+			]
+			id: "616DB394EB7D81D6"
+			size: 1.0d
+			subtitle: "Is Neutronate even a real thing?"
+			tasks: [{
+				id: "665AC3D87C204E18"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
+				type: "item"
+			}]
+			title: "UHV Superconductors"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A8C830DF33F8376"]
+			id: "5C21AAA1238C6F02"
+			tasks: [{
+				id: "4D115928CBF4797B"
+				title: "new smd's"
+				type: "custom"
+			}]
+			title: "UV SMD's used to craft the Optical Ones"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0009F48B6E385A47"
+				"1F7D753ADC71C344"
+			]
+			id: "2738C585801CDE1D"
+			tasks: [{
+				id: "4DC422B1F796A1B1"
+				title: "new material"
+				type: "custom"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2738C585801CDE1D"
+				"7C3AAEFB4C6EB0C8"
+			]
+			id: "7A8C830DF33F8376"
+			subtitle: "fusion recipe idk with what yet tho"
+			tasks: [{
+				id: "1021BE105CA63D96"
+				item: "draconicevolution:awakened_draconium_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48CD87F36D5096FF"]
+			id: "7C3AAEFB4C6EB0C8"
+			tasks: [{
+				id: "58EF3D6CAC72229B"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70BD8BE55A8A9C19"]
+			id: "48CD87F36D5096FF"
+			tasks: [{
+				id: "5207311DE066F7F6"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E85F738DFD87699"
+				"397D4F6A6FD8D6C5"
+			]
+			id: "70BD8BE55A8A9C19"
+			tasks: [{
+				id: "5781562F7E516569"
+				item: {
+					Count: 1
+					id: "gtceu:data_module"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			id: "1E85F738DFD87699"
+			tasks: [{
+				id: "125E4F6E3811C963"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CE16AC0A0D9B6F2"]
+			id: "397D4F6A6FD8D6C5"
+			tasks: [{
+				id: "1B75A851588A82FB"
+				item: "gtceu:network_switch"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C295EED918D27CA"]
+			id: "46B7E999FC7D8BE0"
+			tasks: [{
+				id: "474CE1C0F48C918F"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			id: "4C295EED918D27CA"
+			tasks: [{
+				id: "575AF67E0284F38C"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46B7E999FC7D8BE0"]
+			id: "5CE16AC0A0D9B6F2"
+			tasks: [{
+				id: "42FBD4817BF97494"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["48CD87F36D5096FF"]
+			id: "1972782D30367BED"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "36178E9F36043580"
+				title: "new mutliblock"
+				type: "custom"
+			}]
+			title: "Optical Lapotronic Collision Chamber"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0009F48B6E385A47"
+				"5570F02C03267B36"
+				"1F7D753ADC71C344"
+			]
+			description: [
+				"This Machine uses its power to condese the matter of a whole planet into a single product, which you can then process into raw materials or liquids"
+				""
+				"Each orbit where ist planced gives you Planetary Matter in a very Condesed Form."
+			]
+			id: "444447AF92C21FFA"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "need liquid gravi stars as fuel, and liquid draconium coires"
+			tasks: [{
+				id: "6C0FC4F4A3E057DB"
+				title: "Orbital Matter Reduction Array"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["444447AF92C21FFA"]
+			id: "405E0061A6447B31"
+			subtitle: "Chromarite and Plasmite"
+			tasks: [{
+				id: "2662F982519F89C4"
+				title: "terran Matter"
+				type: "custom"
+			}]
+			title: "Terran Matter"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["444447AF92C21FFA"]
+			description: ["gives Xentium, Quasarium"]
+			id: "62026E29A010FD8A"
+			subtitle: "gives Xentium, Quasarium"
+			tasks: [{
+				id: "35028BF9E080012E"
+				title: "Martian Matter"
+				type: "custom"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["444447AF92C21FFA"]
+			id: "48CECD490C03EEC7"
+			subtitle: "gives tesserite, Xenocite"
+			tasks: [{
+				id: "7E3EEB8E6E225DEB"
+				title: "Lunar Matter"
+				type: "custom"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"62026E29A010FD8A"
+				"48CECD490C03EEC7"
+				"405E0061A6447B31"
+			]
+			description: [
+				"Basically, all matter needs to be centrifuged into their raw states, which takes, power and [placeholder]"
+				""
+				"You get a total of 6 Metals from this which you need to use fusion to make the 6 Superposition Metals for UV."
+				""
+				"3 of these metals are used for Optical SMD's and Transmission Interface Channels, the other 3 are used for crafting in the later steps of the next quest line."
+			]
+			id: "5BF0447A53017B44"
+			tasks: [{
+				id: "59D1C3B5C0765CC1"
+				item: "gtceu:rhodium_gear"
+				type: "item"
+			}]
+			title: "Checkmark"
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5BF0447A53017B44"]
+			id: "22E614A4208A6B0B"
+			subtitle: "uses 3 metals"
+			tasks: [{
+				id: "2A9002E8F901EEDB"
+				title: "new smd's"
+				type: "custom"
+			}]
+			title: "Optical Superpositied SMD's - Optical Transmission Lines"
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5BF0447A53017B44"
+				"1972782D30367BED"
+			]
+			id: "6034763F48C5153E"
+			subtitle: "one of the metals you get from it"
+			tasks: [{
+				id: "0D38B9F6CE5B6505"
+				title: "Photonic Neutronite"
+				type: "custom"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6034763F48C5153E"
+				"1972782D30367BED"
+				"57B762A95F814242"
+				"22E614A4208A6B0B"
+				"18DE9F0DF837A2DA"
+				"45CCAED1FE6572CC"
+				"6B4C07646827C598"
+			]
+			id: "4884C45D506EF273"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "15B430BAD8B34A2F"
+				title: "Optical Photonic Circuit"
+				type: "custom"
+			}]
+			title: "Optical Photonic Superpositioned Processor"
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&2Subatomic Patterning Gel (SAP-Gel)&r"
+				""
+				""
+				"&6Polybenzimidazole Gel&r (wärmeresistenter Träger)"
+				"&aTriazirinyl-Ether&r (fiktives UV-Vernetzungsmittel)"
+				"&5Petroxide Suspension&r (oxidativer Entwickler für Neutronium)"
+				"&cTritium Alcoholate&r (radioaktive Aktivierung bei Belichtung)"
+			]
+			id: "57B762A95F814242"
+			subtitle: "recipe in desc - gpt"
+			tasks: [{
+				id: "65593157F5EB35B5"
+				title: "Subatomic Pattering Gel (SAP-G)"
+				type: "custom"
+			}]
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4884C45D506EF273"
+				"65B91DA18D50D0CF"
+			]
+			id: "59E8C662B8C8FF0A"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&6- You have done it! -"
+			tasks: [{
+				id: "3D2CA7CB1CFC7C98"
+				title: "Optical Photonic Superpositioned Processor Assembly"
+				type: "custom"
+			}]
+			title: "&6Optical Photonic Mainframe"
+			x: 16.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["562F8BA71E2DC0C5"]
+			id: "65B91DA18D50D0CF"
+			subtitle: "Collide Singularite in the chamber with pure Stellarite and you get it"
+			tasks: [{
+				id: "6F0AE729749F7A5D"
+				title: "Hyperdime Liquid"
+				type: "custom"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1972782D30367BED"]
+			id: "562F8BA71E2DC0C5"
+			subtitle: "Awakend Draconium, Trinium, Neutronium Combination Alloy"
+			tasks: [{
+				id: "79AF71055FAE3282"
+				title: "Awakend Trinite Composite"
+				type: "custom"
+			}]
+			title: "Singularite"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59E8C662B8C8FF0A"]
+			id: "0B928813F00D54C4"
+			shape: "heart"
+			subtitle: "&6 - A Little Treat! - "
+			tasks: [{
+				id: "0896C3D647F6AC42"
+				item: "gtceu:creative_energy"
+				type: "item"
+			}]
+			title: "&6 Creative Energy Unlocked"
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BF0447A53017B44"]
+			id: "6D46706992339937"
+			tasks: [{
+				id: "59E4DDDBAA2EA8A3"
+				title: "Raw Exposed Optical Chip"
+				type: "custom"
+			}]
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6D46706992339937"]
+			id: "45CCAED1FE6572CC"
+			tasks: [{
+				id: "036E8C799D97AB0E"
+				title: "Optically Managed Memory Module"
+				type: "custom"
+			}]
+			x: 14.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6D46706992339937"
+				"56FD3906D46592FC"
+			]
+			id: "18DE9F0DF837A2DA"
+			tasks: [{
+				id: "1B552199B864B0CB"
+				title: "Optical Supoerpositied Chip"
+				type: "custom"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5BF0447A53017B44"]
+			id: "56FD3906D46592FC"
+			tasks: [{
+				id: "5C9AB77E3430B3D8"
+				title: "Optical Circuit Board"
+				type: "custom"
+			}]
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1972782D30367BED"]
+			id: "2105395D5F032BE4"
+			subtitle: "Aluminium Plasma, Naquadah Plasma, Samarium Plasma"
+			tasks: [{
+				id: "5DA3FAADB346AF65"
+				title: "Lafium Compound"
+				type: "custom"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1972782D30367BED"]
+			id: "3F68597B8A36DDE3"
+			subtitle: "Lanthum, titanium, niobium plasma comnbiantion"
+			tasks: [{
+				id: "65ABA05ACBFBC160"
+				title: "Lanthaum, Tiutanium, Niobium Plasma combiantion"
+				type: "custom"
+			}]
+			title: "Endurite Alloy"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["59E8C662B8C8FF0A"]
+			id: "34E4DBE7959827E6"
+			shape: "heart"
+			tasks: [{
+				id: "455C9998951C9E17"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59E8C662B8C8FF0A"]
+			id: "32B99AFFD6B34897"
+			shape: "heart"
+			tasks: [{
+				id: "04935488AF8CE603"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+								provider_id: [I;
+									-49176324
+									-1575860144
+									-1842724214
+									-1912919053
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_staff"
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2B57B7B6CC054A05"
+				"08F3B8D788185846"
+				"71CCD6E846531593"
+			]
+			description: [
+				"So, now you will probably have seen, the costs have changed quiet a bit, its all a bit more expensive and more massiv, that is wanted, we want to make a &3HUGE FACTORY RIGHT?&r yeah."
+				""
+				"You can &2Choose&r which &2Chip&r you want to use for the recipe, the &3HASoC&r or the &3Highly Advanced Qubit Central Processiong Unit&r or &3HAQCPU&r for short."
+			]
+			id: "6B4C07646827C598"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "&6- The First Optical Ready Circuit! -&r"
+			tasks: [{
+				id: "1511308815D94A06"
+				item: "kubejs:biotine_supercomputer"
+				type: "item"
+			}]
+			x: 14.625d
+			y: -2.625d
+		}
+	]
+	subtitle: ["Bring your long journey to a well-deserved end"]
+	title: "&3UV&r - Ultimate Voltage"
+}

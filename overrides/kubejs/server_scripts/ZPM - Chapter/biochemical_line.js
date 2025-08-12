@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.biovat("biochemline_biovat_sterilized")
     .itemInputs("gtceu:lead_dust")
-    .inputFluids("gtceu:stabilized_growth_medium 1000")
+    .inputFluids("gtceu:stabilized_growth_medium 1000","gtceu:raw_growth_medium 1000")
     .chancedFluidOutput("gtceu:sterilized_growth_medium 1000", 2500, 0)
     .EUt(GTValues.VA[GTValues.IV]).circuit(1).duration(600).cleanroom(CleanroomType.STERILE_CLEANROOM)
 

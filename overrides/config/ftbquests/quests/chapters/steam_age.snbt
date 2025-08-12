@@ -1,0 +1,340 @@
+{
+	autofocus_id: "03ADCDB4A98A8FF4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "693226878D58638A"
+	icon: "gtceu:primitive_blast_furnace"
+	id: "3B89FB8839204148"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["501F700E38CB914A"]
+			description: [
+				"Make the listed molds for future alloy smelting. Be sure to make &aMolds&r - don't make &cExtruder Shapes&r, as they're used in a different machine."
+				""
+				"The reward for this quest will alleviate &da lot of pain&r when it comes to crafting &bGears&r."
+				""
+				"This will only be needed once you have the Electrical Extruders."
+			]
+			icon: "gtceu:ball_casting_mold"
+			id: "22997534983F6812"
+			rewards: [
+				{
+					id: "0F35BAFC22B1C82E"
+					item: "gtceu:small_gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "4CA581AFFDA18455"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Reduce the amount of malding by molding"
+			tasks: [
+				{
+					id: "33DCDFE73740AF97"
+					item: "gtceu:plate_casting_mold"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E7A1A7FBBCA2C27"
+					item: "gtceu:ball_casting_mold"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AE408B2303C21EA"
+					item: "gtceu:block_casting_mold"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1730E117F9042A2D"
+					title: "Skip."
+					type: "checkmark"
+				}
+			]
+			title: "Malding"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: ["&3Primitive Blast Furnace&r is the first step towards a automated and bright factory."]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "6A997F2CB93512C3"
+			tasks: [
+				{
+					id: "46320FA05F46F9F1"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "076AEC60431FE715"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6A997F2CB93512C3"]
+			description: [
+				"A single PBF probably wont cut it for your factory, so you will need to expand, get 2 more and lets see how you do it. "
+				""
+				"Also you will need a bit more Steel now, get 32 Ingots of it for the start, then later on go by what is needed and batch craft it, if you are unsure."
+			]
+			icon: "gtceu:steel_ingot"
+			id: "501F700E38CB914A"
+			tasks: [
+				{
+					id: "3D6F962F592B4974"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+					title: "Any #forge:ingots/steel"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1AFE9FCEC75AFD13"
+					item: { Count: 2, id: "gtceu:primitive_blast_furnace" }
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "1230D5D8BD7AE497"
+					item: { Count: 52, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1ACBDB8FBD21CD5E"]
+			description: ["You will need to find &6Sulfur&r either in the &4Nether&r, which the Quest Book recommends because you get double of it in the &6Nether Veins&r, Overworld Veins do exist tho. They can be useful if you dont like going into the &6Nether&r!"]
+			id: "6F476C7DF645A843"
+			tasks: [{
+				id: "4B721B5028E3519D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/sulfur"
+					}
+				}
+				title: "Any #forge:dusts/sulfur"
+				type: "item"
+			}]
+			title: "Sulfur"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"22997534983F6812"
+				"6F476C7DF645A843"
+				"14C18C2749F38AE4"
+			]
+			description: [
+				"Now Combind it all together and get yourself some Rubber Sheets, so you can warp your Wires and not get hurt anymore! "
+				""
+				"Rubber is the main warp material for LV - MV."
+			]
+			id: "630AD51560046BF7"
+			tasks: [
+				{
+					id: "2EC3856F372EF86D"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					id: "6B47956DED4388EE"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A997F2CB93512C3"]
+			description: [
+				"You will need to expand your factory into the &4Dimension of the Nether&r now, you are tasked to go search for some Sulfur, which can be found in its Vein in the Nether."
+				""
+				"&2Silk Touch&r is important because &6Nether Ores&r are double the worth of normal &2Overworld Ores&r."
+			]
+			icon: "minecraft:nether_wart"
+			id: "1ACBDB8FBD21CD5E"
+			rewards: [{
+				id: "26A351696DAFFEE6"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:nether_star"
+				id: "377C61609C5AB70A"
+				title: "The Nether!"
+				type: "dimension"
+			}]
+			title: "A True Journey!"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4972972F9588A081"]
+			id: "38AAE16C1A891126"
+			tasks: [{
+				id: "3D45DD2845A729AF"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "4972972F9588A081"
+			tasks: [{
+				id: "4FFB662C2184137E"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"38AAE16C1A891126"
+				"649ABB33BA1CA7C4"
+			]
+			id: "5641CA98D3AB6272"
+			tasks: [{
+				id: "0590B9B99FFA204D"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["501F700E38CB914A"]
+			description: ["Now let's make some Plates!"]
+			id: "649ABB33BA1CA7C4"
+			tasks: [{
+				id: "601E6F3C7CCC7BCD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/steel"
+					}
+				}
+				title: "Any #forge:plates/steel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"So, now you think of &2Rubber Trees&r right? "
+				""
+				"Get some Wood and make yourself your first couple Sticky Resins!"
+				""
+				"Or you can just find some &2Slime Balls&r of any type and process them down into &6Sticky Resin&r, good luck!"
+			]
+			id: "14C18C2749F38AE4"
+			tasks: [{
+				count: 16L
+				id: "4A8906820E38E76B"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"630AD51560046BF7"
+				"5641CA98D3AB6272"
+				"2B622C6BF20A8F36"
+				"6EC6D3AF47BCCD1A"
+			]
+			description: ["You wll find that this is easy, later on you will cry for help! :3"]
+			id: "03ADCDB4A98A8FF4"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&5Congrats in reaching your first Electrical Tier!&r"
+			tasks: [{
+				count: 16L
+				id: "5BD61775440A5A53"
+				item: "kubejs:t1_circuit_lv"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14C18C2749F38AE4"]
+			id: "2B622C6BF20A8F36"
+			tasks: [{
+				id: "3F1986A248E3CAB2"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"630AD51560046BF7"
+				"5641CA98D3AB6272"
+			]
+			id: "008A028089CD2219"
+			shape: "gear"
+			tasks: [{
+				count: 12L
+				id: "4E77E06B343821DF"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38AAE16C1A891126"]
+			id: "6EC6D3AF47BCCD1A"
+			tasks: [{
+				id: "6046FE97EBA43785"
+				item: "kubejs:rose_quartz_plate"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+	]
+	subtitle: ["Harness the power of your first Basic Electronical Circuits!"]
+	title: "&6Electronical Beginnings&r"
+}

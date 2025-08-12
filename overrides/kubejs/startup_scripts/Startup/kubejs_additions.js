@@ -11,9 +11,10 @@ StartupEvents.registry('item', e => {
     e.create("sat_3").displayName("Satellite T3")
     e.create("energized_ingot_of_silicon").displayName("Energized Silicon Ingot")
     e.create("crystal_cpu").displayName("Crystal CPU")
-    e.create("super_seperator").displayName("SPC Spacer")
+    e.create("super_seperator").displayName("Interconnecter")
     e.create("draconic_reflector").displayName("Draconic Reflector")
-    
+
+
     e.create("lv_stator").displayName("LV Stator")
     e.create("mv_stator").displayName("MV Stator")
     e.create("hv_stator").displayName("HV Stator")
@@ -53,7 +54,8 @@ StartupEvents.registry('item', e => {
     e.create("t1_circuit_ev").displayName("Nano Processor")
     e.create("t1_circuit_iv").displayName("Quantum Supercomputer")
     e.create("t1_circuit_luv").displayName("Superpositioned Crystal Mainframe")
-    e.create("t1_circuit_zpm").displayName("Coupled Superpositioned Biotine Mainframe")
+    e.create("t1_circuit_zpm").displayName("Superpositioned Biotine Mainframe")
+    e.create("biotine_supercomputer").displayName("Superpositioned Biotine Supercluster")
     e.create("t1_circuit_uv").displayName("Optical Photonic Superpositioned Processor")
     e.create("t1_circuit_uhv").displayName("Optical Photonic Mainframe Supercluster")
 
@@ -88,6 +90,8 @@ StartupEvents.registry('item', e => {
     e.create("ancw").displayName("Advanced Nano CPU Wafer")
     e.create("qwm").displayName("Quantum Wafer Mask")
     e.create("prep_q_wafer").displayName("Prepared Quantum Wafer")
+    e.create("hahdic_wafer").displayName("Hahdic Wafer")
+    e.create("hahdic_chip").displayName("Hahdic Chip")
     e.create("graphene_rod").displayName("Graphene Rod")
     e.create("inert_enriched_rod").displayName("Inert-Gas Enriched Carbon Fuel Rod")
     e.create("rhodium_palladium_reflector").displayName("Rhodium Palladium Coated Solar Reflector")
